@@ -24,6 +24,11 @@ S.~C. Smith, R.~Jackson, T.~A. Pearson, V.~Fuster, S.~Yusuf, O.~Faergeman,
 E.~Besterman and R.~Creese, ``Waller--pioneer of electrocardiography.,'' {\em
   British Heart Journal}, vol.~42, no.~1, p.~61, 1979.
 
+\bibitem{kreger1987electrocardiogram}
+B.~E. Kreger, L.~A. Cupples, and W.~B. Kannel, ``The electrocardiogram in
+  prediction of sudden death: Framingham study experience,'' {\em American
+  heart journal}, vol.~113, no.~2, pp.~377--382, 1987.
+
 \bibitem{lagerholm2000clustering}
 M.~Lagerholm, C.~Peterson, G.~Braccini, L.~Edenbrandt, and L.~Sornmo,
   ``Clustering ecg complexes using hermite functions and self-organizing
@@ -82,6 +87,28 @@ T.~Ince, S.~Kiranyaz, and M.~Gabbouj, ``A generic and robust system for
 S.~Kiranyaz, T.~Ince, and M.~Gabbouj, ``Real-time patient-specific ecg
   classification by 1-d convolutional neural networks,'' {\em IEEE Transactions
   on Biomedical Engineering}, vol.~63, no.~3, pp.~664--675, 2016.
+
+\bibitem{wilson1998prediction}
+P.~W. Wilson, R.~B. D’Agostino, D.~Levy, A.~M. Belanger, H.~Silbershatz, and
+  W.~B. Kannel, ``Prediction of coronary heart disease using risk factor
+  categories,'' {\em Circulation}, vol.~97, no.~18, pp.~1837--1847, 1998.
+
+\bibitem{whooley2008depressive}
+M.~A. Whooley, P.~de~Jonge, E.~Vittinghoff, C.~Otte, R.~Moos, R.~M. Carney,
+  S.~Ali, S.~Dowray, B.~Na, M.~D. Feldman, {\em et~al.}, ``Depressive symptoms,
+  health behaviors, and risk of cardiovascular events in patients with coronary
+  heart disease,'' {\em Jama}, vol.~300, no.~20, pp.~2379--2388, 2008.
+
+\bibitem{jambukia2015classification}
+S.~H. Jambukia, V.~K. Dabhi, and H.~B. Prajapati, ``Classification of ecg
+  signals using machine learning techniques: A survey,'' in {\em Computer
+  Engineering and Applications (ICACEA), 2015 International Conference on
+  Advances in}, pp.~714--721, IEEE, 2015.
+
+\bibitem{advancewarning}
+S.~Kiranyaz, T.~Ince, and M.~Gabbouj, ``Personalized monitoring and advance
+  warning system for cardiac arrhythmias,'' {\em Scientific Reports}, vol.~7,
+  no.~1, p.~9270, 2017.
 
 \bibitem{agesex}
 L.~S. Green, R.~L. Lux, C.~W. Haws, R.~R. Williams, S.~C. Hunt, and M.~J.
@@ -175,12 +202,6 @@ S.~Banerjee, R.~Gupta, and M.~Mitra, ``Delineation of ecg characteristic
 Z.~Zidelmal, A.~Amirou, M.~Adnane, and A.~Belouchrani, ``\textsc{QRS} detection
   based on wavelet coefficients,'' {\em Computer methods and programs in
   biomedicine}, vol.~107, no.~3, pp.~490--496, 2012.
-
-\bibitem{jambukia2015classification}
-S.~H. Jambukia, V.~K. Dabhi, and H.~B. Prajapati, ``Classification of ecg
-  signals using machine learning techniques: A survey,'' in {\em Computer
-  Engineering and Applications (ICACEA), 2015 International Conference on
-  Advances in}, pp.~714--721, IEEE, 2015.
 
 \bibitem{chen2018predictive}
 J.~Chen and A.~Razi, ``A predictive framework for ecg signal processing using

@@ -13,16 +13,75 @@ D.~Lloyd-Jones, R.~J. Adams, T.~M. Brown, M.~Carnethon, S.~Dai, G.~De~Simone,
 \bibitem{who}
 W.~H. Organization, ``Cardiovascular diseases (cvds),'' 2017.
 
-\bibitem{circulation2010}
-G.~I. Fishman, S.~S. Chugh, J.~P. DiMarco, C.~M. Albert, M.~E. Anderson, R.~O.
-  Bonow, A.~E. Buxton, P.-S. Chen, M.~Estes, X.~Jouven, {\em et~al.}, ``Sudden
-  cardiac death prediction and prevention: report from a national heart, lung,
-  and blood institute and heart rhythm society workshop,'' {\em Circulation},
-  vol.~122, no.~22, pp.~2335--2348, 2010.
+\bibitem{smith2004principles}
+S.~C. Smith, R.~Jackson, T.~A. Pearson, V.~Fuster, S.~Yusuf, O.~Faergeman,
+  D.~A. Wood, M.~Alderman, J.~Horgan, P.~Home, {\em et~al.}, ``Principles for
+  national and regional guidelines on cardiovascular disease prevention: a
+  scientific statement from the world heart and stroke forum,'' {\em
+  Circulation}, vol.~109, no.~25, pp.~3112--3121, 2004.
 
 \bibitem{besterman1979waller}
 E.~Besterman and R.~Creese, ``Waller--pioneer of electrocardiography.,'' {\em
   British Heart Journal}, vol.~42, no.~1, p.~61, 1979.
+
+\bibitem{lagerholm2000clustering}
+M.~Lagerholm, C.~Peterson, G.~Braccini, L.~Edenbrandt, and L.~Sornmo,
+  ``Clustering ecg complexes using hermite functions and self-organizing
+  maps,'' {\em IEEE Transactions on Biomedical Engineering}, vol.~47, no.~7,
+  pp.~838--848, 2000.
+
+\bibitem{prasad2003classification}
+G.~K. Prasad and J.~Sahambi, ``Classification of ecg arrhythmias using
+  multi-resolution analysis and neural networks,'' in {\em TENCON 2003.
+  Conference on Convergent Technologies for the Asia-Pacific Region}, vol.~1,
+  pp.~227--231, IEEE, 2003.
+
+\bibitem{autofs}
+P.~de~Chazal, M.~O'Dwyer, and R.~B. Reilly, ``Automatic classification of
+  heartbeats using \textsc{ECG} morphology and heartbeat interval features,''
+  {\em IEEE Transactions on Biomedical Engineering}, vol.~51, pp.~1196--1206,
+  July 2004.
+
+\bibitem{ceylan2009novel}
+R.~Ceylan, Y.~{\"O}zbay, and B.~Karlik, ``A novel approach for classification
+  of ecg arrhythmias: Type-2 fuzzy clustering neural network,'' {\em Expert
+  Systems with Applications}, vol.~36, no.~3, pp.~6721--6726, 2009.
+
+\bibitem{osowski2004support}
+S.~Osowski, L.~T. Hoai, and T.~Markiewicz, ``Support vector machine-based
+  expert system for reliable heartbeat recognition,'' {\em IEEE transactions on
+  biomedical engineering}, vol.~51, no.~4, pp.~582--589, 2004.
+
+\bibitem{Hu_et_al}
+H.~H. Yu, P.~S., and J.~T. W., ``A patient-adaptable \textsc{ECG} beat
+  classifier using a mixture of experts approach,'' {\em IEEE Transactions on
+  Biomedical Engineering}, vol.~44, no.~9, pp.~891--900, 1997.
+
+\bibitem{deChazal2006}
+P.~de~Chazal and R.~B. Reilly, ``A patient-adapting heartbeat classifier using
+  ecg morphology and heartbeat interval features,'' {\em IEEE Transactions on
+  Biomedical Engineering}, vol.~53, pp.~2535--2543, Dec 2006.
+
+\bibitem{llamedo2012automatic}
+M.~Llamedo and J.~P. Mart{\'\i}nez, ``An automatic patient-adapted ecg
+  heartbeat classifier allowing expert assistance,'' {\em IEEE Transactions on
+  Biomedical Engineering}, vol.~59, no.~8, pp.~2312--2320, 2012.
+
+\bibitem{bbnn}
+W.~Jiang and S.~G. Kong, ``Block-based neural networks for personalized
+  \textsc{ECG} signal classification,'' {\em IEEE Transactions on Neural
+  Networks}, vol.~18, no.~6, pp.~1750--1761, 2007.
+
+\bibitem{ince2009generic}
+T.~Ince, S.~Kiranyaz, and M.~Gabbouj, ``A generic and robust system for
+  automated patient-specific classification of ecg signals,'' {\em IEEE
+  Transactions on Biomedical Engineering}, vol.~56, no.~5, pp.~1415--1426,
+  2009.
+
+\bibitem{Kiranyaz}
+S.~Kiranyaz, T.~Ince, and M.~Gabbouj, ``Real-time patient-specific ecg
+  classification by 1-d convolutional neural networks,'' {\em IEEE Transactions
+  on Biomedical Engineering}, vol.~63, no.~3, pp.~664--675, 2016.
 
 \bibitem{agesex}
 L.~S. Green, R.~L. Lux, C.~W. Haws, R.~R. Williams, S.~C. Hunt, and M.~J.
@@ -34,11 +93,6 @@ L.~S. Green, R.~L. Lux, C.~W. Haws, R.~R. Williams, S.~C. Hunt, and M.~J.
 R.~Hoekema, G.~J.~H. Uijen, and A.~van Oosterom, ``Geometrical aspects of the
   interindividual variability of multilead ecg recordings,'' {\em IEEE
   Transactions on Biomedical Engineering}, vol.~48, pp.~551--559, May 2001.
-
-\bibitem{llamedo2012automatic}
-M.~Llamedo and J.~P. Mart{\'\i}nez, ``An automatic patient-adapted ecg
-  heartbeat classifier allowing expert assistance,'' {\em IEEE Transactions on
-  Biomedical Engineering}, vol.~59, no.~8, pp.~2312--2320, 2012.
 
 \bibitem{aami}
 A.-A. EC57, ``Testing and reporting performance results of cardiac rhythm and
@@ -117,64 +171,10 @@ S.~Banerjee, R.~Gupta, and M.~Mitra, ``Delineation of ecg characteristic
   features using multiresolution wavelet analysis method,'' {\em Measurement},
   vol.~45, no.~3, pp.~474--487, 2012.
 
-\bibitem{lagerholm2000clustering}
-M.~Lagerholm, C.~Peterson, G.~Braccini, L.~Edenbrandt, and L.~Sornmo,
-  ``Clustering ecg complexes using hermite functions and self-organizing
-  maps,'' {\em IEEE Transactions on Biomedical Engineering}, vol.~47, no.~7,
-  pp.~838--848, 2000.
-
-\bibitem{prasad2003classification}
-G.~K. Prasad and J.~Sahambi, ``Classification of ecg arrhythmias using
-  multi-resolution analysis and neural networks,'' in {\em TENCON 2003.
-  Conference on Convergent Technologies for the Asia-Pacific Region}, vol.~1,
-  pp.~227--231, IEEE, 2003.
-
-\bibitem{ceylan2009novel}
-R.~Ceylan, Y.~{\"O}zbay, and B.~Karlik, ``A novel approach for classification
-  of ecg arrhythmias: Type-2 fuzzy clustering neural network,'' {\em Expert
-  Systems with Applications}, vol.~36, no.~3, pp.~6721--6726, 2009.
-
-\bibitem{osowski2004support}
-S.~Osowski, L.~T. Hoai, and T.~Markiewicz, ``Support vector machine-based
-  expert system for reliable heartbeat recognition,'' {\em IEEE transactions on
-  biomedical engineering}, vol.~51, no.~4, pp.~582--589, 2004.
-
-\bibitem{Hu_et_al}
-H.~H. Yu, P.~S., and J.~T. W., ``A patient-adaptable \textsc{ECG} beat
-  classifier using a mixture of experts approach,'' {\em IEEE Transactions on
-  Biomedical Engineering}, vol.~44, no.~9, pp.~891--900, 1997.
-
-\bibitem{deChazal2006}
-P.~de~Chazal and R.~B. Reilly, ``A patient-adapting heartbeat classifier using
-  ecg morphology and heartbeat interval features,'' {\em IEEE Transactions on
-  Biomedical Engineering}, vol.~53, pp.~2535--2543, Dec 2006.
-
-\bibitem{bbnn}
-W.~Jiang and S.~G. Kong, ``Block-based neural networks for personalized
-  \textsc{ECG} signal classification,'' {\em IEEE Transactions on Neural
-  Networks}, vol.~18, no.~6, pp.~1750--1761, 2007.
-
-\bibitem{ince2009generic}
-T.~Ince, S.~Kiranyaz, and M.~Gabbouj, ``A generic and robust system for
-  automated patient-specific classification of ecg signals,'' {\em IEEE
-  Transactions on Biomedical Engineering}, vol.~56, no.~5, pp.~1415--1426,
-  2009.
-
-\bibitem{Kiranyaz}
-S.~Kiranyaz, T.~Ince, and M.~Gabbouj, ``Real-time patient-specific ecg
-  classification by 1-d convolutional neural networks,'' {\em IEEE Transactions
-  on Biomedical Engineering}, vol.~63, no.~3, pp.~664--675, 2016.
-
 \bibitem{2012qrs}
 Z.~Zidelmal, A.~Amirou, M.~Adnane, and A.~Belouchrani, ``\textsc{QRS} detection
   based on wavelet coefficients,'' {\em Computer methods and programs in
   biomedicine}, vol.~107, no.~3, pp.~490--496, 2012.
-
-\bibitem{autofs}
-P.~de~Chazal, M.~O'Dwyer, and R.~B. Reilly, ``Automatic classification of
-  heartbeats using \textsc{ECG} morphology and heartbeat interval features,''
-  {\em IEEE Transactions on Biomedical Engineering}, vol.~51, pp.~1196--1206,
-  July 2004.
 
 \bibitem{jambukia2015classification}
 S.~H. Jambukia, V.~K. Dabhi, and H.~B. Prajapati, ``Classification of ecg

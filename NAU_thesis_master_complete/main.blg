@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: front/cover.aux
+A level-1 auxiliary file: front/abstract.aux
+A level-1 auxiliary file: Introduction/1-intro.aux
+A level-1 auxiliary file: body/2-Framework.aux
+A level-1 auxiliary file: body/3-KernelModel.aux
+A level-1 auxiliary file: body/4-SphereModel.aux
+A level-1 auxiliary file: conclusion/6-Discussion.aux
+The style file: ieeetr.bst
+Database file #1: Bibs.bib
+Warning--entry type for "who" isn't style-file defined
+--line 29 of file Bibs.bib
+You've used 45 entries,
+            1876 wiz_defined-function locations,
+            760 strings with 11960 characters,
+and the built_in function-call counts, 14702 in all, are:
+= -- 1541
+> -- 507
+< -- 0
++ -- 186
+- -- 141
+* -- 1052
+:= -- 1976
+add.period$ -- 49
+call.type$ -- 45
+change.case$ -- 41
+chr.to.int$ -- 0
+cite$ -- 45
+duplicate$ -- 740
+empty$ -- 1333
+format.name$ -- 141
+if$ -- 3638
+int.to.chr$ -- 0
+int.to.str$ -- 45
+missing$ -- 48
+newline$ -- 142
+num.names$ -- 45
+pop$ -- 106
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 599
+stack$ -- 0
+substring$ -- 1245
+swap$ -- 368
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 149
+width$ -- 47
+write$ -- 472
+(There was 1 warning)

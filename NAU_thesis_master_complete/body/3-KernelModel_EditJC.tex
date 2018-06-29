@@ -1,46 +1,46 @@
 \chapter{Kernel-Based Nonlinear Spatial Transformation}\label{ch:spheremapping}
 \section{Introduction}
 
-As proposed in last chapter, objective of the system is to predict subsequent abnormalities by quantifying the deviation of sample. Whereas the original cluster topology in feature space $\Omega^d$ depends on the feature extraction stage $g()$ and may lead to poor performance or even failure of predicting. An optimization using spatial transformation is addressed to solve this problem. More specifically, the designed method is able to maximize angles between vectors of normal cluster centroid to each abnormal cluster center centroids. In this chapter, a kernel based nonlinear spatial transformation is proposed to reshape the feature space to a symmetric topology which has the following features:
+As proposed in last chapter, the objective of the proposed system is to predict subsequent abnormalities by quantifying the deviation of a sample. Whereas the original cluster geometry in feature space $\Omega^d$ depends on the feature extraction stage $g()$. With the extracted features, the cluster geometry may not present a necessary symmetric property and will thus lead to poor performance or even failure in predicting subsequent abnormalities. 
+Therefore, an optimization using spatial transformation is addressed to solve this problem. More specifically, the designed method is able to maximize angles between vectors of normal cluster centroid to each abnormal cluster center centroids. In this chapter, a kernel-based nonlinear spatial transformation is proposed to reshape the feature space to reach the required symmetric property. The geometry of reshaped feature space should possess the following features:
  \begin{itemize}
-     \item Vectors pointing from normal centroid to different abnormal clusters centroids has no overlapping or cross with each other.
-     \item Vectors pointing from normal centroid to different abnormal clusters centroids has maximum mutual cosine distance.
+     %\item Vectors pointing from normal centroid to different abnormal clusters centroids has no overlapping or cross with each other.
+     \item Vectors pointing from normal centroid to different abnormal clusters centroids have maximum mutual cosine distance.
      \item The overlapping part of all clusters is minimized.
  \end{itemize}
 
 %However the geometric structure of clusters in the feature space $\Omega$ depends on the feature extraction stage $\g()$. The geometric structure of extracted feature in Table.\ref{table:features} does not meet the standards mentioned above.
+Given that clusters in original feature space do not meet the symmetric property mentioned above and a spatial transformation is required, we assume in this chapter that new feature space obtained by non-linear reshaping is noted as $\Phi^{d'}$. This reshaping process is included in the Personal Classifier stage (as shown in Fig.\ref{fig:flow}) of the ECG classification system as described in chapter 2. The nonlinear mapping projects each sample $\mathbf{x}_k$  onto a new vector $\mathbf{z}_k$ in a higher dimensional space, which can be considered as the union of subspaces for each type: $\Phi^{d'}=\{\mathcal{N},\mathcal{S},\mathcal{V},\mathcal{F}\}$, where $d'>d$
 
 
 \section{Kernel Method}
 
-First, given that clusters do not meet the symmetric features mentioned above, it's assumed in this chapter that new feature space obtained by non-linear reshaping is noted as $\Phi^{d'}$. This reshaping process is included in Personal Classifier stage (as shown in Fig.\ref{fig:flow}) of the ECG classification system as described in chapter 2. The nonlinear mapping projects each sample $\mathbf{x}_k$   onto a new vector $\mathbf{z}_k$ in a higher dimension space, which can be considered as the union of subspace for each type: $\Phi^{d'}=\{\mathcal{N},\mathcal{S},\mathcal{V},\mathcal{F}\}$, where $d'>d$
-
-Kernel method has been widely applied in the machine learning algorithms, among which nonlinear support vector machine (SVM) has been deployed in numerous applications recently\cite{shawe2004kernel}. Nonlinear kernel method is most efficient when there is a nonlinear relationship between input and output variable. This nonlinear relationship assumption is usually true for ECG classification due to the complex feature vectors for ECG analysis. Therefore, it is practical to apply this method in the ECG analysis.
+Kernel method has been widely applied in the machine learning algorithms, among which nonlinear Support Vector Machine (SVM) has been utilized in numerous applications recently\cite{shawe2004kernel}. Nonlinear kernel method can efficiently improve classification performance when there exists a nonlinear relationship between input and output variables. Because of the complexity and variety of feature vectors used in ECG analysis, the nonlinear relationship assumption is considered valid in this work. Therefore, it is practical to incorporate the nonlinear kernel method in the ECG analysis system.
 
 
-In nonlinear SVM, the algorithm  minimize the expected error $E[L(y,f(x)]$ so as to obtain classification function $f$, where $L$ is the designated loss function, such as square error $(y-f(x))^2$ \cite{scholkopf1999advances}. Based on input space $x_i\in \Omega$ and classifier mapping function $f$, we first define loss function through following formula:
+In nonlinear SVM, the algorithm  minimize the expected error $E[L(y,f(x)]$ so as to obtain the final classification mapping function $f$, where $L$ is the designated loss function, such as square error $(y-f(x))^2$ \cite{scholkopf1999advances}. Based on the input space $x_i\in \Omega$ and classification mapping function $f$, the loss function is defined by following formula:
 
 \begin{align}
     \frac{1}{m}\sum_{j\in \mathbb{N}}L(y_j,f(x_j) + \gamma||f||_K^2
 \end{align}
 
-where, $||f||_K^2$ is the norm of $f$ on $H_K$. If $H_K$ is the Hilbert space of linear functions, $f=w' x,~w\in\mathbb{R}^d$. Therefore the loss function can be written as:
+where, $||f||_K^2$ is the norm of $f$ on Hilbert space $H_K$. For example, if $H_K$ is the Hilbert space of linear functions, the $f$ can be written as $f=w' x,~w\in\mathbb{R}^d$. Therefore, the loss function can be written as:
 
 \begin{align}
-    \frac{1}{m}\sum_{j\in \mathbb{N}}L(y_j,w'x_j) + w'w
+    \frac{1}{m}\sum_{j\in \mathbb{N}}L(y_j,w'x_j) + \gamma w'w
     \label{eq:kernel}
 \end{align}
 
-Positive constant $\gamma$ known as regularization parameter, controls the balance between training error and the complexity (smoothness) of solution. SVM and other machine learning methods deploy kernel method with selected loss function \cite{evgeniou2000regularization}. In general, the solution to Eq.\ref{eq:kernel} is as the following: 
+Positive constant $\gamma$, also known as the regularization parameter, controls the balance between training error and the model complexity (smoothness). In SVM and other machine learning models, nonlinear kernel methods are implemented with different loss functions \cite{evgeniou2000regularization}. In general, the solution to Eq.\ref{eq:kernel} can be written as the following: 
 
 \begin{align}
     f(x)=\sum_{j\in \mathbb{N}}c_j K(x_j,x)
     \label{eq:kernel2}
 \end{align}
 
-where $c_j$ is a real number, $K$ is kernel function, such as polynomial function: $K(x,t)=(x't)^r,~x,t\in \mathbb{R}^d$
+where $c_j$ is a real number, $K$ is the kernel function, such as polynomial kernel: $K(x,t)=(x't)^r,~x,t\in \mathbb{R}^d$
 
-Hibert space $H_K$ is usually defined base on feature mapping concept, $\Psi:\Phi^d\to \Phi^{d'}$ where $\Phi^{d'}$ is Hilbert space and $<,>_{\Phi}$  represents inner product. Therefore, Eq.\ref{eq:kernel2} can be also written as:
+Hilbert space $H_K$ is usually defined base on feature mapping concept, $\Psi:\Phi^d\to \Phi^{d'}$ where $\Phi^{d'}$ is Hilbert space and $<,>_{\Phi}$  represents inner product. Therefore, Eq.\ref{eq:kernel2} can be also written as:
 
 \begin{align}
     f(x) = \sum_{j\in \mathbb{N}}c_j \Psi(x_j,x)

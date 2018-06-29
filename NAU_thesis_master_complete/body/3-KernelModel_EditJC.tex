@@ -18,32 +18,35 @@ Given that clusters in original feature space do not meet the symmetric property
 Kernel method has been widely applied in the machine learning algorithms, among which nonlinear Support Vector Machine (SVM) has been utilized in numerous applications recently\cite{shawe2004kernel}. Nonlinear kernel method can efficiently improve classification performance when there exists a nonlinear relationship between input and output variables. Because of the complexity and variety of feature vectors used in ECG analysis, the nonlinear relationship assumption is considered valid in this work. Therefore, it is practical to incorporate the nonlinear kernel method in the ECG analysis system.
 
 
-In nonlinear SVM, the algorithm  minimize the expected error $E[L(y,f(x)]$ so as to obtain the final classification mapping function $f$, where $L$ is the designated loss function, such as square error $(y-f(x))^2$ \cite{scholkopf1999advances}. Based on the input space $x_i\in \Omega$ and classification mapping function $f$, the loss function is defined by following formula:
+In nonlinear SVM, the algorithm  minimize the expected error $E[L(y,f(x)]$ so as to obtain the final classification mapping function $f$, where $L$ is the designated loss function, such as square error $(y-f(x))^2$ \cite{scholkopf1999advances}. If there are $m$ observations in the input space, we use notation $\mathbb{N}$ for index set ${1:m}$. Based on the input space $\mathbf{x_i}\in \Omega (i\in \mathbb{N})$ and classification mapping function $f$, the loss function is defined by following formula:
 
 \begin{align}
-    \frac{1}{m}\sum_{j\in \mathbb{N}}L(y_j,f(x_j) + \gamma||f||_K^2
+    \frac{1}{m}\sum_{i\in \mathbb{N}}L(y_i,f(\mathbf{x_i}) + \gamma||f||_K^2
 \end{align}
 
 where, $||f||_K^2$ is the norm of $f$ on Hilbert space $H_K$. For example, if $H_K$ is the Hilbert space of linear functions, the $f$ can be written as $f=w' x,~w\in\mathbb{R}^d$. Therefore, the loss function can be written as:
 
 \begin{align}
-    \frac{1}{m}\sum_{j\in \mathbb{N}}L(y_j,w'x_j) + \gamma w'w
+    \frac{1}{m}\sum_{i\in \mathbb{N}}L(y_i,w'\mathbf{x_i}) + \gamma w'w
     \label{eq:kernel}
 \end{align}
 
-Positive constant $\gamma$, also known as the regularization parameter, controls the balance between training error and the model complexity (smoothness). In SVM and other machine learning models, nonlinear kernel methods are implemented with different loss functions \cite{evgeniou2000regularization}. In general, the solution to Eq.\ref{eq:kernel} can be written as the following: 
+Positive constant $\gamma$, also known as the regularization parameter, controls the balance between training error and the model complexity (smoothness). In SVM and other machine learning models, nonlinear kernel methods are implemented with different loss functions \cite{evgeniou2000regularization}. But in more general conditions, the solution to Eq.\ref{eq:kernel} can be written as follows: 
 
 \begin{align}
-    f(x)=\sum_{j\in \mathbb{N}}c_j K(x_j,x)
+    f(x)=\sum_{i\in \mathbb{N}}c_i K(\mathbf{x_i},\mathbf{x} )
     \label{eq:kernel2}
 \end{align}
 
-where $c_j$ is a real number, $K$ is the kernel function, such as polynomial kernel: $K(x,t)=(x't)^r,~x,t\in \mathbb{R}^d$
+where ${c_i: i \in \mathbb{N}}$ is a set of real number, $K$ is a kernel such as a polynomial kernel of order $r$: $K(x,t)=(x't)^r,~x,t\in \mathbb{R}^d$.
 
-Hilbert space $H_K$ is usually defined base on feature mapping concept, $\Psi:\Phi^d\to \Phi^{d'}$ where $\Phi^{d'}$ is Hilbert space and $<,>_{\Phi}$  represents inner product. Therefore, Eq.\ref{eq:kernel2} can be also written as:
+For any kernel $K$, it has the following properties: i) for $\mathbf{x} \in \Omega$, $K(\mathbf{x},\cdot)\in H_K$; ii) for $f\in H_K$, $<f,K(\mathbf{x},\cdot)>_K = f(\mathbf{x})$, where $<\cdot,\cdot>_K$ represents the inner product of $H_K$\cite{aronszajn1950theory}.
+
+A kernel is usually defined base on feature mapping concept, in this work we define this mapping function as $\Psi:\Omega^d\to \Phi^{d'}$ %where $\Psi^{d'}$ is Hilbert space and $<,>_{\Phi}$  represents inner product. 
+Therefore, Eq.\ref{eq:kernel2} can be also written as:
 
 \begin{align}
-    f(x) = \sum_{j\in \mathbb{N}}c_j \Psi(x_j,x)
+    f(x) = \sum_{i\in \mathbb{N}}c_i \Psi(x_i,x)
 \end{align}
 
 %%%% FROM HERE

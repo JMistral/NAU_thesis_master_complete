@@ -12,45 +12,45 @@ The style file: ieeetr.bst
 Database file #1: Bibs.bib
 Warning--entry type for "who" isn't style-file defined
 --line 29 of file Bibs.bib
-You've used 51 entries,
+You've used 54 entries,
             1876 wiz_defined-function locations,
-            797 strings with 13176 characters,
-and the built_in function-call counts, 16737 in all, are:
-= -- 1749
-> -- 596
+            814 strings with 13851 characters,
+and the built_in function-call counts, 17816 in all, are:
+= -- 1862
+> -- 635
 < -- 0
-+ -- 218
-- -- 167
-* -- 1203
-:= -- 2257
-add.period$ -- 56
-call.type$ -- 51
-change.case$ -- 46
++ -- 232
+- -- 178
+* -- 1282
+:= -- 2400
+add.period$ -- 59
+call.type$ -- 54
+change.case$ -- 49
 chr.to.int$ -- 0
-cite$ -- 51
-duplicate$ -- 840
-empty$ -- 1504
-format.name$ -- 167
-if$ -- 4134
+cite$ -- 54
+duplicate$ -- 894
+empty$ -- 1601
+format.name$ -- 178
+if$ -- 4399
 int.to.chr$ -- 0
-int.to.str$ -- 51
-missing$ -- 55
-newline$ -- 161
-num.names$ -- 51
-pop$ -- 118
+int.to.str$ -- 54
+missing$ -- 58
+newline$ -- 170
+num.names$ -- 54
+pop$ -- 126
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 679
+skip$ -- 724
 stack$ -- 0
-substring$ -- 1405
-swap$ -- 420
+substring$ -- 1501
+swap$ -- 447
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 168
-width$ -- 53
-write$ -- 536
+while$ -- 180
+width$ -- 56
+write$ -- 568
 (There was 1 warning)

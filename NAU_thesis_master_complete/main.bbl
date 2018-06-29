@@ -145,6 +145,17 @@ G.~B. Moody and R.~G. Mark, ``The impact of the mit-bih arrhythmia database,''
   {\em IEEE Engineering in Medicine and Biology Magazine}, vol.~20, no.~3,
   pp.~45--50, 2001.
 
+\bibitem{chen2018predictive}
+J.~Chen and A.~Razi, ``A predictive framework for ecg signal processing using
+  controlled nonlinear transformation,'' in {\em Biomedical \& Health
+  Informatics (BHI), 2018 IEEE EMBS International Conference on}, pp.~161--165,
+  IEEE, 2018.
+
+\bibitem{jchen}
+J.~Chen, H.~Peng, and A.~Razi, ``Remote \textsc{ECG} monitoring kit to predict
+  patient-specific heart abnormalities,'' {\em Journal of Systemics,
+  Cybernetics and Informatics}, vol.~15, no.~4, pp.~82--89, 2017.
+
 \bibitem{denoise}
 B.~N. Singh and A.~K. Tiwari, ``Optimal selection of wavelet basis function
   applied to ecg signal denoising,'' {\em Digital signal processing}, vol.~16,
@@ -159,6 +170,12 @@ N.~V. Thakor, J.~G. Webster, and W.~J. Tompkins, ``Estimation of qrs complex
 Y.~Lian and P.~C. Ho, ``Ecg noise reduction using multiplier-free fir digital
   filters,'' in {\em Signal Processing, 2004. Proceedings. ICSP'04. 2004 7th
   International Conference on}, vol.~3, pp.~2198--2201, IEEE, 2004.
+
+\bibitem{bai2004adjustable}
+Y.-W. Bai, W.-Y. Chu, C.-Y. Chen, Y.-T. Lee, Y.-C. Tsai, and C.-H. Tsai,
+  ``Adjustable 60hz noise reduction by a notch filter for ecg signals,'' in
+  {\em Instrumentation and Measurement Technology Conference, 2004. IMTC 04.
+  Proceedings of the 21st IEEE}, vol.~3, pp.~1706--1711, IEEE, 2004.
 
 \bibitem{Sayadi}
 O.~Sayadi$^*$ and M.~B. Shamsollahi, ``Ecg denoising and compression using a
@@ -175,6 +192,11 @@ N.~Nikolaev, Z.~Nikolov, A.~Gotchev, and K.~Egiazarian, ``Wavelet domain wiener
   filtering for ecg denoising using improved signal estimate,'' in {\em
   Acoustics, Speech, and Signal Processing, 2000. ICASSP'00. Proceedings. 2000
   IEEE International Conference on}, vol.~6, pp.~3578--3581, IEEE, 2000.
+
+\bibitem{poungponsri2013adaptive}
+S.~Poungponsri and X.-H. Yu, ``An adaptive filtering approach for
+  electrocardiogram (ecg) signal noise reduction using neural networks,'' {\em
+  Neurocomputing}, vol.~117, pp.~206--213, 2013.
 
 \bibitem{afonso1999ecg}
 V.~X. Afonso, W.~J. Tompkins, T.~Q. Nguyen, and S.~Luo, ``Ecg beat detection
@@ -210,12 +232,6 @@ S.~Banerjee, R.~Gupta, and M.~Mitra, ``Delineation of ecg characteristic
 Z.~Zidelmal, A.~Amirou, M.~Adnane, and A.~Belouchrani, ``\textsc{QRS} detection
   based on wavelet coefficients,'' {\em Computer methods and programs in
   biomedicine}, vol.~107, no.~3, pp.~490--496, 2012.
-
-\bibitem{chen2018predictive}
-J.~Chen and A.~Razi, ``A predictive framework for ecg signal processing using
-  controlled nonlinear transformation,'' in {\em Biomedical \& Health
-  Informatics (BHI), 2018 IEEE EMBS International Conference on}, pp.~161--165,
-  IEEE, 2018.
 
 \bibitem{shawe2004kernel}
 J.~Shawe-Taylor and N.~Cristianini, {\em Kernel methods for pattern analysis}.

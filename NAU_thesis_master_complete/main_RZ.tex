@@ -1,0 +1,157 @@
+
+
+\documentclass[12pt,double,openany]{book}
+\usepackage{setspace}
+\usepackage{nameref}
+\usepackage{amsthm, amsmath, amssymb, multirow, cite, comment, bm, array, mathrsfs} %graphics
+\usepackage{graphicx , color, subcaption} %wrapfig, subfig, 
+\usepackage{caption}
+%\usepackage[font=scriptsize]{caption}
+\usepackage{tikz} 
+\usepackage{slashbox}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+\graphicspath{{Images/}} 
+\usepackage{pict2e}
+\usetikzlibrary{arrows}
+\doublespacing
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{8.5in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\topmargin}{0in}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.1in}
+
+% Uncomment for double-spaced document.
+% \renewcommand{\baselinestretch}{2}
+
+% \usepackage{epsf}
+
+\begin{document}
+%\begin{document}
+%	\pagestyle{plain}
+%	%%---------------------------------------------------------------------------%%
+%	\frontmatter
+%	
+%	\include{front}
+%	
+%	%%---------------------------------------------------------------------------%%
+%	\mainmatter
+%	
+%	
+%	
+%	\pagestyle{plain}
+%	\newgeometry{margin=1in,lmargin=1.25in,footskip=\chapterfootskip, includehead, includefoot}
+%	\include{Chapter-1/Chapter-1}
+%	\include{Chapter-2/Chapter-2}
+%	\include{Chapter-3/Chapter-3}
+%	%\include{Chapter-4/Chapter-4}
+%	%\include{Chapter-5/Chapter-5}
+%	%\include{Chapter-6/Chapter-6}
+%	%\restoregeometry
+%	
+%	
+%	%%---------------------------------------------------------------------------%%
+%	%%  Bibliography 
+%	
+%	%%  You can use the bibitem list.
+%	%\bibliographystyle{unsrt}
+%	%\begin{%thebibliography}{99}
+%	%\bibitem{cb02}
+%	%Casella, G. and Berger, R.L. (2002)
+%	%\newblock {\it Statistical Inference, Second Edition.}
+%	%Duxbury Press, Belmont, CA.
+%	%
+%	%\bibitem{t06}
+%	%Tsiatis, A.A. (2006)
+%	%\newblock {\it Semiparametric Theory and Missing Data.}
+%	%Springer, New York.
+%	%
+%	%\end{thebibliography}
+%	
+%	%% or use BibTeX
+%	%\bibliography{Ortiz-thesis}{}
+%	%\bibliographystyle{plain}
+%	%\nociterec{*}
+%	
+%	%\bibliographystyle{plainnat}%plainnat is necessary to enable the use of citet. Natbib style file.
+%	%\bibliography{Ortiz-thesis2}
+%	%\ensureoddstart
+%	\begin{spacing}{1}
+%		\setlength\bibitemsep{11pt} %22pt = 2*11pt, where fontsize is 11pt
+%		\phantomsection
+%		\addcontentsline{toc}{chapter}{{\uppercase{\bibname}}} %\textorpdfstring and \uppercase needed due to hyperref package http://www.latex-community.org/forum/viewtopic.php?f=44&t=16601
+%		%\vspace{-0.5in}
+%		\titleformat{\chapter}[display]{\bf\filcenter
+%		}{\chaptertitlename\ \thechapter}{11pt}{\bf\filcenter}
+%		\titlespacing*{\chapter}{0pt}{-0.5in-9pt}{22pt}
+%		
+%		\printbibliography[heading=myheading]
+%	\end{spacing}
+%	%\bibliographystyle{apalike}
+%	
+%	
+%	%%---------------------------------------------------------------------------%%
+%	% Appendices
+%	%\ensureoddstart
+%	\restoregeometry
+%	\appendix
+%	\newgeometry{margin=1in,lmargin=1.25in,footskip=\chapterfootskip, includehead, includefoot}
+%	
+%	
+%	\include{Appendix-A/Appendix-A}
+%	
+%	\restoregeometry
+%	
+%	%%---------------------------------------------------------------------------%%
+%	%\ensureoddstart
+%	\backmatter
+%	
+%	
+%\end{document}
+	\pagestyle{plain}
+	%%---------------------------------------------------------------------------%%
+	\frontmatter
+\thispagestyle{empty}
+\pagenumbering{roman}
+\include{front/cover}
+\include{front/abstract}
+% 
+%\input{front/Acknowledgments}
+\tableofcontents
+\listoffigures
+%\newpage
+%\vspace*{4cm}
+
+%\centerline{\fontfamily{calligra}\selectfont \begin{large}  To my family\end{large}}
+%\clearpage
+\mainmatter
+\pagenumbering{arabic}
+%\pagestyle{myheadings}
+
+\include{Introduction/1-intro}
+\include{body/2-Framework-Edit}
+\include{body/3-KernelModel}
+\include{body/4-SphereModel}
+%\include{body/5-learning}
+\include{conclusion/6-Discussion}
+%\include{conclusion/6-Result}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{References}
+%\printbibliography[heading=none]
+\bibliographystyle{ieeetr}
+\bibliography{Bibs}
+% If you are using BibTeX, uncomment the following:
+%\thebibliography
+%
+% Otherwise, uncomment the following:
+% \chapter*{Bibliography}
+% \appendix
+
+% In LaTeX, each appendix is a "chapter"
+% \chapter{Program Source}
+
+
+\end{document}

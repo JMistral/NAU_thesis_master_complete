@@ -3,7 +3,7 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces ECG signals of normal heartbeat from 15 different records reflect the inter-patient variability of ECG signal\relax }}{8}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Potential latent abnormal status(yellow alarm) predict upcoming abnormality of same type.\relax }}{9}
 \contentsline {figure}{\numberline {1.4}{\ignorespaces General structure of ECG classification system\relax }}{10}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Fiducial peaks within one cardiac cycle\relax }}{11}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Fiducial peaks within one cardiac cycle\relax }}{12}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Frequency band of wavelet decomposition coefficient for MITDB signals\relax }}{20}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces QRS detection with wavelet coefficients of level 5 and level 6\relax }}{21}

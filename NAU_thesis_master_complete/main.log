@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  28 JUN 2018 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  28 JUN 2018 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -772,83 +772,94 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-[4] <Fig/cardiac_cycle.png, id=47, 505.89pt x 454.69875pt>
+[4] <Fig/cardiac_cycle.png, id=48, 505.89pt x 454.69875pt>
 File: Fig/cardiac_cycle.png Graphic file (type png)
 
 <use Fig/cardiac_cycle.png>
 Package pdftex.def Info: Fig/cardiac_cycle.png used on input line 54.
 (pdftex.def)             Requested size: 379.41655pt x 341.02322pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [5 <./Fig/cardiac_cycle.png (PNG copy)>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-<Fig/interpatient_variability.pdf, id=55, 532.91798pt x 378.1036pt>
+<Fig/interpatient_variability.pdf, id=56, 532.91798pt x 378.1036pt>
 File: Fig/interpatient_variability.pdf Graphic file (type pdf)
 
 <use Fig/interpatient_variability.pdf>
-Package pdftex.def Info: Fig/interpatient_variability.pdf used on input line 93
+Package pdftex.def Info: Fig/interpatient_variability.pdf used on input line 94
 .
 (pdftex.def)             Requested size: 373.04005pt x 264.67072pt.
 
-<Fig/predicting_record215S_croped.pdf, id=56, 596.43225pt x 269.93248pt>
+Underfull \vbox (badness 6141) has occurred while \output is active []
+
+ [7]
+<Fig/predicting_record215S_croped.pdf, id=60, 596.43225pt x 269.93248pt>
 File: Fig/predicting_record215S_croped.pdf Graphic file (type pdf)
 
 <use Fig/predicting_record215S_croped.pdf>
 Package pdftex.def Info: Fig/predicting_record215S_croped.pdf used on input lin
-e 102.
+e 103.
 (pdftex.def)             Requested size: 357.8621pt x 161.96072pt.
 
-<Fig/predicting_record215_croped.pdf, id=57, 590.477pt x 274.89502pt>
+<Fig/predicting_record215_croped.pdf, id=61, 590.477pt x 274.89502pt>
 File: Fig/predicting_record215_croped.pdf Graphic file (type pdf)
 
 <use Fig/predicting_record215_croped.pdf>
 Package pdftex.def Info: Fig/predicting_record215_croped.pdf used on input line
- 103.
+ 104.
 (pdftex.def)             Requested size: 354.28894pt x 164.93826pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-<Fig/general_flow.png, id=61, 473.6094pt x 273.1806pt>
+ [8 <./Fig/interpatient_variability.pdf>] <Fig/general_flow.png, id=69, 473.609
+4pt x 273.1806pt>
 File: Fig/general_flow.png Graphic file (type png)
 
 <use Fig/general_flow.png>
-Package pdftex.def Info: Fig/general_flow.png used on input line 116.
+Package pdftex.def Info: Fig/general_flow.png used on input line 117.
 (pdftex.def)             Requested size: 331.52432pt x 191.2251pt.
- [8 <./Fig/interpatient_variability.pdf>] [9 <./Fig/predicting_record215S_crope
-d.pdf> <./Fig/predicting_record215_croped.pdf>]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <./Fig/general_flow.png>] <Fig/fiducial_peaks.png, id=128, 575.2692pt x 18
-7.4202pt>
+ [9 <./Fig/predicting_record215S_croped.pdf> <./Fig/predicting_record215_croped
+.pdf>]
+[10 <./Fig/general_flow.png>]
+<Fig/fiducial_peaks.png, id=128, 575.2692pt x 187.4202pt>
 File: Fig/fiducial_peaks.png Graphic file (type png)
 
 <use Fig/fiducial_peaks.png>
-Package pdftex.def Info: Fig/fiducial_peaks.png used on input line 139.
+Package pdftex.def Info: Fig/fiducial_peaks.png used on input line 140.
 (pdftex.def)             Requested size: 402.68568pt x 131.19324pt.
- [11 <./Fig/fiducial_peaks.png>] [12]
+
+Underfull \vbox (badness 4660) has occurred while \output is active []
+
+ [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [12 <./Fig/fiducial_peaks.png>]
+Underfull \vbox (badness 4660) has occurred while \output is active []
+
  [13]
-Underfull \vbox (badness 2253) has occurred while \output is active []
+Underfull \vbox (badness 4660) has occurred while \output is active []
 
  [14]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 165.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 166.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 165.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15]
-[16]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 166.
+ [15]) [16]
 \openout2 = `body/2-Framework.aux'.
 
- (./body/2-Framework.tex
+
+(./body/2-Framework.tex
 Chapter 2.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1193,10 +1204,10 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15997 strings out of 492995
- 310786 string characters out of 6132704
- 362922 words of memory out of 5000000
- 19123 multiletter control sequences out of 15000+600000
+ 15999 strings out of 492995
+ 310822 string characters out of 6132704
+ 362930 words of memory out of 5000000
+ 19125 multiletter control sequences out of 15000+600000
  15738 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,23n,54p,2036b,2718s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1216,7 +1227,7 @@ r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (75 pages, 1431794 bytes).
+Output written on main.pdf (75 pages, 1432927 bytes).
 PDF statistics:
  563 PDF objects out of 1000 (max. 8388607)
  380 compressed objects within 4 object streams

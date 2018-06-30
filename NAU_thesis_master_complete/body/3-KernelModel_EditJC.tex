@@ -17,42 +17,53 @@ Given that clusters in original feature space do not meet the symmetric property
 
 Kernel method has been widely applied in the machine learning algorithms, among which nonlinear Support Vector Machine (SVM) has been utilized in numerous applications recently\cite{shawe2004kernel}. Nonlinear kernel method can efficiently improve classification performance when there exists a nonlinear relationship between input and output variables. Because of the complexity and variety of feature vectors used in ECG analysis, the nonlinear relationship assumption is considered valid in this work. Therefore, it is practical to incorporate the nonlinear kernel method in the ECG analysis system.
 
-
-In nonlinear SVM, the algorithm  minimize the expected error $E[L(y,f(x)]$ so as to obtain the final classification mapping function $f$, where $L$ is the designated loss function, such as square error $(y-f(x))^2$ \cite{scholkopf1999advances}. If there are $m$ observations in the input space, we use notation $\mathbb{N}$ for index set ${1:m}$. Based on the input space $\mathbf{x_i}\in \Omega (i\in \mathbb{N})$ and classification mapping function $f$, the loss function is defined by following formula:
-
-\begin{align}
-    \frac{1}{m}\sum_{i\in \mathbb{N}}L(y_i,f(\mathbf{x_i}) + \gamma||f||_K^2
-\end{align}
-
-where, $||f||_K^2$ is the norm of $f$ on Hilbert space $H_K$. For example, if $H_K$ is the Hilbert space of linear functions, the $f$ can be written as $f=w' x,~w\in\mathbb{R}^d$. Therefore, the loss function can be written as:
+In kernel SVM, the nonlinearities are introduced to the model by a kernel, which implicitly maps data $\mathbf{x}$ in input space $\Omega$ into a Hilbert space $\Phi$ via a function $\Psi()$\cite{aronszajn1950theory}. And the algorithm  minimize the expected error $E[L(y,f(x)]$ so as to obtain the final classification mapping function $f$ defined by $\Psi()$, where $L$ is the designated loss function, such as square error $(y-f(x))^2$ \cite{scholkopf1999advances}. If there are $m$ observations in the input space, we use notation $\mathbb{N}$ for index set ${1:m}$. Based on the input space $\mathbf{x_i}\in \Omega (i\in \mathbb{N})$ and classification mapping function $f$, the optimization problem can be written as:
 
 \begin{align}
-    \frac{1}{m}\sum_{i\in \mathbb{N}}L(y_i,w'\mathbf{x_i}) + \gamma w'w
+    \text{minimize}~\frac{1}{m}\sum_{i\in \mathbb{N}}L(y_i,f(\mathbf{x_i})) + \gamma||f||^2
     \label{eq:kernel}
 \end{align}
 
-Positive constant $\gamma$, also known as the regularization parameter, controls the balance between training error and the model complexity (smoothness). In SVM and other machine learning models, nonlinear kernel methods are implemented with different loss functions \cite{evgeniou2000regularization}. But in more general conditions, the solution to Eq.\ref{eq:kernel} can be written as follows: 
+where, $||f||^2$ is the squared norm of $f$% on Hilbert space $H_K$. 
+; positive constant $\gamma$, also known as the regularization parameter, controls the balance between training error and the model complexity (smoothness).
+%For example, if $H_K$ is the Hilbert space of linear functions, the $f$ can be written as $f=w' x,~w\in\mathbb{R}^d$. Therefore, the loss function can be written as:
 
-\begin{align}
-    f(x)=\sum_{i\in \mathbb{N}}c_i K(\mathbf{x_i},\mathbf{x} )
-    \label{eq:kernel2}
-\end{align}
+%\begin{align}
+%    \frac{1}{m}\sum_{i\in \mathbb{N}}L(y_i,w'\mathbf{x_i}) + \gamma w'w
+%    \label{eq:kernel}
+%\end{align}
 
-where ${c_i: i \in \mathbb{N}}$ is a set of real number, $K$ is a kernel such as a polynomial kernel of order $r$: $K(x,t)=(x't)^r,~x,t\in \mathbb{R}^d$.
+%Positive constant $\gamma$, also known as the regularization parameter, controls the balance between training error and the model complexity (smoothness). 
+When optimizing the objective function above, SVM only requires the inner products of the mapped features $\Psi(\mathbf{x})$ in Hilbert Space $\Phi$. Therefore, a kernel defined as $k(\mathbf{x_i},\mathbf{x_j}) = \Psi(\mathbf{x_i})^T\Psi(\mathbf{x_j})$ can efficiently substitute inner product calculation and introduce necessary nonlinearities in the model\cite{evgeniou2000regularization}.
 
-For any kernel $K$, it has the following properties: i) for $\mathbf{x} \in \Omega$, $K(\mathbf{x},\cdot)\in H_K$; ii) for $f\in H_K$, $<f,K(\mathbf{x},\cdot)>_K = f(\mathbf{x})$, where $<\cdot,\cdot>_K$ represents the inner product of $H_K$\cite{aronszajn1950theory}.
+%In SVM and other machine learning models, nonlinear kernel methods are implemented with different loss functions \cite{evgeniou2000regularization}. But in more general conditions, the solution to Eq.\ref{eq:kernel} can be written as follows: 
 
-A kernel is usually defined base on feature mapping concept, in this work we define this mapping function as $\Psi:\Omega^d\to \Phi^{d'}$ %where $\Psi^{d'}$ is Hilbert space and $<,>_{\Phi}$  represents inner product. 
-Therefore, Eq.\ref{eq:kernel2} can be also written as:
+%\begin{align}
+%    f(x)=\sum_{i\in \mathbb{N}}c_i K(\mathbf{x_i},\mathbf{x} )
+%    \label{eq:kernel2}
+%\end{align}
 
-\begin{align}
-    f(x) = \sum_{i\in \mathbb{N}}c_i \Psi(x_i,x)
-\end{align}
+%where ${c_i: i \in \mathbb{N}}$ is a set of real number, $K$ is a kernel such as a polynomial kernel of order $r$: $K(x,t)=(x't)^r,~x,t\in \mathbb{R}^d$.
 
-%%%% FROM HERE
-For nonlinear kernel function method, the selection of kernel function plays a decisive role. An effective kernel function generally needs to satisfy Mercer theorem \cite{cristianini2000introduction}. This means the matrix defined by function $\Psi(x_j,x)$ is symmetric positive semi-definite. In general, the selection of kernel function depends on all observations in input space. However, in effect, kernel functions with simple expression, such as polynomial kernel function, Gaussian kernel function and exponential kernel function are usually preferred than complicated kernel function for its simplicity and consistency. Polynomial kernel function is usually applied on normalized data for its explicit expression and steady performance. Whereas degree of freedom of polynomial kernel function is comparatively high which leads to a large of parameters. Gaussian kernel function, a very classic robust radial function, has high robustness when the data includes strong noise. Nevertheless, since Gaussian kernel actually projects samples to a infinite dimensional space, it's difficult to visualize projected observations and interpret the result. Moreover its performance is greatly affected by parameter selection.
+%For any kernel $K$, it has the following properties: i) for $\mathbf{x} \in \Omega$, $K(\mathbf{x},\cdot)\in H_K$; ii) for $f\in H_K$, $<f,K(\mathbf{x},\cdot)>_K = f(\mathbf{x})$, where $<\cdot,\cdot>_K$ represents the inner product of $H_K$\cite{aronszajn1950theory}.
 
-In this work, the representative polynomial kernel is selected for the purpose of validating the method and explaining the effect of nonlinear kernel method and optimization on the feature space reshaping. The kernel functions can be written in the following format:
+%A kernel is usually defined base on feature mapping concept, in this work we define this mapping function as $\Psi:\Omega^d\to \Phi^{d'}$ %where $\Psi^{d'}$ is Hilbert space and $<,>_{\Phi}$  represents inner product. 
+%Therefore, Eq.\ref{eq:kernel2} can be also written as:
+
+%\begin{align}
+%    f(x) = \sum_{i\in \mathbb{N}}c_i \Psi(x_i,x)
+%\end{align}
+
+
+
+Different kernels represent distinctive nonlinear mapping functions. For machine learning models, the selection of kernel plays a decisive role. An effective kernel function generally needs to satisfy Mercer theorem \cite{cristianini2000introduction}. 
+%This means the matrix defined by function $\Psi(x_j,x)$ is symmetric positive semi-definite. In general, the selection of kernel function depends on all observations in input space. 
+Whereas, exhaustively searching for all possible kernel is computationally expensive and unrealistic\cite{chapelle1999support}. A more efficient way to resolve this problem is to search for the optimal weighted combination of a set of base kernels, such as polynomial kernel function and Gaussian kernel function\cite{lanckriet2002robust}. This method has been proven to be robust and efficient since the base kernels satisfy Mercer’s condition individually and is consistent with different dataset\cite{jebara2004multi}.
+%However, in effect, kernel functions with simple expression, such as polynomial kernel function, Gaussian kernel function and exponential kernel function are usually preferred than complicated kernel function for its simplicity and consistency. 
+
+Polynomial kernel is usually applied on normalized data for its explicit expression and steady performance. Whereas the degree of freedom of polynomial kernel is comparatively high, which leads to a large number of parameters. Gaussian kernel function, a very classic robust radial function, has high robustness when strong noise presents in the dataset. Nevertheless, since Gaussian kernel actually projects samples to an infinite dimensional space, it's difficult to visualize the projected observations $\Psi(\mathbf{x})$ and interpret the result. %Moreover its performance is greatly affected by parameter selection.
+
+In this work, the representative polynomial kernel is selected for the purpose of validating the proposed method and interpreting the effect of optimized nonlinear kernel method on feature space reshaping. The mapping functions, which is a weighted combination of polynomial kernel can be explicitly written in the following format:
 
 \begin{align}
 \mathbf{z}_k
@@ -73,7 +84,8 @@ w_{d^\prime}
 \label{eq:z}
 \end{align}
 
-The example above shows that regardless the selection of kernel function, parameter optimization will play a critical role. For instance, in this work, the process of spatial topology optimization is accomplished by adjusting the coefficients of fixed polynomial basis functions $\psi()$. Since the number of parameters to adjust is very large when the order of polynomial functions is high, exhaustive algorithms are not practical for parameter optimization. Therefore, it's necessary to implement a heuristic optimization algorithm, in which parameters are obtained by maximizing or minimizing a loss function. More specifically, the nonlinear reshaping in this work aims to adjust mapping coefficient  $\mathbf{w} = [w_1,w_2,\dots w_d]^T$ to achieve the ideal symmetry of clusters in the reshaped feature space while maintaining the distance between clusters.
+where $\mathbf{w}$ is the coefficient of weight. Instead of selecting kernel, %The example above shows that regardless the selection of kernel function, parameter optimization will play a critical role. For instance, in this work, 
+the process of spatial geometry optimization is accomplished by adjusting the coefficients of fixed polynomial basis functions $\psi()$. Since the number of parameters to adjust will increase exponentially when the order of polynomial functions increase, exhaustive searching are not practical for parameter optimization. Therefore, it's necessary to implement an heuristic optimization algorithm, in which parameters are obtained by maximizing or minimizing objective functions. More specifically, the nonlinear reshaping module in this chapter aims to adjust mapping coefficient  $\mathbf{w} = [w_1,w_2,\dots w_d]^T$ to achieve the ideal symmetric geometry in the reshaped feature space while maintaining the separation between clusters.
 
 
 \section{Multiobjective Optimization}

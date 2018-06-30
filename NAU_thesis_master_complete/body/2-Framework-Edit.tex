@@ -152,9 +152,11 @@ The flowchart in Figure \ref{fig:flow} presents the overall operation of the pro
 	\label{fig:flow}
 \end{figure}
 
-\textcolor{red}{Razi revised up to here.}
 
-However, as the objective of this study is to identify latent status between normality and abnormalities, the design focus on processing samples classified as N while deviating towards abnormal classes. For this purpose, a simple structured classifier is insufficient since sample numbers of N and other morbid classes are unbalanced in training set DS1 as shown in Table.\ref{table:ds}, which results in missed abnormalities. Thus a deviation detection module is added after the Global Classifier to specifically identify latent status using patient-specific normal cluster. In order to extract patient-specific information and adapt the classifier accordingly, the first 20\% of total Normal samples of each patient are selected as initialization of Personal Dynamic Normal Cluster $\mathcal{N}_0^k$. The binary classification of N versus non-N which includes all abnormal classes is completed by first calculating the following distance metrics:
+
+
+
+Since, one objective of this study is to identify the fuzzy states between normality and abnormalities, the subsequent analysis is focused on processing samples classified as \textit{normal}(N) \textcolor{red}{use a consistent notation: you can choose to use italic font for ``normal'' and ``abnormal'', ``red'', ``yellow'', etc in their first appearance or for all appearances.  Also, define labels N, S, ... on their first appearances.} to check whether or not they show considerable deviations to one of the abnormality classes. For this purpose, a one-layer classifier is not sufficient \textcolor{blue}{due to multiple reasons: i) the numbers of samples in the normal and different morbid classes are not balanced in the training set DS1 as shown in Table.\ref{table:ds}, ii) the patient-specific normal trend is not known, iii) determining yellow alarms require a new set of decision rules to determine whether or not the deviations are worthy of calling a yellow alarm.} which results in missed abnormalities. Thus a deviation detection module is added after the Global Classifier to specifically identify latent status using patient-specific normal cluster. In order to extract patient-specific information and adapt the classifier accordingly, the first 20\% of total Normal samples of each patient are selected as initialization of Personal Dynamic Normal Cluster $\mathcal{N}_0^k$. The binary classification of N versus non-N which includes all abnormal classes is completed by first calculating the following distance metrics:
 
 \begin{align}
 \label{eq:matrices}
@@ -225,3 +227,4 @@ The measurement accuracy of cosine distance varies according to topology of clus
 \end{figure}
 
 For this purpose, two different spatial transformation methods are proposed in the next two chapters.
+\textcolor{red}{Razi revised up to here.}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.9)  30 JUN 2018 11:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.9)  30 JUN 2018 11:42
 entering extended mode
 **./main_RZ.tex
 (main_RZ.tex
@@ -614,7 +614,8 @@ LaTeX Warning: Unused global option(s):
     [double].
 
 (main_RZ.aux (front/cover.aux) (front/abstract.aux) (Introduction/1-intro.aux)
-(body/2-Framework-Edit.aux) (body/3-KernelModel.aux) (body/4-SphereModel.aux
+(body/2-Framework-RZfinished.aux) (body/3-KernelModel.aux)
+(body/4-SphereModel.aux
 
 LaTeX Warning: Label `table:pred' multiply defined.
 
@@ -836,10 +837,10 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 176.
 ) [16] [17]
-\openout2 = `body/2-Framework-Edit.aux'.
+\openout2 = `body/2-Framework-RZfinished.aux'.
 
 
-(body/2-Framework-Edit.tex
+(body/2-Framework-RZfinished.tex
 Chapter 2.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1202,8 +1203,8 @@ Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
  [66] [67] [68] [69]) [70] (main_RZ.aux
 (front/cover.aux) (front/abstract.aux) (Introduction/1-intro.aux)
-(body/2-Framework-Edit.aux) (body/3-KernelModel.aux) (body/4-SphereModel.aux)
-(conclusion/6-Discussion.aux))
+(body/2-Framework-RZfinished.aux) (body/3-KernelModel.aux)
+(body/4-SphereModel.aux) (conclusion/6-Discussion.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -1217,8 +1218,8 @@ LaTeX Warning: There were multiply-defined labels.
 ### bottom level 
 Here is how much of TeX's memory you used:
  15993 strings out of 493333
- 308742 string characters out of 3139192
- 362404 words of memory out of 3000000
+ 308790 string characters out of 3139192
+ 362427 words of memory out of 3000000
  19098 multiletter control sequences out of 15000+200000
  15738 words of font info for 59 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1238,7 +1239,7 @@ am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main_RZ.pdf (78 pages, 1505130 bytes).
+Output written on main_RZ.pdf (78 pages, 1505433 bytes).
 PDF statistics:
  567 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -147,12 +147,11 @@ Among all the MOPSO algorithms in the literature, the algorithm proposed by Coel
 \label{fig:repo_members}
 \end{figure}
 
-With the concept of Pareto optimal, we further demonstrate the impact of applying kernel functions in this spatial reshaping problem by comparing the optimal solutions for coefficients of linear function combination and solutions for coefficients of polynomial kernel functions. %A two-dimension curve formed by repository members t will be drawn with two objective functions.
+With the concept of Pareto optimal, we further demonstrate the impact of applying kernel functions in this spatial reshaping problem by comparing the optimal solutions for coefficients of linear function combination and those for coefficients of polynomial kernel functions. Therefore, we first optimize the coefficients of third-order polynomial kernel functions, as formulated in Eq.\ref{eq5} and then optimize coefficients of linear features in origin feature space. The purpose is to verify if the objective functions can be fundamentally better optimized by introducing nonlinearities into the model. %A two-dimension curve formed by repository members t will be drawn with two objective functions.
 
 %This mapping by kernel method can be accounted as the input space reshaping, namely, new input sample space is produced using non-linear kernel bending feature space in order for a higher space symmetry. Reshaping result as indicated in diagram 4-6 can be obtained through testing the reshaping algorithm with test data and quadratic polynomial. More specifically, we can regard this kernel method as a mapping from two-dimension space   to three-dimension space. Because the data visualization is very important in the test, we don’t adopt polynomial kernel of higher degree.
-%%%%%%%%%%%%%%%%%%%%%%%%% UP TO HERE
 
-As shown in Fig.\ref{fig:pareto_compare}, the Pareto front in feature space after nonlinear reshaping is superior obviously to that of Pareto front with linear combination of original data. The kernel function used in this comparison is a third-order polynomial kernel function as formulated in Eq.\ref{eq5}. The result shows that nonlinear kernel method possess a higher degree of freedom to in multiobjective optimization. In other words, kernel method combined with multiobjective particle swarm optimization algorithm can improve the spatial topology of clusters.
+As shown in Fig. \ref{fig:pareto_compare}, the estimated Pareto front of the nonlinear model using polynomial kernel obviously dominates the Pareto front of linear model consist. The result shows that optimization with nonlinear kernel functions possess a higher degree of freedom and is able to find optimal solutions than the best solutions by linear combination. In other words, kernel method combined with multiobjective particle swarm optimization algorithm can improve the spatial structure of clusters according to the two objective functions.
 
 %\subsubsection{Pareto Front}
 \begin{figure}[t]
@@ -164,8 +163,9 @@ As shown in Fig.\ref{fig:pareto_compare}, the Pareto front in feature space afte
 
 \section{Experimental Results}\label{sec:result1}
 
-This section will introduce the experimental result generated with test set DS2 of MITDB to show the performance of the proposed method in this Chapter. Here, we firstly map the original 22-dimensional feature vectors representative of cardiac segments into a 8-dimensional vectors $\mathbf{x}_{8 \times 1}$ using principal component analysis (PCA). 
-In order to realize the non-linear transformation in (\ref{eq:z}), we use polynomial function of order $3$. Taking the computational cost into account and also to avoid over-fitting of higher-order data samples, we only retain $32$ terms (8 second order pure terms $x_i^2$, 8 third order pure terms $x_i^3$, 8 second order cross terms $x_ix_j$, and 8 pure third order cross terms $x_i x_j^2$) and randomly discard the rest of cross terms. Therefore, the mapped vectors $\mathbf{z}_{32 \times 1}$ include a total of $32$ terms as follows.
+%This section will introduce the experimental result of the aforementioned kernel-based method on test set DS2 of MITDB to show the performance. 
+As mentioned in Section. 2.3, a cardiac segment is represented by an 8-dimensional vectors after feature extraction and PCA. %In order to reduce the complexity,  we firstly map the original 22-dimensional feature vectors, representing cardiac segments, into an 8-dimensional vectors $\mathbf{x}_{8 \times 1}$ using Principal Component Analysis (PCA). 
+To specify the nonlinear transformation in (\ref{eq:z}), the polynomial functions of order $3$ is applied on the feature vectors. Moreover, taking the overfitting problem in high-dimensional space and computational cost into account, only $32$ terms, which include 8 square terms $x_i^2$, 8 cubic terms $x_i^3$, 8 cross terms $x_ix_j$ of second order and 8 cross terms $x_i x_j^2$ of third order, are retained by randomly discard the redundant cross terms. Therefore, the mapped vectors $\mathbf{z}_{32 \times 1}$ include a total of $32$ terms as follows.
 
 \begin{align}
 \label{eq:8-32}
@@ -174,14 +174,14 @@ In order to realize the non-linear transformation in (\ref{eq:z}), we use polyno
 & \{x_ix_j|i,j=1,2\dots 8,i\neq j\} \cup  \{  x_i^2x_j | i,j=1,2\dots 8,i\neq j \}
 \end{align}
 
-The performance of the proposed system in this paper is tested with DS2 excluding record 232, for this record has only 7 normal samples $y_k=N$. In total, 21 records are tested.
+The performance of the aforementioned kernel-based method is tested on DS2 excluding record 232, for this record has only 7 normal samples $y_k=N$. In total, 21 records are tested.
 
-Table \ref{table:result1}, shows the performance of the proposed method in classification of ECG signal segments. In order to average the results over all recordings, we present the median, interquartile range (IQR), mean and standard deviation of accuracy (AC), sensitivity (SE) and specificity (SP). The results are promising and the median of accuracy for all classes are in the range of $88\%-99\%$. Sensitivity and specificity of the proposed method exhibits similar ranges. The mean accuracy is at least $86\%$ excluding class $V$. Therefore, this system is very less likely to miss an important alarm or to report false alarms. 
+Table \ref{table:result1} shows the performance of the proposed method in classifying ECG signal segments. In order to evaluate the consistency and general classification classification results over all recordings, the median, interquartile range (IQR), mean and standard deviation of accuracy (AC), sensitivity (SE) and specificity (SP) are presented as evaluation metrics. The results are promising and the median of accuracy for all classes are in the range of $88\%-99\%$. Sensitivity and specificity of the proposed method exhibits similar ranges. The mean accuracy is at least $86\%$ excluding class $V$. Therefore, this system is not likely to miss an important alarm or to report false alarms. 
 
 \begin{table}[thpb]
 	\caption{Classification results of the proposed method.}
 	\centering
-	\begin{tabular}{|c||c||c||c||c|}
+	\begin{tabular}{|c|c|c|c|c|}
 		\hline
 		Class N & median(\%) & IQR(\%) & mean(\%)& std (\%) \\ 
 		\hline 
@@ -207,10 +207,11 @@ Table \ref{table:result1}, shows the performance of the proposed method in class
 		\hline 
 		SP & 100.00 & 0.03&99.12&3.6\\ 
 		\hline 
-		\hline
 	\end{tabular} 
 	\label{table:result1}
 \end{table}
+
+%%%%%%%%%%%%555
 
 More importantly, the predicting ability of the proposed method is worthy of evaluating separately. In order to quantify the conditional probability of observing a red alarm after a preceding yellow alarm of similar type in (\ref{eq:personal_discrim}), we count the number of predicted samples as follows:
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  29 JUN 2018 19:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  29 JUN 2018 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1044,14 +1044,20 @@ File: Fig/repo_members.jpg Graphic file (type jpg)
 <use Fig/repo_members.jpg>
 Package pdftex.def Info: Fig/repo_members.jpg used on input line 145.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
- [39 <./Fig/repo_members.jpg>]
-<Fig/pareto_compare.pdf, id=267, 561.09625pt x 361.35pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39 <./Fig/repo_members.jpg>] <Fig/pareto_compare.pdf, id=267, 561.09625pt x 3
+61.35pt>
 File: Fig/pareto_compare.pdf Graphic file (type pdf)
 
 <use Fig/pareto_compare.pdf>
 Package pdftex.def Info: Fig/pareto_compare.pdf used on input line 160.
 (pdftex.def)             Requested size: 336.66034pt x 216.81168pt.
- [40 <./Fig/pareto_compare.pdf>] [41]
+ [40 <./Fig/pareto_compare.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
 Underfull \hbox (badness 3428) in paragraph at lines 232--232
 []|\OT1/cmr/m/n/12 Number of next
  []
@@ -1200,7 +1206,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  16006 strings out of 492995
  311015 string characters out of 6132704
- 362979 words of memory out of 5000000
+ 365979 words of memory out of 5000000
  19132 multiletter control sequences out of 15000+600000
  15738 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1221,7 +1227,7 @@ r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (77 pages, 1437807 bytes).
+Output written on main.pdf (77 pages, 1438110 bytes).
 PDF statistics:
  569 PDF objects out of 1000 (max. 8388607)
  384 compressed objects within 4 object streams

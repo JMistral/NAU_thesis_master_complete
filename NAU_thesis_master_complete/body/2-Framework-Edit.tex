@@ -140,6 +140,8 @@ From Table.\ref{table:features}, one may notice that these 22 feature are not co
 
 \section{Classification Framework}
 
+\textcolor{red}{part of the following text is related to global classifier, and part of it to deviation analysis (including personalized normal cluster, ...). Use subsections as needed to be more clear.}
+
 In this section, we elaborate on the details of the proposed methodoology to perform the classification and prediction tasks using the pre-processed ECG data. Based on our previous study \cite{chen2018predictive} as well as similar prioir works on developing patient-specific classifiers \cite{Hu_et_al,deChazal2006,llamedo2012automatic}, we propose a two-staged structure which includes a global classifier to capture general properties of different classes followed by a personalized classifier to capture patient-specific properties~\cite{chen2018predictive,Hu_et_al,deChazal2006,llamedo2012automatic}. Moreover, the proposed algorithm incorporates a novel deviation analysis module with details presented in the following sections. 
 
 
@@ -156,7 +158,8 @@ The flowchart in Figure \ref{fig:flow} presents the overall operation of the pro
 
 
 
-Since, one objective of this study is to identify the fuzzy states between normality and abnormalities, the subsequent analysis is focused on processing samples classified as \textit{normal}(N) \textcolor{red}{use a consistent notation: you can choose to use italic font for ``normal'' and ``abnormal'', ``red'', ``yellow'', etc in their first appearance or for all appearances.  Also, define labels N, S, ... on their first appearances.} to check whether or not they show considerable deviations to one of the abnormality classes. For this purpose, a one-layer classifier is not sufficient \textcolor{blue}{due to multiple reasons: i) the numbers of samples in the normal and different morbid classes are not balanced in the training set DS1 as shown in Table.\ref{table:ds}, ii) the patient-specific normal trend is not known, iii) determining yellow alarms require a new set of decision rules to determine whether or not the deviations are worthy of calling a yellow alarm.} which results in missed abnormalities. Thus a deviation detection module is added after the Global Classifier to specifically identify latent status using patient-specific normal cluster. In order to extract patient-specific information and adapt the classifier accordingly, the first 20\% of total Normal samples of each patient are selected as initialization of Personal Dynamic Normal Cluster $\mathcal{N}_0^k$. The binary classification of N versus non-N which includes all abnormal classes is completed by first calculating the following distance metrics:
+Since, one objective of this study is to identify the fuzzy states between normality and abnormalities, the subsequent analysis is focused on processing samples classified as \textit{normal}(N) \textcolor{red}{use a consistent notation: you can choose to use italic font for ``normal'' and ``abnormal'', ``red'', ``yellow'', etc in their first appearance or for all appearances.  Also, define labels N, S, ... on their first appearances.} to check whether or not they show considerable deviations to one of the abnormality classes. For this purpose, a one-layer classifier is not sufficient \textcolor{blue}{due to multiple reasons: i) the numbers of samples in the normal and different morbid classes are not balanced in the training set DS1 as shown in Table.\ref{table:ds}, ii) the patient-specific normal trend is not known, iii) determining yellow alarms require a new set of decision rules to determine whether or not the deviations are worthy of calling a yellow alarm.} Therefore, a deviation detection module is added after the Global Classifier to identify \textcolor{red}{latent has a special meaning in ML, which is different than what you mean., I recommend change ``latent'' to a different word} %latent status 
+yellow alarms using patient-specific normal cluster. In order to develop a ground for patient-specific normal functionality and adapt the classifier accordingly, the first 20\% of total Normal samples of each patient are selected as the initialization of \textit{personalized dynamic normal cluster} $\mathcal{N}_0^k$. To do this, we use a binary classification of N versus non-N, where the second includes all abnormal classes. We firstly calculate the following distance metrics:
 
 \begin{align}
 \label{eq:matrices}
@@ -171,7 +174,7 @@ D_\mathcal{N}^{\max}(\mathbf{x}_k(i))=\underset{\mathbf{x} \in\mathcal{N}_i^k}{\
 %D_{max}(x^t)=\underset{x_N\in\Omega_N^t}{\max}\{\sqrt{(x^t-x_N)^2}\}
 \end{align}
 
-The following conditions are thus examined to verify if deviation of a sample is within the range defined by $\alpha$. Considering the fact that some rare abnormalities are unlikely to be observed within the limit initialization time range, abnormal clusters: ${\mathcal{S},\mathcal{V},\mathcal{F}}$ ,which are composed of abnormal beats in DS1, are deployed as training data together with Personal Dynamic Normal Cluster $\mathcal{N}_i^k$ in the following steps.
+The following conditions are then examined to verify if the deviation of a sample is within the range defined by $\alpha$. Since some rare abnormalities are unlikely to be observed within the limited initialization period, therefore abnormal clusters: ${\mathcal{S},\mathcal{V},\mathcal{F}}$, which include abnormal beats for all patients in DS1, are deployed as the training dataset when developing the  \textit{personalized dynamic normal cluster} $\mathcal{N}_i^k$ as follows. \textcolor{red}{I think here in $\mathcal{N}_i^k$, you mean that $i=0$ represents the normal cluster and $i=1,2,...$ represent different abnormality clusters. This is not obvious and you need define it before its first appearance.}
 
 \begin{align}\label{eq:condition1}
 \begin{cases}
@@ -180,9 +183,9 @@ D_\mathcal{N}(\mathbf{x}_k(i)) < D_\mathcal{X}(\mathbf{x}_k(i)) &\text{for~} \ma
 \end{cases}
 \end{align}
 
-If a sample is confirmed as N in this module, it will be used to update the $\mathcal{N}_i^k$. Otherwise the system assumes that the sample have demonstrated deviation towards abnormal clusters and will pass it to the subsequent Personal Classifier with controlled nonlinear transformation. Using transformation with optimized parameters, Personal Classifier is able to discern the deviation to different morbid types regardless of the cluster topology within the original feature space. Details of the module will be presented in the next Section.
+If a sample already called normal by the global classifier, is again confirmed as N in this module, it will be used to update the $\mathcal{N}_i^k$. Otherwise, the system assumes that the sample has a considerable deviation towards one of the abnormal clusters and hence will pass it to the subsequent \textcolor{blue}{\textit{personalized classifier}}. The \textit{personalized classifier} uses controlled transformation with optimized parameters to discern the deviation to different morbid types regardless of the cluster topology within the original feature space \textcolor{blue}{, as detailed in Section XXX}. 
 
-Overall, if given a sample $x_k$ at time $k$, the proposed framework maps it to label $\hat{y}_k \in \{N,Y_V,Y_S,Y_F,R_V,R_S,R_F\}$, where $N$ stands for normal, $Y_V$ stands for ventricular yellow alarm, $R_V$ stands for ventricular red alarm.
+After performing both global and personalized classification steps, a given sample $x_k$ at time $k$ is mapped to label $\hat{y}_k \in \{N,Y_V,Y_S,Y_F,R_V,R_S,R_F\}$, where $N$ stands for normal status, $Y_X$ stands for a ventricular yellow alarm of type ``X'', and $R_X$ stands for a ventricular red alarm of type ``X''.
 
 \begin{figure}[t]
 \centering
@@ -192,8 +195,9 @@ Overall, if given a sample $x_k$ at time $k$, the proposed framework maps it to 
 \end{figure}
 
 
-\section{Personal Classifier}
+\section{Personal Classifier} \textcolor{red}{I suggest you use the term personalized classifier, although personal classifier is correct too.}
 
+Here, we provide the core idea behind the design of the personalized classifier, and the details of implementation will be discussed in \textcolor{blue}{Sections 3 and 4.} 
 As the proposed system aims at predicting subsequent abnormalities by analyzing the deviation of sample signal, it's vital to quantify the deviations using topological characteristics of training data. For most of the ECG applications analysis is conducted within high-dimensional feature space, we therefore select Cosine Distance(defined in Eq.\ref{eq:cosine}) to quantify deviation.
 
 \begin{align}

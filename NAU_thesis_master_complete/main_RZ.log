@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.9)  30 JUN 2018 10:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.9)  30 JUN 2018 11:11
 entering extended mode
 **./main_RZ.tex
 (main_RZ.tex
@@ -990,15 +990,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
 
-LaTeX Warning: Citation `REF' on page 27 undefined on input line 146.
+LaTeX Warning: Citation `REF' on page 27 undefined on input line 148.
 
 
-LaTeX Warning: Citation `REF' on page 27 undefined on input line 146.
+LaTeX Warning: Citation `REF' on page 27 undefined on input line 148.
 
 [27] <Fig/flow2.png, id=215, 797.8608pt x 728.9634pt>
 File: Fig/flow2.png Graphic file (type png)
  <use Fig/flow2.png>
-Package pdftex.def Info: Fig/flow2.png used on input line 150.
+Package pdftex.def Info: Fig/flow2.png used on input line 152.
 (pdftex.def)             Requested size: 398.92943pt x 364.4808pt.
 
 [28 <./Fig/flow2.png>]
@@ -1008,21 +1008,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <Fig/topology.jpg, id=228, 454.69875pt x 398.48875pt>
 File: Fig/topology.jpg Graphic file (type jpg)
  <use Fig/topology.jpg>
-Package pdftex.def Info: Fig/topology.jpg used on input line 189.
+Package pdftex.def Info: Fig/topology.jpg used on input line 192.
 (pdftex.def)             Requested size: 318.28694pt x 278.94022pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30]
+[30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31 <./Fig/topology.jpg>] <Fig/topo1.png, id=235, 918.3108pt x 384.4764pt>
 File: Fig/topo1.png Graphic file (type png)
 
 <use Fig/topo1.png>
-Package pdftex.def Info: Fig/topo1.png used on input line 224.
+Package pdftex.def Info: Fig/topo1.png used on input line 228.
 (pdftex.def)             Requested size: 459.15428pt x 192.23772pt.
-) [32 <./Fig/topo1.png>] [33]
+) [32] [33 <./Fig/topo1.png>]
 \openout2 = `body/3-KernelModel.aux'.
 
  (body/3-KernelModel.tex
@@ -1240,7 +1238,7 @@ am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main_RZ.pdf (78 pages, 1503867 bytes).
+Output written on main_RZ.pdf (78 pages, 1505130 bytes).
 PDF statistics:
  567 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

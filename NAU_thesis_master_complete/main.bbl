@@ -237,6 +237,10 @@ Z.~Zidelmal, A.~Amirou, M.~Adnane, and A.~Belouchrani, ``\textsc{QRS} detection
 J.~Shawe-Taylor and N.~Cristianini, {\em Kernel methods for pattern analysis}.
 \newblock Cambridge university press, 2004.
 
+\bibitem{aronszajn1950theory}
+N.~Aronszajn, ``Theory of reproducing kernels,'' {\em Transactions of the
+  American mathematical society}, vol.~68, no.~3, pp.~337--404, 1950.
+
 \bibitem{scholkopf1999advances}
 B.~Sch{\"o}lkopf, C.~J. Burges, and A.~J. Smola, {\em Advances in kernel
   methods: support vector learning}.
@@ -251,6 +255,21 @@ T.~Evgeniou, M.~Pontil, and T.~Poggio, ``Regularization networks and support
 N.~Cristianini and J.~Shawe-Taylor, {\em An introduction to support vector
   machines and other kernel-based learning methods}.
 \newblock Cambridge university press, 2000.
+
+\bibitem{chapelle1999support}
+O.~Chapelle, P.~Haffner, and V.~N. Vapnik, ``Support vector machines for
+  histogram-based image classification,'' {\em IEEE transactions on Neural
+  Networks}, vol.~10, no.~5, pp.~1055--1064, 1999.
+
+\bibitem{lanckriet2002robust}
+G.~R. Lanckriet, L.~E. Ghaoui, C.~Bhattacharyya, and M.~I. Jordan, ``A robust
+  minimax approach to classification,'' {\em Journal of Machine Learning
+  Research}, vol.~3, no.~Dec, pp.~555--582, 2002.
+
+\bibitem{jebara2004multi}
+T.~Jebara, ``Multi-task feature and kernel selection for svms,'' in {\em
+  Proceedings of the twenty-first international conference on Machine
+  learning}, p.~55, ACM, 2004.
 
 \bibitem{coello2002mopso}
 C.~A. Coello~Coello, ``Mopso: A proposal for multiple objective particle swarm

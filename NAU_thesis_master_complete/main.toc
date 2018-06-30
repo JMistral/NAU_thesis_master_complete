@@ -24,7 +24,9 @@
 \contentsline {section}{\numberline {3.2}Kernel Method}{33}
 \contentsline {section}{\numberline {3.3}Multiobjective Optimization}{36}
 \contentsline {subsection}{\numberline {3.3.1}Objective Functions}{36}
-\contentsline {subsection}{\numberline {3.3.2}Multiobjective Particle Swarm Optimization}{38}
+\contentsline {subsection}{\numberline {3.3.2}Multiobjective Particle Swarm Optimization}{37}
+\contentsline {subsubsection}{Pareto Front}{38}
+\contentsline {subsubsection}{MOPSO}{38}
 \contentsline {section}{\numberline {3.4}Experimental Results}{40}
 \contentsline {section}{\numberline {3.5}Conclusions}{43}
 \contentsline {chapter}{\numberline {4}Controlled Spatial Transformation With Deterministic Mapping Function}{44}

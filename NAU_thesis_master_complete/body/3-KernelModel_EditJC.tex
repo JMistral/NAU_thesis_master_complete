@@ -178,7 +178,7 @@ The performance of the aforementioned kernel-based method is tested on DS2 exclu
 
 Table \ref{table:result1} shows the performance of the proposed method in classifying ECG signal segments. In order to evaluate the consistency and general classification classification results over all recordings, the median, interquartile range (IQR), mean and standard deviation of accuracy (AC), sensitivity (SE) and specificity (SP) are presented as evaluation metrics. The results are promising and the median of accuracy for all classes are in the range of $88\%-99\%$. Sensitivity and specificity of the proposed method exhibits similar ranges. The mean accuracy is at least $86\%$ excluding class $V$. Therefore, this system is not likely to miss an important alarm or to report false alarms. 
 
-\begin{table}[thpb]
+\begin{table}[t]
 	\caption{Classification results of the proposed method.}
 	\centering
 	\begin{tabular}{|c|c|c|c|c|}
@@ -213,24 +213,27 @@ Table \ref{table:result1} shows the performance of the proposed method in classi
 
 %%%%%%%%%%%%555
 
-More importantly, the predicting ability of the proposed method is worthy of evaluating separately. In order to quantify the conditional probability of observing a red alarm after a preceding yellow alarm of similar type in (\ref{eq:personal_discrim}), we count the number of predicted samples as follows:
+More importantly, the predictive capability of the proposed method is worthy of evaluating exclusively for it is the featuring specialty of the proposed system. In order to quantify the posterior probability of observing an abnormal signal after a preceding yellow alarm of similar type in (\ref{eq:personal_discrim}), the number of predicted samples are counted as formulated in Eq \ref{eq:proab}:
 
 \begin{align}
 \nonumber 
 &P(\hat{y}_{k+i}=X_r|\hat{y}_{k}=X_y)=\frac{\text{\# of $y_{k+i}=X$ after $\hat{y}_k=X_y$}}{\text{\# of true alarms after $\hat{y}_k=X_y$}} \\
 &P(\hat{y}_{k+i}=X_r)=\frac{\text{\# of true alarm of type $X$ ($y_{k}=X$)}}{\text{\# of all true alarms}} 
+\label{eq:proab}
 \end{align}
 
-The summary of results for all 21 test records is presented in Table. \ref{table:pred}. The last 4 columns of the Table. \ref{table:pred} show the probability of having a subsequent true abnormality of any type after observing a yellow alarm. %It's compared with the probability of having the same type of abnormality after a secondary abnormality of its own type. 
-These results confirm the predictive power of yellow alarms. 
-For instance, the absolute probability of observing a segment with abnormal classes $V$, $S$, and $F$ is respectively $\frac{96}{96+29+18}=67\%$, $\frac{29}{96+29+18}=20\%$ and $\frac{18}{96+29+18}=13\%$, based on their relative frequencies. However, these probabilities after observing a yellow alarm of type $Vp$ are respectively $\frac{38}{38+11+2}=75\%$, $\frac{11}{38+11+2}=21\%$ and $\frac{2}{38+11+2}=4\%$. This means that the probability of observing a red alarm of type $V$ is $75\%-67\%=8\%$ higher than its absolute probability. The same trend holds for other yellow alarms as well. The results suggest a more in-depth study of the concept of yellow alarms for heart monitoring.
+The summary of results for all 21 test records is presented in Table. \ref{table:pred}. The subsection \textit{Probability of next abnormality (\%)} in Table. \ref{table:pred} shows the confusion matrix of the probability of having a subsequent true abnormality of all types after observing a yellow alarm of all types along with the prior probability of observing a certain type of abnormal sample in the very last column. %The last 4 columns of the Table. \ref{table:pred} show the confusion matrix of the probability of having a subsequent true abnormality of all types after observing a yellow alarm of all types. It's compared with the probability of having the same type of abnormality after a secondary abnormality of its own type. 
+
+These results validate the predictive capability of yellow alarms. 
+For instance, the prior probability of observing a sample segment with abnormal types $V$, $S$, and $F$ is respectively $\frac{96}{96+29+18}=67\%$, $\frac{29}{96+29+18}=20\%$ and $\frac{18}{96+29+18}=13\%$, based on their relative frequencies in the dataset. However, the corresponding posterior probabilities after observing a yellow alarm of type $Vp$ are respectively $\frac{38}{38+11+2}=75\%$, $\frac{11}{38+11+2}=21\%$ and $\frac{2}{38+11+2}=4\%$. This means that the probability of observing a real abnormal segment of type $V$ is $75\%-67\%=8\%$, which is higher than its prior probability. The same trend holds for other yellow alarms as well. The results suggest a more in-depth study of the concept of yellow alarms for heart monitoring. Therefore, we investigate in improving the spatial transformation module of the system and meanwhile reduce the computational cost in Chapter 4.
 
 \begin{table}
 	\caption{Predictive power of yellow alarms: A yellow alarm increases the chance of observing a red alarm of the same type.}
 	\centering
-	\begin{tabular}{|m{3.5em}|| m{1.4em} || m{1.4em} || m{1.4em} ||m{1.4em}|| m{1.4em} || m{1.4em} || m{1.4em} || m{1.4em}|}
+	%\resizebox{\textwidth}{!}{
+	\begin{tabular}{|m{6em}| m{2em}| m{2em}| m{2em} |m{2em}| m{2em}| m{2em}| m{2em}| m{2em}|}
 		\hline
-		& \multicolumn{3}{m{8em}}{Number of next abnormality }& &\multicolumn{3}{m{8em}}{Probability of next abnormality (\%)}  & \\ 
+		& \multicolumn{3}{p{6em}}{Count numbers of subsequent abnormality}& &\multicolumn{3}{p{6em}}{Probability of subsequent abnormality (\%)}  & \\ 
 		\hline 
 		secondary abnormalities & $V_y$ & $S_y$ & $F_y$ & Total & $V_y$ & $S_y$ & $F_y$ & Total \\ 
 		\hline 
@@ -242,16 +245,16 @@ For instance, the absolute probability of observing a segment with abnormal clas
 		%		\hline 
 		%		Total & 4 & 20 & 0 & 24 & 100 & 100 & 100 & 100\\
 		\hline 
-	\end{tabular} 
+	\end{tabular}%} 
 	\label{table:pred}
 \end{table}
 
 
 \section{Conclusions}
 
-This chapter explains the nonlinear reshaping with kernel function and multipurpose particle swarm optimization method. With the kernel method adopted in SVM, we utilize a group of nonlinear kernels to reshape the input feature space and map it to high-dimensional feature space, which meets two conditions, namely, maximum separation between cluster and maximum cosine similarities between abnormal clusters.
+This chapter introduces and studies the kernel-based nonlinear transformation using Multiobjective Particle Swarm Optimization (MOPSO) method. Inspired by the concept of kernel method and loss function utilized in SVM, we implement the method with a weighted combination of base nonlinear kernels to reshape the input feature space by mapping it to a high-dimensional space. The coefficients of kernels are optimized according to two conditions, namely, maximum separation between cluster and maximum cosine similarities between abnormal clusters.
 
-In this chapter we adopt multipurpose particle swarm optimization method to optimize parameters of kernel function. Result shows that Pareto front produced by kernel method in the objective function space is apparently optimal to that produced by linear combination of features. The results verify the accuracy of the proposed method with a classification accuracy range of $88\%-99\%$ for different ECG records in publicly available MIT-BIH database.
+Result shows that approximated Pareto front produced by kernel method in the objective function space is apparently optimal to the one which is produced by the linear combinations of original features. The results verify that the proposed method has a classification accuracy in the range of $88\%-99\%$ for different ECG records in the test set of MIT-BIH database.
 
-Above all the proposed methodology demonstrates a potential to add detailed information about sample deviation upon conventional machine learning algorithm. We tested this system with ECG signal and observed promising results, but this method is not bound to this application. 
+Above all, the proposed algorithm demonstrates the potential of providing detailed information about the sample deviations, which indicate the upcoming abnormal sample types. The predictive capacities of the system is verified with ECG signal, but this method is general and not bound to this application. If a biomedical signal has one base class (i.e. normal state) and several abnormal states, the proposed method can be implemented to predict upcoming abnormal types.
   

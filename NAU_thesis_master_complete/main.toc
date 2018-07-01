@@ -22,26 +22,25 @@
 \contentsline {subsection}{\numberline {2.5.1}Global Classifier}{28}
 \contentsline {subsection}{\numberline {2.5.2}Deviation Detection}{28}
 \contentsline {section}{\numberline {2.6}Personalized Classifier}{32}
-\contentsline {chapter}{\numberline {3}Kernel-Based Nonlinear Spatial Transformation}{34}
+\contentsline {chapter}{\numberline {3}\textit {Kernels}-Based Nonlinear Spatial Transformation}{34}
 \contentsline {section}{\numberline {3.1}Introduction}{34}
-\contentsline {section}{\numberline {3.2}Kernel Method}{35}
-\contentsline {section}{\numberline {3.3}Multiobjective Optimization}{38}
-\contentsline {subsection}{\numberline {3.3.1}Objective Functions}{38}
-\contentsline {subsection}{\numberline {3.3.2}Multiobjective Particle Swarm Optimization}{39}
-\contentsline {subsubsection}{Pareto Front}{40}
-\contentsline {subsubsection}{MOPSO}{40}
-\contentsline {section}{\numberline {3.4}Experimental Results}{42}
-\contentsline {section}{\numberline {3.5}Conclusions}{45}
-\contentsline {chapter}{\numberline {4}Controlled Spatial Transformation With Deterministic Mapping Function}{47}
-\contentsline {section}{\numberline {4.1}Introduction}{47}
-\contentsline {section}{\numberline {4.2}Hyper-Spherical Coordinates}{48}
-\contentsline {section}{\numberline {4.3}Orthogonalization}{50}
-\contentsline {section}{\numberline {4.4}Spatial Mapping Function}{51}
-\contentsline {section}{\numberline {4.5}Optimized Mapping Function}{53}
-\contentsline {section}{\numberline {4.6}Experimental Results}{55}
-\contentsline {subsection}{\numberline {4.6.1}Classification Performance}{56}
-\contentsline {subsection}{\numberline {4.6.2}Prediction Performance}{58}
-\contentsline {chapter}{\numberline {5}Conclusions And Future works}{61}
-\contentsline {section}{\numberline {5.1}Conclusions}{61}
-\contentsline {section}{\numberline {5.2}Future works}{63}
-\contentsline {chapter}{Bibliography}{65}
+\contentsline {section}{\numberline {3.2}\textit {Kernel} Method}{36}
+\contentsline {section}{\numberline {3.3}Multiobjective Optimization}{39}
+\contentsline {subsection}{\numberline {3.3.1}Objective Functions}{39}
+\contentsline {subsection}{\numberline {3.3.2}Multi-objective Particle Swarm Optimization}{41}
+\contentsline {subsubsection}{MOPSO}{42}
+\contentsline {section}{\numberline {3.4}Experimental Results}{44}
+\contentsline {section}{\numberline {3.5}Summary of contributions}{47}
+\contentsline {chapter}{\numberline {4}Controlled Spatial Transformation With Deterministic Mapping Function}{49}
+\contentsline {section}{\numberline {4.1}Introduction}{49}
+\contentsline {section}{\numberline {4.2}Hyper-Spherical Coordinates}{50}
+\contentsline {section}{\numberline {4.3}Orthogonalization}{52}
+\contentsline {section}{\numberline {4.4}Spatial Mapping Function}{53}
+\contentsline {section}{\numberline {4.5}Optimized Mapping Function}{55}
+\contentsline {section}{\numberline {4.6}Experimental Results}{58}
+\contentsline {subsection}{\numberline {4.6.1}Classification Performance}{58}
+\contentsline {subsection}{\numberline {4.6.2}Prediction Performance}{60}
+\contentsline {chapter}{\numberline {5}Conclusions And Future works}{63}
+\contentsline {section}{\numberline {5.1}Conclusions}{63}
+\contentsline {section}{\numberline {5.2}Future works}{65}
+\contentsline {chapter}{Bibliography}{67}

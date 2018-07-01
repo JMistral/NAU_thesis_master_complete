@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 JUN 2018 23:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  1 JUL 2018 12:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -647,7 +647,7 @@ LaTeX Warning: Unused global option(s):
 
 (./main.aux (./front/cover.aux) (./front/abstract.aux)
 (./Introduction/1-intro.aux) (./body/2-Framework-JCedit.aux)
-(./body/3-KernelModel_Finalv1.aux) (./body/4-SphereModel.aux
+(./body/3-KernelModel-JCfinishing.aux) (./body/4-SphereModel-JCedit.aux
 
 LaTeX Warning: Label `table:pred' multiply defined.
 
@@ -792,7 +792,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-[4] <Fig/cardiac_cycle.png, id=49, 505.89pt x 454.69875pt>
+[4] <Fig/cardiac_cycle.png, id=50, 505.89pt x 454.69875pt>
 File: Fig/cardiac_cycle.png Graphic file (type png)
 
 <use Fig/cardiac_cycle.png>
@@ -809,7 +809,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-<Fig/interpatient_variability.pdf, id=57, 532.91798pt x 378.1036pt>
+<Fig/interpatient_variability.pdf, id=58, 532.91798pt x 378.1036pt>
 File: Fig/interpatient_variability.pdf Graphic file (type pdf)
 
 <use Fig/interpatient_variability.pdf>
@@ -820,7 +820,7 @@ Package pdftex.def Info: Fig/interpatient_variability.pdf used on input line 95
 Underfull \vbox (badness 6141) has occurred while \output is active []
 
  [7]
-<Fig/predicting_record215S_croped.pdf, id=61, 596.43225pt x 269.93248pt>
+<Fig/predicting_record215S_croped.pdf, id=62, 596.43225pt x 269.93248pt>
 File: Fig/predicting_record215S_croped.pdf Graphic file (type pdf)
 
 <use Fig/predicting_record215S_croped.pdf>
@@ -828,7 +828,7 @@ Package pdftex.def Info: Fig/predicting_record215S_croped.pdf used on input lin
 e 107.
 (pdftex.def)             Requested size: 357.8621pt x 161.96072pt.
 
-<Fig/predicting_record215_croped.pdf, id=62, 590.477pt x 274.89502pt>
+<Fig/predicting_record215_croped.pdf, id=63, 590.477pt x 274.89502pt>
 File: Fig/predicting_record215_croped.pdf Graphic file (type pdf)
 
 <use Fig/predicting_record215_croped.pdf>
@@ -839,7 +839,7 @@ Package pdftex.def Info: Fig/predicting_record215_croped.pdf used on input line
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8 <./Fig/interpatient_variability.pdf>]
-<Fig/general_flow.png, id=70, 473.6094pt x 273.1806pt>
+<Fig/general_flow.png, id=71, 473.6094pt x 273.1806pt>
 File: Fig/general_flow.png Graphic file (type png)
 
 <use Fig/general_flow.png>
@@ -850,7 +850,7 @@ Package pdftex.def Info: Fig/general_flow.png used on input line 121.
 Underfull \vbox (badness 4660) has occurred while \output is active []
 
  [11]
-<Fig/fiducial_peaks2.png, id=133, 555.0336pt x 187.4202pt>
+<Fig/fiducial_peaks2.png, id=134, 555.0336pt x 187.4202pt>
 File: Fig/fiducial_peaks2.png Graphic file (type png)
 
 <use Fig/fiducial_peaks2.png>
@@ -888,7 +888,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 2253) has occurred while \output is active []
 
  [19]
-<Fig/segment.png, id=162, 470.42416pt x 252.4632pt>
+<Fig/segment.png, id=163, 470.42416pt x 252.4632pt>
 File: Fig/segment.png Graphic file (type png)
  <use Fig/segment.png>
 Package pdftex.def Info: Fig/segment.png used on input line 19.
@@ -900,20 +900,20 @@ Underfull \vbox (badness 1968) has occurred while \output is active []
 Underfull \vbox (badness 1442) has occurred while \output is active []
 
  [22]
-<Fig/scale_wavelet.png, id=174, 792.561pt x 335.8146pt>
+<Fig/scale_wavelet.png, id=175, 792.561pt x 335.8146pt>
 File: Fig/scale_wavelet.png Graphic file (type png)
 
 <use Fig/scale_wavelet.png>
 Package pdftex.def Info: Fig/scale_wavelet.png used on input line 72.
 (pdftex.def)             Requested size: 396.27953pt x 167.90689pt.
 
-<Fig/QRS_D5D6_sub.png, id=175, 836.12375pt x 565.11125pt>
+<Fig/QRS_D5D6_sub.png, id=176, 836.12375pt x 565.11125pt>
 File: Fig/QRS_D5D6_sub.png Graphic file (type png)
 
 <use Fig/QRS_D5D6_sub.png>
 Package pdftex.def Info: Fig/QRS_D5D6_sub.png used on input line 82.
 (pdftex.def)             Requested size: 418.06085pt x 282.55493pt.
- <Fig/window.pdf, id=176, 801.99625pt x 492.84125pt>
+ <Fig/window.pdf, id=177, 801.99625pt x 492.84125pt>
 File: Fig/window.pdf Graphic file (type pdf)
 
 <use Fig/window.pdf>
@@ -938,7 +938,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
-<Fig/flow2.png, id=213, 797.8608pt x 728.9634pt>
+<Fig/flow2.png, id=214, 797.8608pt x 728.9634pt>
 File: Fig/flow2.png Graphic file (type png)
  <use Fig/flow2.png>
 Package pdftex.def Info: Fig/flow2.png used on input line 198.
@@ -950,7 +950,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]
-<Fig/topology.jpg, id=229, 454.69875pt x 398.48875pt>
+<Fig/topology.jpg, id=230, 454.69875pt x 398.48875pt>
 File: Fig/topology.jpg Graphic file (type jpg)
  <use Fig/topology.jpg>
 Package pdftex.def Info: Fig/topology.jpg used on input line 247.
@@ -962,105 +962,109 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32]
-<Fig/topo1.png, id=236, 918.3108pt x 384.4764pt>
+<Fig/topo1.png, id=237, 918.3108pt x 384.4764pt>
 File: Fig/topo1.png Graphic file (type png)
  <use Fig/topo1.png>
 Package pdftex.def Info: Fig/topo1.png used on input line 283.
 (pdftex.def)             Requested size: 459.15428pt x 192.23772pt.
 ) [33 <./Fig/topo1.png>]
-\openout2 = `body/3-KernelModel_Finalv1.aux'.
+\openout2 = `body/3-KernelModel-JCfinishing.aux'.
 
- (./body/3-KernelModel_Finalv1.tex
+ (./body/3-KernelModel-JCfinishing.tex
 Chapter 3.
+[34
 
+
+
+] [35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34
-
-
-
-]
-[35]
+ [36]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [37]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38]
-Underfull \vbox (badness 1762) has occurred while \output is active []
+[39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
-[40] <Fig/repo_members.jpg, id=265, 562.1pt x 421.575pt>
+ [40]
+
+LaTeX Warning: Citation `Mo-PSO' on page 41 undefined on input line 156.
+
+
+LaTeX Warning: Citation `XXX: Add REFs here if there are other implementations 
+of MO-PSO' on page 41 undefined on input line 158.
+
+[41] [42] <Fig/repo_members.jpg, id=273, 562.1pt x 421.575pt>
 File: Fig/repo_members.jpg Graphic file (type jpg)
 
 <use Fig/repo_members.jpg>
-Package pdftex.def Info: Fig/repo_members.jpg used on input line 145.
+Package pdftex.def Info: Fig/repo_members.jpg used on input line 180.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41 <./Fig/repo_members.jpg>] <Fig/pareto_compare.pdf, id=270, 561.09625pt x 3
+ [43 <./Fig/repo_members.jpg>] <Fig/pareto_compare.pdf, id=277, 561.09625pt x 3
 61.35pt>
 File: Fig/pareto_compare.pdf Graphic file (type pdf)
 
 <use Fig/pareto_compare.pdf>
-Package pdftex.def Info: Fig/pareto_compare.pdf used on input line 159.
+Package pdftex.def Info: Fig/pareto_compare.pdf used on input line 195.
 (pdftex.def)             Requested size: 336.66034pt x 216.81168pt.
- [42 <./Fig/pareto_compare.pdf>]
+ [44 <./Fig/pareto_compare.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43]
-[44]
-Underfull \hbox (badness 8132) in paragraph at lines 236--236
+ [45]
+[46]
+Underfull \hbox (badness 8132) in paragraph at lines 275--275
 []|\OT1/cmr/m/n/12 Count num-
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 236--236
+Underfull \hbox (badness 1270) in paragraph at lines 275--275
 \OT1/cmr/m/n/12 quent ab-nor-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--236
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 []|\OT1/cmr/m/n/12 Probability
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--236
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 \OT1/cmr/m/n/12 ab-nor-mal-ity
  []
 
 
-Overfull \hbox (3.59024pt too wide) in paragraph at lines 238--238
+Overfull \hbox (3.59024pt too wide) in paragraph at lines 277--277
 []|\OT1/cmr/m/n/12 Total| 
  []
 
 
-Overfull \hbox (3.59024pt too wide) in paragraph at lines 238--239
+Overfull \hbox (3.59024pt too wide) in paragraph at lines 277--278
 []|\OT1/cmr/m/n/12 Total| 
  []
 
-[45]) [46]
-\openout2 = `body/4-SphereModel.aux'.
+[47]) [48]
+\openout2 = `body/4-SphereModel-JCedit.aux'.
 
- (./body/4-SphereModel.tex
+ (./body/4-SphereModel-JCedit.tex
 Chapter 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47
+ [49
 
 
 
 ]
-<Fig/topo2.png, id=313, 895.1844pt x 378.6948pt>
+<Fig/topo2.png, id=320, 895.1844pt x 378.6948pt>
 File: Fig/topo2.png Graphic file (type png)
  <use Fig/topo2.png>
 Package pdftex.def Info: Fig/topo2.png used on input line 13.
@@ -1068,54 +1072,60 @@ Package pdftex.def Info: Fig/topo2.png used on input line 13.
 
 Underfull \vbox (badness 1005) has occurred while \output is active []
 
- [48 <./Fig/topo2.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49]
-[50]
+ [50 <./Fig/topo2.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [51]
-<Fig/simple_spline1.pdf, id=328, 492.22995pt x 301.68912pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]
+<Fig/simple_spline1.pdf, id=336, 492.22995pt x 301.68912pt>
 File: Fig/simple_spline1.pdf Graphic file (type pdf)
 
 <use Fig/simple_spline1.pdf>
-Package pdftex.def Info: Fig/simple_spline1.pdf used on input line 132.
+Package pdftex.def Info: Fig/simple_spline1.pdf used on input line 133.
 (pdftex.def)             Requested size: 344.55861pt x 211.18092pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52]
+ [54]
 Underfull \vbox (badness 2050) has occurred while \output is active []
 
- [53 <./Fig/simple_spline1.pdf>]
-<Fig/optimized_single_f.pdf, id=377, 555.74324pt x 341.38539pt>
+ [55 <./Fig/simple_spline1.pdf>]
+<Fig/optimized_single_f.pdf, id=384, 555.74324pt x 341.38539pt>
 File: Fig/optimized_single_f.pdf Graphic file (type pdf)
 
 <use Fig/optimized_single_f.pdf>
-Package pdftex.def Info: Fig/optimized_single_f.pdf used on input line 175.
+Package pdftex.def Info: Fig/optimized_single_f.pdf used on input line 176.
 (pdftex.def)             Requested size: 389.01761pt x 238.96814pt.
- [54]
-<Fig/optimized_mapping_f.pdf, id=381, 589.48534pt x 343.36983pt>
+ [56]
+Overfull \hbox (0.11035pt too wide) in paragraph at lines 181--182
+[]\OT1/cmr/m/n/12 Therefore, if we ap-ply the piece-wise in-ter-po-late func-ti
+on $\OML/cmm/m/it/12 p$ \OT1/cmr/m/n/12 at all four tar-get points: ($\OML/cmm/
+m/it/12 ^^N[]$\OT1/cmr/m/n/12 ,$\OML/cmm/m/it/12 ^^N[]$\OT1/cmr/m/n/12 ),
+ []
+
+<Fig/optimized_mapping_f.pdf, id=388, 589.48534pt x 343.36983pt>
 File: Fig/optimized_mapping_f.pdf Graphic file (type pdf)
 
 <use Fig/optimized_mapping_f.pdf>
-Package pdftex.def Info: Fig/optimized_mapping_f.pdf used on input line 184.
+Package pdftex.def Info: Fig/optimized_mapping_f.pdf used on input line 185.
 (pdftex.def)             Requested size: 412.63693pt x 240.35724pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55 <./Fig/optimized_single_f.pdf>] [56 <./Fig/optimized_mapping_f.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57]
-Underfull \vbox (badness 1308) has occurred while \output is active []
-
- [58])
-Underfull \vbox (badness 6141) has occurred while \output is active []
+ [57 <./Fig/optimized_single_f.pdf>] [58 <./Fig/optimized_mapping_f.pdf>]
+Underfull \vbox (badness 3291) has occurred while \output is active []
 
  [59]
 [60]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61])
+[62]
 \openout2 = `conclusion/6-Discussion.aux'.
 
  (./conclusion/6-Discussion.tex
@@ -1123,29 +1133,32 @@ Chapter 5.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61
+ [63
 
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62]
-[63]) [64] (./main.bbl
+ [64]
+[65]) [66] (./main.bbl
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
- [65
+ [67
 
 
-] [66]
+] [68]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [67] [68] [69] [70] [71]) [72] (./main.aux
+ [69] [70] [71] [72] [73]) [74] (./main.aux
 (./front/cover.aux) (./front/abstract.aux) (./Introduction/1-intro.aux)
-(./body/2-Framework-JCedit.aux) (./body/3-KernelModel_Finalv1.aux)
-(./body/4-SphereModel.aux) (./conclusion/6-Discussion.aux))
+(./body/2-Framework-JCedit.aux) (./body/3-KernelModel-JCfinishing.aux)
+(./body/4-SphereModel-JCedit.aux) (./conclusion/6-Discussion.aux))
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1155,33 +1168,34 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16067 strings out of 492995
- 311916 string characters out of 6132704
- 363900 words of memory out of 5000000
- 19189 multiletter control sequences out of 15000+600000
- 15738 words of font info for 59 fonts, out of 8000000 for 9000
+ 16074 strings out of 492995
+ 312151 string characters out of 6132704
+ 364116 words of memory out of 5000000
+ 19195 multiletter control sequences out of 15000+600000
+ 16815 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,23n,54p,2142b,2758s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,23n,54p,2143b,2758s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (80 pages, 1543944 bytes).
+/cmbxti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
+pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (82 pages, 1560237 bytes).
 PDF statistics:
- 575 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
+ 585 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  108 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -13,32 +13,35 @@
 \contentsline {section}{\numberline {1.6}Organization of Thesis}{16}
 \contentsline {chapter}{\numberline {2}Patient-Adaptable ECG Classification Framework}{18}
 \contentsline {section}{\numberline {2.1}Introduction}{18}
-\contentsline {section}{\numberline {2.2}ECG Signal Processing}{19}
-\contentsline {subsection}{\numberline {2.2.1}Preprocessing}{19}
-\contentsline {subsection}{\numberline {2.2.2}Segmentation}{20}
-\contentsline {section}{\numberline {2.3}Feature Extraction}{24}
-\contentsline {section}{\numberline {2.4}Classification Framework}{26}
-\contentsline {section}{\numberline {2.5}Personal Classifier}{28}
-\contentsline {chapter}{\numberline {3}Kernel-Based Nonlinear Spatial Transformation}{32}
-\contentsline {section}{\numberline {3.1}Introduction}{32}
-\contentsline {section}{\numberline {3.2}Kernel Method}{33}
-\contentsline {section}{\numberline {3.3}Multiobjective Optimization}{36}
-\contentsline {subsection}{\numberline {3.3.1}Objective Functions}{36}
-\contentsline {subsection}{\numberline {3.3.2}Multiobjective Particle Swarm Optimization}{37}
-\contentsline {subsubsection}{Pareto Front}{38}
-\contentsline {subsubsection}{MOPSO}{38}
-\contentsline {section}{\numberline {3.4}Experimental Results}{40}
-\contentsline {section}{\numberline {3.5}Conclusions}{43}
-\contentsline {chapter}{\numberline {4}Controlled Spatial Transformation With Deterministic Mapping Function}{45}
-\contentsline {section}{\numberline {4.1}Introduction}{45}
-\contentsline {section}{\numberline {4.2}Hyper-Spherical Coordinates}{46}
-\contentsline {section}{\numberline {4.3}Orthogonalization}{48}
-\contentsline {section}{\numberline {4.4}Spatial Mapping Function}{49}
-\contentsline {section}{\numberline {4.5}Optimized Mapping Function}{51}
-\contentsline {section}{\numberline {4.6}Experimental Results}{53}
-\contentsline {subsection}{\numberline {4.6.1}Classification Performance}{54}
-\contentsline {subsection}{\numberline {4.6.2}Prediction Performance}{56}
-\contentsline {chapter}{\numberline {5}Conclusions And Future works}{59}
-\contentsline {section}{\numberline {5.1}Conclusions}{59}
-\contentsline {section}{\numberline {5.2}Future works}{61}
-\contentsline {chapter}{Bibliography}{63}
+\contentsline {section}{\numberline {2.2}Utilized Dataset}{19}
+\contentsline {section}{\numberline {2.3}ECG Signal Processing}{21}
+\contentsline {subsection}{\numberline {2.3.1}Preprocessing}{21}
+\contentsline {subsection}{\numberline {2.3.2}Segmentation}{22}
+\contentsline {section}{\numberline {2.4}Feature Extraction}{26}
+\contentsline {section}{\numberline {2.5}Classification Framework}{27}
+\contentsline {subsection}{\numberline {2.5.1}Global Classifier}{28}
+\contentsline {subsection}{\numberline {2.5.2}Deviation Detection}{28}
+\contentsline {section}{\numberline {2.6}Personalized Classifier}{32}
+\contentsline {chapter}{\numberline {3}Kernel-Based Nonlinear Spatial Transformation}{34}
+\contentsline {section}{\numberline {3.1}Introduction}{34}
+\contentsline {section}{\numberline {3.2}Kernel Method}{35}
+\contentsline {section}{\numberline {3.3}Multiobjective Optimization}{38}
+\contentsline {subsection}{\numberline {3.3.1}Objective Functions}{38}
+\contentsline {subsection}{\numberline {3.3.2}Multiobjective Particle Swarm Optimization}{39}
+\contentsline {subsubsection}{Pareto Front}{40}
+\contentsline {subsubsection}{MOPSO}{40}
+\contentsline {section}{\numberline {3.4}Experimental Results}{42}
+\contentsline {section}{\numberline {3.5}Conclusions}{45}
+\contentsline {chapter}{\numberline {4}Controlled Spatial Transformation With Deterministic Mapping Function}{47}
+\contentsline {section}{\numberline {4.1}Introduction}{47}
+\contentsline {section}{\numberline {4.2}Hyper-Spherical Coordinates}{48}
+\contentsline {section}{\numberline {4.3}Orthogonalization}{50}
+\contentsline {section}{\numberline {4.4}Spatial Mapping Function}{51}
+\contentsline {section}{\numberline {4.5}Optimized Mapping Function}{53}
+\contentsline {section}{\numberline {4.6}Experimental Results}{55}
+\contentsline {subsection}{\numberline {4.6.1}Classification Performance}{56}
+\contentsline {subsection}{\numberline {4.6.2}Prediction Performance}{58}
+\contentsline {chapter}{\numberline {5}Conclusions And Future works}{61}
+\contentsline {section}{\numberline {5.1}Conclusions}{61}
+\contentsline {section}{\numberline {5.2}Future works}{63}
+\contentsline {chapter}{Bibliography}{65}

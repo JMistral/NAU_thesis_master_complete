@@ -4,53 +4,53 @@ The top-level auxiliary file: main.aux
 A level-1 auxiliary file: front/cover.aux
 A level-1 auxiliary file: front/abstract.aux
 A level-1 auxiliary file: Introduction/1-intro.aux
-A level-1 auxiliary file: body/2-Framework.aux
-A level-1 auxiliary file: body/3-KernelModel_EditJC.aux
+A level-1 auxiliary file: body/2-Framework-JCedit.aux
+A level-1 auxiliary file: body/3-KernelModel_Finalv1.aux
 A level-1 auxiliary file: body/4-SphereModel.aux
 A level-1 auxiliary file: conclusion/6-Discussion.aux
 The style file: ieeetr.bst
 Database file #1: Bibs.bib
 Warning--entry type for "who" isn't style-file defined
 --line 29 of file Bibs.bib
-You've used 58 entries,
+You've used 60 entries,
             1876 wiz_defined-function locations,
-            837 strings with 14531 characters,
-and the built_in function-call counts, 19084 in all, are:
-= -- 1999
-> -- 668
+            849 strings with 15006 characters,
+and the built_in function-call counts, 19825 in all, are:
+= -- 2075
+> -- 702
 < -- 0
-+ -- 245
-- -- 187
-* -- 1370
-:= -- 2566
-add.period$ -- 63
-call.type$ -- 58
-change.case$ -- 53
++ -- 257
+- -- 197
+* -- 1424
+:= -- 2666
+add.period$ -- 65
+call.type$ -- 60
+change.case$ -- 55
 chr.to.int$ -- 0
-cite$ -- 58
-duplicate$ -- 964
-empty$ -- 1721
-format.name$ -- 187
-if$ -- 4716
+cite$ -- 60
+duplicate$ -- 1004
+empty$ -- 1778
+format.name$ -- 197
+if$ -- 4899
 int.to.chr$ -- 0
-int.to.str$ -- 58
-missing$ -- 62
-newline$ -- 182
-num.names$ -- 58
-pop$ -- 136
+int.to.str$ -- 60
+missing$ -- 64
+newline$ -- 188
+num.names$ -- 60
+pop$ -- 139
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 777
+skip$ -- 813
 stack$ -- 0
-substring$ -- 1609
-swap$ -- 481
+substring$ -- 1661
+swap$ -- 505
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 194
-width$ -- 60
-write$ -- 611
+while$ -- 200
+width$ -- 62
+write$ -- 633
 (There was 1 warning)

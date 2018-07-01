@@ -233,6 +233,17 @@ Z.~Zidelmal, A.~Amirou, M.~Adnane, and A.~Belouchrani, ``\textsc{QRS} detection
   based on wavelet coefficients,'' {\em Computer methods and programs in
   biomedicine}, vol.~107, no.~3, pp.~490--496, 2012.
 
+\bibitem{fs}
+T.~Mar, S.~Zaunseder, J.~P. Mart{\'\i}nez, M.~Llamedo, and R.~Poll,
+  ``Optimization of ecg classification by means of feature selection,'' {\em
+  IEEE transactions on Biomedical Engineering}, vol.~58, no.~8, pp.~2168--2177,
+  2011.
+
+\bibitem{castells2007principal}
+F.~Castells, P.~Laguna, L.~S{\"o}rnmo, A.~Bollmann, and J.~M. Roig, ``Principal
+  component analysis in ecg signal processing,'' {\em EURASIP Journal on
+  Advances in Signal Processing}, vol.~2007, no.~1, p.~074580, 2007.
+
 \bibitem{shawe2004kernel}
 J.~Shawe-Taylor and N.~Cristianini, {\em Kernel methods for pattern analysis}.
 \newblock Cambridge university press, 2004.

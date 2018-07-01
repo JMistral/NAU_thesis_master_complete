@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.9)  30 JUN 2018 11:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2017.1.9)  30 JUN 2018 16:07
 entering extended mode
 **./main_RZ.tex
 (main_RZ.tex
@@ -613,13 +613,7 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 LaTeX Warning: Unused global option(s):
     [double].
 
-(main_RZ.aux (front/cover.aux) (front/abstract.aux) (Introduction/1-intro.aux)
-(body/2-Framework-RZfinished.aux) (body/3-KernelModel.aux)
-(body/4-SphereModel.aux
-
-LaTeX Warning: Label `table:pred' multiply defined.
-
-) (conclusion/6-Discussion.aux))
+(main_RZ.aux (body/3-KernelModel-RZ.aux))
 \openout1 = `main_RZ.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -680,536 +674,166 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-\openout2 = `front/cover.aux'.
+\openout2 = `body/3-KernelModel-RZ.aux'.
 
- (front/cover.tex) [1
-
-
-
-{C:/Users/ar2843/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-\openout2 = `front/abstract.aux'.
-
- (front/abstract.tex) [2
-
-
-]
-(main_RZ.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+ (body/3-KernelModel-RZ.tex
+Chapter 1.
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 2.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 4.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
 
- [3
-
-
-]
-Underfull \vbox (badness 3333) has occurred while \output is active []
-
- [4])
-\tf@toc=\write5
-\openout5 = `main_RZ.toc'.
-
-
-[5] (main_RZ.lof
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6
-
-])
-\tf@lof=\write6
-\openout6 = `main_RZ.lof'.
-
-
-[7] [8
-
-]
-\openout2 = `Introduction/1-intro.aux'.
-
- (Introduction/1-intro.tex
-Chapter 1.
-
-Underfull \vbox (badness 5064) has occurred while \output is active []
-
- [1
-
-
-]
-Overfull \hbox (4.94008pt too wide) in paragraph at lines 23--24
-[]\OT1/cmr/m/n/12 Several computer-based au-to-mated clas-si-fi-ca-tion al-go-r
-ithms has been de-vel-oped by re-searchers
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-[4] <Fig/cardiac_cycle.png, id=47, 505.89pt x 454.69875pt>
-File: Fig/cardiac_cycle.png Graphic file (type png)
-
-<use Fig/cardiac_cycle.png>
-Package pdftex.def Info: Fig/cardiac_cycle.png used on input line 54.
-(pdftex.def)             Requested size: 379.41655pt x 341.02322pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <./Fig/cardiac_cycle.png (PNG copy)>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-<Fig/interpatient_variability.pdf, id=55, 532.91798pt x 378.1036pt>
-File: Fig/interpatient_variability.pdf Graphic file (type pdf)
-
-<use Fig/interpatient_variability.pdf>
-Package pdftex.def Info: Fig/interpatient_variability.pdf used on input line 95
-.
-(pdftex.def)             Requested size: 373.04005pt x 264.67072pt.
-
-Underfull \vbox (badness 6141) has occurred while \output is active []
-
- [7]
-<Fig/predicting_record215S_croped.pdf, id=59, 596.43225pt x 269.93248pt>
-File: Fig/predicting_record215S_croped.pdf Graphic file (type pdf)
-
-<use Fig/predicting_record215S_croped.pdf>
-Package pdftex.def Info: Fig/predicting_record215S_croped.pdf used on input lin
-e 107.
-(pdftex.def)             Requested size: 357.8621pt x 161.96072pt.
-
-<Fig/predicting_record215_croped.pdf, id=60, 590.477pt x 274.89502pt>
-File: Fig/predicting_record215_croped.pdf Graphic file (type pdf)
-
-<use Fig/predicting_record215_croped.pdf>
-Package pdftex.def Info: Fig/predicting_record215_croped.pdf used on input line
- 108.
-(pdftex.def)             Requested size: 354.28894pt x 164.93826pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <./Fig/interpatient_variability.pdf>]
-<Fig/general_flow.png, id=68, 473.6094pt x 273.1806pt>
-File: Fig/general_flow.png Graphic file (type png)
-
-<use Fig/general_flow.png>
-Package pdftex.def Info: Fig/general_flow.png used on input line 121.
-(pdftex.def)             Requested size: 331.52432pt x 191.2251pt.
- [9 <./Fig/predicting_record215S_croped.pdf> <./Fig/predicting_record215_croped
-.pdf>] [10 <./Fig/general_flow.png>]
-Underfull \vbox (badness 4660) has occurred while \output is active []
-
- [11]
-<Fig/fiducial_peaks2.png, id=131, 555.0336pt x 187.4202pt>
-File: Fig/fiducial_peaks2.png Graphic file (type png)
-
-<use Fig/fiducial_peaks2.png>
-Package pdftex.def Info: Fig/fiducial_peaks2.png used on input line 146.
-(pdftex.def)             Requested size: 388.52087pt x 131.19324pt.
- [12 <./Fig/fiducial_peaks2.png>]
-Underfull \vbox (badness 4660) has occurred while \output is active []
-
- [13]
-Underfull \vbox (badness 4660) has occurred while \output is active []
-
- [14]
-[15]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 176.
-
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 176.
-) [16] [17]
-\openout2 = `body/2-Framework-RZfinished.aux'.
-
-
-(body/2-Framework-RZfinished.tex
-Chapter 2.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+ [1
 
 
 
-]
-Underfull \vbox (badness 2351) has occurred while \output is active []
-
- [19]
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [20]
-<Fig/scale_wavelet.png, id=163, 792.561pt x 335.8146pt>
-File: Fig/scale_wavelet.png Graphic file (type png)
-
-<use Fig/scale_wavelet.png>
-Package pdftex.def Info: Fig/scale_wavelet.png used on input line 31.
-(pdftex.def)             Requested size: 396.27953pt x 167.90689pt.
-
-<Fig/QRS_D5D6.pdf, id=164, 501.16133pt x 342.37811pt>
-File: Fig/QRS_D5D6.pdf Graphic file (type pdf)
- <use Fig/QRS_D5D6.pdf>
-Package pdftex.def Info: Fig/QRS_D5D6.pdf used on input line 41.
-(pdftex.def)             Requested size: 350.81053pt x 239.66304pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21 <./Fig/scale_wavelet.png>] <Fig/window.pdf, id=169, 801.99625pt x 492.8412
-5pt>
-File: Fig/window.pdf Graphic file (type pdf)
-
-<use Fig/window.pdf>
-Package pdftex.def Info: Fig/window.pdf used on input line 52.
-(pdftex.def)             Requested size: 400.99713pt x 246.42001pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22 <./Fig/QRS_D5D6.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23 <./Fig/window.pdf>] <Fig/segment.png, id=200, 470.42416pt x 252.4632pt>
-File: Fig/segment.png Graphic file (type png)
-
-<use Fig/segment.png>
-Package pdftex.def Info: Fig/segment.png used on input line 71.
-(pdftex.def)             Requested size: 376.33984pt x 201.97083pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24]
-[25 <./Fig/segment.png>]
-
-LaTeX Warning: Citation `XXX' on page 26 undefined on input line 110.
 
 
-LaTeX Warning: Citation `XXX' on page 26 undefined on input line 110.
+{C:/Users/ar2843/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no — in font cmr12!
+LaTeX Warning: Reference `fig:flow' on page 2 undefined on input line 24.
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
-[]|\OT1/cmr/m/n/12 Temporal
- []
+[2]
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--124
-[]|\OT1/cmr/m/n/12 QRS du-ra-tion,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--124
-\OT1/cmr/m/n/12 QT du-ra-tion,
- []
-
-
-Overfull \hbox (2.28053pt too wide) in paragraph at lines 126--126
-[]|\OT1/cmr/m/n/12 Morphological
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 126--126
-[]|\OT1/cmr/m/n/12 max pos-i-tive
- []
-
-
-Underfull \hbox (badness 1924) in paragraph at lines 126--126
-\OT1/cmr/m/n/12 peak to sec-ond
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 126--130
-[]|\OT1/cmr/m/n/12 signal av-er-age
- []
-
-
-Underfull \hbox (badness 1622) in paragraph at lines 126--130
-\OT1/cmr/m/n/12 i-tive peak, max
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 126--130
-\OT1/cmr/m/n/12 neg-a-tive peak,
- []
-
-
-Underfull \hbox (badness 4981) in paragraph at lines 126--130
-\OT1/cmr/m/n/12 peak to en-ergy
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--131
-[]|\OT1/cmr/m/n/12 Frequency
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--131
-\OT1/cmr/m/n/12 Do-main
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--131
-[]|\OT1/cmr/m/n/12 signal power
- []
-
-
-Underfull \hbox (badness 4096) in paragraph at lines 131--131
-\OT1/cmr/m/n/12 level at 7.5Hz,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--131
-\OT1/cmr/m/n/12 10Hz, 12.5Hz,
- []
-
-
-LaTeX Warning: Citation `Some references for feature selection' on page 26 unde
-fined on input line 137.
-
-
-LaTeX Warning: Citation `Some references for PCA as a dimension reduction metho
-d' on page 26 undefined on input line 137.
+LaTeX Warning: Citation `aronszajn1950theory' on page 3 undefined on input line
+ 36.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26]
+ [3]
 
-LaTeX Warning: Citation `REF' on page 27 undefined on input line 148.
+LaTeX Warning: Citation `chapelle1999support' on page 4 undefined on input line
+ 82.
 
 
-LaTeX Warning: Citation `REF' on page 27 undefined on input line 148.
+LaTeX Warning: Citation `lanckriet2002robust' on page 4 undefined on input line
+ 82.
 
-[27] <Fig/flow2.png, id=215, 797.8608pt x 728.9634pt>
-File: Fig/flow2.png Graphic file (type png)
- <use Fig/flow2.png>
-Package pdftex.def Info: Fig/flow2.png used on input line 152.
-(pdftex.def)             Requested size: 398.92943pt x 364.4808pt.
-
-[28 <./Fig/flow2.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
-<Fig/topology.jpg, id=228, 454.69875pt x 398.48875pt>
-File: Fig/topology.jpg Graphic file (type jpg)
- <use Fig/topology.jpg>
-Package pdftex.def Info: Fig/topology.jpg used on input line 192.
-(pdftex.def)             Requested size: 318.28694pt x 278.94022pt.
-
-[30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31 <./Fig/topology.jpg>] <Fig/topo1.png, id=235, 918.3108pt x 384.4764pt>
-File: Fig/topo1.png Graphic file (type png)
-
-<use Fig/topo1.png>
-Package pdftex.def Info: Fig/topo1.png used on input line 228.
-(pdftex.def)             Requested size: 459.15428pt x 192.23772pt.
-) [32] [33 <./Fig/topo1.png>]
-\openout2 = `body/3-KernelModel.aux'.
-
- (body/3-KernelModel.tex
-Chapter 3.
-[34
-
-
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39]
-<Fig/repo_members.jpg, id=264, 562.1pt x 421.575pt>
-File: Fig/repo_members.jpg Graphic file (type jpg)
- <use Fig/repo_members.jpg>
-Package pdftex.def Info: Fig/repo_members.jpg used on input line 118.
-(pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
-
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [40]
-<Fig/pareto_compare.pdf, id=268, 561.09625pt x 361.35pt>
-File: Fig/pareto_compare.pdf Graphic file (type pdf)
-
-<use Fig/pareto_compare.pdf>
-Package pdftex.def Info: Fig/pareto_compare.pdf used on input line 132.
-(pdftex.def)             Requested size: 336.66034pt x 216.81168pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41 <./Fig/repo_members.jpg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42 <./Fig/pareto_compare.pdf>] [43]
-Underfull \hbox (badness 3428) in paragraph at lines 204--204
-[]|\OT1/cmr/m/n/12 Number of next
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
-[]|\OT1/cmr/m/n/12 Probability of
- []
-
-
-Underfull \hbox (badness 2269) in paragraph at lines 204--204
-\OT1/cmr/m/n/12 next ab-nor-mal-ity
- []
-
-
-Overfull \hbox (9.53046pt too wide) in paragraph at lines 206--206
-[]|\OT1/cmr/m/n/12 secondary
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--206
-\OT1/cmr/m/n/12 ab-nor-
- []
-
-
-Overfull \hbox (10.64024pt too wide) in paragraph at lines 206--206
-[]|\OT1/cmr/m/n/12 Total| 
- []
-
-
-Overfull \hbox (10.64024pt too wide) in paragraph at lines 206--207
-[]|\OT1/cmr/m/n/12 Total| 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [44])
-[45]
-\openout2 = `body/4-SphereModel.aux'.
-
- (body/4-SphereModel.tex
-Chapter 4.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [46
-
-
-
-]
-<Fig/topo2.png, id=311, 895.1844pt x 378.6948pt>
-File: Fig/topo2.png Graphic file (type png)
- <use Fig/topo2.png>
-Package pdftex.def Info: Fig/topo2.png used on input line 13.
-(pdftex.def)             Requested size: 375.97488pt x 159.05072pt.
-
-Underfull \vbox (badness 1005) has occurred while \output is active []
-
- [47 <./Fig/topo2.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48]
-[49]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50]
-<Fig/simple_spline1.pdf, id=327, 492.22995pt x 301.68912pt>
-File: Fig/simple_spline1.pdf Graphic file (type pdf)
-
-<use Fig/simple_spline1.pdf>
-Package pdftex.def Info: Fig/simple_spline1.pdf used on input line 132.
-(pdftex.def)             Requested size: 344.55861pt x 211.18092pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [51]
-Underfull \vbox (badness 2050) has occurred while \output is active []
-
- [52 <./Fig/simple_spline1.pdf>]
-<Fig/optimized_single_f.pdf, id=374, 555.74324pt x 341.38539pt>
-File: Fig/optimized_single_f.pdf Graphic file (type pdf)
-
-<use Fig/optimized_single_f.pdf>
-Package pdftex.def Info: Fig/optimized_single_f.pdf used on input line 175.
-(pdftex.def)             Requested size: 389.01761pt x 238.96814pt.
- [53]
-<Fig/optimized_mapping_f.pdf, id=379, 589.48534pt x 343.36983pt>
-File: Fig/optimized_mapping_f.pdf Graphic file (type pdf)
-
-<use Fig/optimized_mapping_f.pdf>
-Package pdftex.def Info: Fig/optimized_mapping_f.pdf used on input line 184.
-(pdftex.def)             Requested size: 412.63693pt x 240.35724pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [54 <./Fig/optimized_single_f.pdf>] [55 <./Fig/optimized_mapping_f.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [56]
-Underfull \vbox (badness 1308) has occurred while \output is active []
-
- [57])
-Underfull \vbox (badness 6141) has occurred while \output is active []
-
- [58]
-[59]
-\openout2 = `conclusion/6-Discussion.aux'.
-
- (conclusion/6-Discussion.tex
-Chapter 5.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [60
-
-
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [61]
-[62]) [63] (main_RZ.bbl
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ” in font cmr12!
- [64
-
-
-] [65]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [66] [67] [68] [69]) [70] (main_RZ.aux
-(front/cover.aux) (front/abstract.aux) (Introduction/1-intro.aux)
-(body/2-Framework-RZfinished.aux) (body/3-KernelModel.aux)
-(body/4-SphereModel.aux) (conclusion/6-Discussion.aux))
+
+LaTeX Warning: Citation `jebara2004multi' on page 4 undefined on input line 82.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+Underfull \vbox (badness 6001) has occurred while \output is active []
+
+ [6]
+
+LaTeX Warning: Reference `eq:personal_discrim' on page 7 undefined on input lin
+e 142.
+
+
+LaTeX Warning: Reference `eq:cosine' on page 7 undefined on input line 142.
+
+
+LaTeX Warning: Reference `eq:personal_discrim' on page 7 undefined on input lin
+e 150.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+[8] <Fig/repo_members.jpg, id=44, 562.1pt x 421.575pt>
+File: Fig/repo_members.jpg Graphic file (type jpg)
+
+<use Fig/repo_members.jpg>
+Package pdftex.def Info: Fig/repo_members.jpg used on input line 174.
+(pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
+
+Underfull \vbox (badness 3826) has occurred while \output is active []
+
+ [9]
+<Fig/pareto_compare.pdf, id=48, 561.09625pt x 361.35pt>
+File: Fig/pareto_compare.pdf Graphic file (type pdf)
+
+<use Fig/pareto_compare.pdf>
+Package pdftex.def Info: Fig/pareto_compare.pdf used on input line 188.
+(pdftex.def)             Requested size: 336.66034pt x 216.81168pt.
+ [10 <./Fig/repo_members.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./Fig/pareto_compare.pdf>]
+
+LaTeX Warning: Reference `eq:personal_discrim' on page 12 undefined on input li
+ne 245.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+Underfull \hbox (badness 8132) in paragraph at lines 265--265
+[]|\OT1/cmr/m/n/12 Count num-
+ []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 265--265
+\OT1/cmr/m/n/12 quent ab-nor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+[]|\OT1/cmr/m/n/12 Probability
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+\OT1/cmr/m/n/12 ab-nor-mal-ity
+ []
+
+
+Overfull \hbox (3.59024pt too wide) in paragraph at lines 267--267
+[]|\OT1/cmr/m/n/12 Total| 
+ []
+
+
+Overfull \hbox (3.59024pt too wide) in paragraph at lines 267--268
+[]|\OT1/cmr/m/n/12 Total| 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13])
+[14] (main_RZ.bbl
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ” in font cmr12!
+ [15
+
+
+] [16]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [17] [18] [19] [20]) [21] (main_RZ.aux
+(body/3-KernelModel-RZ.aux))
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
  )
 (\end occurred inside a group at level 1)
@@ -1217,31 +841,30 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15993 strings out of 493333
- 308790 string characters out of 3139192
- 362427 words of memory out of 3000000
- 19098 multiletter control sequences out of 15000+200000
- 15738 words of font info for 59 fonts, out of 3000000 for 9000
+ 15821 strings out of 493333
+ 305108 string characters out of 3139192
+ 355195 words of memory out of 3000000
+ 18994 multiletter control sequences out of 15000+200000
+ 16456 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,23n,54p,2147b,2727s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,15n,54p,974b,2714s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main_RZ.pdf (78 pages, 1505433 bytes).
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main_RZ.pdf (21 pages, 303909 bytes).
 PDF statistics:
- 567 PDF objects out of 1000 (max. 8388607)
+ 158 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -177,7 +177,7 @@ Each target point is associated with a basic function.
 The function $p$ is composed of two constitutive functions: $h(x)$ and $g(x)$, \textcolor{black}{respectively defined in two regions: i) from the target point to the upper boundary point, ii) from the lower boundary point to the next target point. }% [RZ: show h(x) and g(x) in Fig. 1.3.]. }
 Before defining the two functions $h(x)$ and $g(x)$, we need to define the boundaries between two consecutive target points  ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$), in which these functions are defined.% (i.g. $\epsilon_XXXX$). 
 We simply choose the midpoint as the boundary points. For instance, we have $\epsilon=(\delta_1+\delta_2)/2$ %[RZ:Write the correct equation] 
-as stated in Eq. \ref{eq:midpoint}
+as stated in Eq. \ref{eq:midpoint}.
 The lower and upper boundary points are noted respectively as ($\gamma$,$\gamma^{\perp}$) and ($\epsilon$,$\epsilon^{\perp}$). To ensure the continuity of the mapping function $f$, the boundaries and target points should satisfy:
  
 %The boundaries that each function activates are decided by target points ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$) along with the mid-points between the target points. The lower boundary mid points are noted as ($\gamma$,$\gamma^{\perp}$). The upper boundary mid points are noted as ($\epsilon$,$\epsilon^{\perp}$). To ensure the continuity of the mapping function $f$, the boundaries and target points satisfy:
@@ -191,20 +191,23 @@ The lower and upper boundary points are noted respectively as ($\gamma$,$\gamma^
 \end{aligned}
 \end{align}
 
-The two piece-wise \textcolor{green}{inverse of logit} functions $h(x)$ and $g(x)$ are defined as follows:%\textcolor{red}{use the correct name: the inverse of logit/sigmoid function} as follows:
+The two piece-wise \textcolor{black}{inverse of logit} functions $h(x;\alpha,\epsilon,\epsilon^{\perp},\delta,\delta^{\perp})$ and $g(x;\alpha,\gamma,\gamma^{\perp},\delta,\delta^{\perp})$ are defined as follows:%\textcolor{red}{use the correct name: the inverse of logit/sigmoid function} as follows:
 
 \begin{align}
 K_h &= \frac{\epsilon^{\perp}-\delta^{\perp}}{e^{\alpha(\epsilon-\delta,0)^{+}}-1}\\ \nonumber
-h(x) &= K_h[e^{\alpha(x-\delta,0)^{+}}-1] + \delta^{\perp}
+h(x;\alpha,\epsilon,\epsilon^{\perp},\delta,\delta^{\perp}) &= K_h[e^{\alpha(x-\delta,0)^{+}}-1] + \delta^{\perp}
 \end{align}
 \begin{align}
 K_g &= \frac{\gamma^{\perp}-\delta^{\perp}}{e^{\alpha(-\gamma+\delta,0)^{+}}-1}\\ \nonumber
-g(x) &= K_g[e^{\alpha(\delta-x,0)^{+}}-1] + \delta^{\perp}
+g(x;\alpha,\gamma,\gamma^{\perp},\delta,\delta^{\perp}) &= K_g[e^{\alpha(\delta-x,0)^{+}}-1] + \delta^{\perp}
 \end{align}
 
 %\fbox{RZ: revised up to here}.
 
-To demonstrate this process, we first apply $p$ on two target points ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$). This will result in a smooth curve as shown in Fig.\ref{fig:optimized_p}
+%\textcolor{red}{RZ: 1-include parameters in the function definitions: $h(x;\alpha,\epsilon, ....)$. 2-check functions, there are some typos like using different parameters in the denominator and nominator.}
+
+In order to investigate the satisfaction of the above-mentioned conditions, we first verify that these functions pass through the target points. \textcolor{black}{More specifically, $g()$ should pass through points $(\gamma_{i},\gamma^{\perp}_{i}),~(\delta_{i}$,$\delta^{\perp}_{i})$ 
+and $h()$ pass through $(\epsilon_{i},\epsilon^{\perp}_{i})$,  ($\delta_{i}$,$\delta^{\perp}_{i}$)} % and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$).
 
 \begin{figure}[t]
 \centering
@@ -213,7 +216,13 @@ To demonstrate this process, we first apply $p$ on two target points ($\delta_{i
 \label{fig:optimized_p}
 \end{figure}
 
-Therefore, if we apply the piecewise interpolate function $p$ at all four target points: ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$), ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$) and two boundary points of angular dimension, the final result is shown in Fig.\ref{fig:optimized_map}
+\textcolor{black}{Once, we confirm that that the basic function $h(x)$ has the desired properties, we fit this function with appropriate parameters to all regions. The final function is a smooth and continuous function, which passes through all target points ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$), ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$) as well as the two extreme boundary points as shown in Fig.\ref{fig:optimized_map}.}
+
+%To demonstrate this process, we first apply $p$ on two target points ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$). This will result in a smooth curve as shown in Fig.\ref{fig:optimized_p}
+
+
+
+%Therefore, if we apply the piecewise interpolate function $p$ at all four target points: ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$), ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$) and two boundary points of angular dimension, the final result is shown in Fig.\ref{fig:optimized_map}
 
 \begin{figure}[t]
 \centering
@@ -222,13 +231,13 @@ Therefore, if we apply the piecewise interpolate function $p$ at all four target
 \label{fig:optimized_map}
 \end{figure}
 
-In the training process, abnormal data from DS1 and personalized normal cluster are used to determine the mapping function. In the predicting process, the hyper-spherical coordinate of a new ECG sample is calculated and the mapping function is applied on its hyper-spherical coordinate. After this step, we calculate the Cartesian coordinate of the transformed data. This final result in Cartesian coordinate is then fed into Eq. \ref{eq:personal_discrim} to generate the corresponding type of yellow alarm.
+In the training process, \textcolor{black}{data samples with abnormal labels belonging to all patients in DS1 and the personalized normal cluster for one patient are used to determine the mapping function for one corresponding patient. In the predicting process, the hyper-the the feature vector of new ECG sample in the spherical coordinate system is calculated and the mapping function is applied on its hyper-spherical coordinates to yield the transformed feature vector. After this step, we calculate the transformed data samples in the Cartesian coordinate system, which further fed into the personalized classification stage defined by Eq. \ref{eq:personal_discrim} to generate the corresponding type of yellow alarm.} %\textcolor{red}{RZ: later make sure to use a consistent notation for equations Eq. or Equi. with or without parentheses.}%abnormal data from DS1 and personalized normal cluster are used to determine the mapping function. In the predicting process, the hyper-spherical coordinate of a new ECG sample is calculated and the mapping function is applied on its hyper-spherical coordinate. After this step, we calculate the Cartesian coordinate of the transformed data. This final result in Cartesian coordinate is then fed into Eq. \ref{eq:personal_discrim} to generate the corresponding type of yellow alarm.
 
 
 
 \section{Experimental Results}\label{sec:result_spatial}
 
-In this section, the performance of proposed method is evaluated according to two aspects. We will first analyze the classification performance of the system and demonstrate the comparison with other representative ECG classifiers. Furthermore, the classification results are partitioned into two sets:  red alarms generated by global classifier and final results by combining yellow and red alarms. In this way, the impacts of personalized classifier on final results can be revealed. Finally, the prediction performance which is representative in the proposed system is evaluated.
+In this section, the performance of the proposed method is evaluated in terms of two aspects. We first analyze the classification performance of the system and then present the comparative results with respect to other representative ECG classifiers. Furthermore, the classification results are partitioned into two sets:  red alarms generated by the global classifier and the final labels by combining the yellow and red alarms. In this way, the impact of personalized classifier on the final labels can be revealed. Finally, the prediction power of the proposed method in terms of providing precaution hints for upcoming red alarms is evaluated.
 
 \subsection{Classification Performance}
 

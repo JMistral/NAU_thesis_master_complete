@@ -11,8 +11,8 @@ While the aforementioned method in Chapter 3 yields the desired capacity of pred
 \begin{figure}[t]
 \centering
 \includegraphics[scale=.42]{Fig/topo2.png}
-\caption{Left: illustration of the clustering topology in the \textcolor{blue}{original} feature space; % transformed with a simple mapping function;  
-Right: illustration of the clustering topology in the feature space transformed with an optimized mapping function. \textcolor{red}{Razi: it is not clear what you mean here by simple, is it unoptimized, why not just saying the original space before transmission !}}
+\caption{Left: illustration of the clustering topology in the \textcolor{green}{transformed feature space without reducing the within-cluster variance}; % transformed with a simple mapping function;  
+Right: illustration of the clustering topology in the \textcolor{green}{feature space transformed with the optimized mapping function, which reduces the within-cluster variance.}}%\textcolor{red}{Razi: it is not clear what you mean here by simple, is it unoptimized, why not just saying the original space before transmission !}}
 \label{fig:topo2}
 \end{figure}
 
@@ -20,7 +20,7 @@ Right: illustration of the clustering topology in the feature space transformed 
 
 In the previous chapter, the spatial transformation module is implemented with a polynomial kernel function and a heuristic optimization method. The system performance has been proven to be promising. In addition to the general drawbacks of heuristic method, it is not straightforward to select an appropriate base kernel as the core of spatial mapping function due to the high variety of kernel functions. % and the limitation of dimensionality.
 
-In order to address this issue, a novel deterministic spatial mapping function is proposed in this chapter based on \textit{hyper-spherical} coordinates [REF: XXX (it is ok to repeat references, ans is ok to have web pages as REFs)]. Since hyper-spherical coordinates consist of angles and radii, these parameters in both original feature space and the desired target space are used to determine the mapping function.
+In order to address this issue, a novel deterministic spatial mapping function is proposed in this chapter based on \textit{hyper-spherical} coordinates\cite{nsphere}. Since hyper-spherical coordinates consist of angles and radius, these parameters in both original feature space and the desired target space are used to determine the mapping function.
 
 
 The hyper-spherical coordinate system (n-dimensional spherical coordinate system) and its mapping to the \textit{Cartesian} coordinate system are first introduced in \cite{nsphere}. If $\mathbf{x}$ is a sample vector in 
@@ -70,7 +70,7 @@ where $0\leq \theta_j\leq\pi,~j=1,\dots ,n-2$; $0\leq \theta_{n-1}\leq 2 \pi$; $
  
 \section{Orthogonalization}
 
-To simplify the algorithm, in this chapter, the topology of clusters in the feature space is approximated by their centroid locations, \textcolor{blue}{denoted by $\mathbf{c}_N^k, \mathbf{c}_{\mathcal{V}}, \mathbf{c}_{\mathcal{S}}, \mathbf{c}_{\mathcal{F}}$, respectively for the normal cluster and the three abnormality clusters of type $V$, $S$, and $F$.} Furthermore, as we assume that the samples with fuzzy states deviate from the normal cluster to a specific abnormality cluster, the spatial topology stays unchanged if the normal centroid is simply translated to the origin of the Cartesian coordinate system. The clustering topology in the original feature space can be equivalently represented by the following matrix with three row vectors:
+To simplify the algorithm, in this chapter, the topology of clusters in the feature space is approximated by their centroid locations, \textcolor{black}{denoted by $\mathbf{c}_N^k, \mathbf{c}_{\mathcal{V}}, \mathbf{c}_{\mathcal{S}}, \mathbf{c}_{\mathcal{F}}$, respectively for the normal cluster and the three abnormality clusters of type $V$, $S$, and $F$.} Furthermore, as we assume that the samples with fuzzy states deviate from the normal cluster to a specific abnormality cluster, the spatial topology stays unchanged if the normal centroid is simply translated to the origin of the Cartesian coordinate system. The clustering topology in the original feature space can be equivalently represented by the following matrix with three row vectors:
 
 \begin{align}
 \mathcal{C} = 
@@ -88,9 +88,9 @@ To simplify the algorithm, in this chapter, the topology of clusters in the feat
 %\mathbf{v}_{\mathcal{FN}}
 \end{bmatrix}
 \end{align}
-\textcolor{red}{RZ: I used lower case $v$ for vectors, which is more consistent with other definitions. Capital letter are more commonly used for matrices.}
+%\textcolor{red}{RZ: I used lower case $v$ for vectors, which is more consistent with other definitions. Capital letter are more commonly used for matrices.}
 
-As shown in Fig. \ref{fig:topo2}, in order to improve the performance of the personalized classifier and to avoid ambiguity in quantifying the deviations to different abnormality classes, a topology with a maximum separation between the three vectors of $\mathcal{C}$ is preferred. To achieve a lower computational complexity in higher order dimensions, the algorithm aims at transforming vectors in $\mathcal{C}$ to orthogonal vectors using a deterministic function. This approach not only simplifies the transformation derivations, it also ensures a full symmetry among abnormality clusters. As such, the problem reduces to finding a transformation that maps a set of vectors to a set of orthogonal vectors in the same space. Therefore, we can use the popular method of \textit{Gram-Schmidt} orthogonalization method \textcolor{blue}{RZ: introduced or explained, choose the right term} in \cite{Gram-schmidth1, Gram-schmidth2}. Hence, in the first step of this stage, the three row vectors of $\mathcal{C}$ representing the centroids of the three abnormality clusters are fed to the orthogonalization process as follows:
+As shown in Fig. \ref{fig:topo2}, in order to improve the performance of the personalized classifier and to avoid ambiguity in quantifying the deviations to different abnormality classes, a topology with a maximum separation between the three vectors of $\mathcal{C}$ is preferred. To achieve a lower computational complexity in higher order dimensions, the algorithm aims at transforming vectors in $\mathcal{C}$ to orthogonal vectors using a deterministic function. This approach not only simplifies the transformation derivations, it also ensures a full symmetry among abnormality clusters. As such, the problem reduces to finding a transformation that maps a set of vectors to a set of orthogonal vectors in the same space. Therefore, we can use the popular method of \textit{Gram-Schmidt} orthogonalization method \textcolor{blue}{explained} in \cite{Gram-schmidth1, Gram-schmidth2}. Hence, in the first step of this stage, the three row vectors of $\mathcal{C}$ representing the centroids of the three abnormality clusters are fed to the orthogonalization process as follows:
 \begin{align}
 \mathcal{C}^{\perp}= \text{Gram-Schmidt}(\mathcal{C})
 =
@@ -116,7 +116,7 @@ where $\mathcal{C}^{\perp}$ is the matrix of orthogonalized vectors in the Carte
 
 
 \section{Spatial Mapping Function}
-After obtaining the original hyper-spherical coordinates of $[\mathbf{v}_{\mathcal{VN}},~\mathbf{v}_{\mathcal{SN}},~\mathbf{v}_{\mathcal{FN}}]^T$ and the orthogonalized hyper-spherical coordinates $[\mathbf{v}_{\mathcal{VN}}^{\perp},~\mathbf{v}_{\mathcal{SN}}^{\perp},~\mathbf{v}_{\mathcal{FN}}^{\perp}]^T$, the goal is to design a mapping function $\mathbf{F}: \mathbf{R}^n \to \mathbf{R}^n$ from the original coordinates to the orthogonal ones which exhibit the desired clustering topology, \textcolor{blue}{such that Equi. \ref{eq:constraints} holds.}
+After obtaining the original hyper-spherical coordinates of $[\mathbf{v}_{\mathcal{VN}},~\mathbf{v}_{\mathcal{SN}},~\mathbf{v}_{\mathcal{FN}}]^T$ and the orthogonalized hyper-spherical coordinates $[\mathbf{v}_{\mathcal{VN}}^{\perp},~\mathbf{v}_{\mathcal{SN}}^{\perp},~\mathbf{v}_{\mathcal{FN}}^{\perp}]^T$, the goal is to design a mapping function $\mathbf{F}: \mathbf{R}^n \to \mathbf{R}^n$ from the original coordinates to the orthogonal ones which exhibit the desired clustering topology, \textcolor{blue}{such that Eq. \ref{eq:constraints} holds.}
 
 In the Gram-Schmidt algorithm, the very first vector serves as a reference vector and remains unchanged in the orthogonalization process, namely $\mathbf{v}_{\mathcal{VN}} = \mathbf{v}_{\mathcal{VN}}^{\perp}$. Therefore the mapping function $\mathbf{F}$ shall satisfy the following equations:
 
@@ -132,7 +132,7 @@ In the Gram-Schmidt algorithm, the very first vector serves as a reference vecto
 Furthermore, since the orthogonality of vectors is independent to their radii $r$, we only need to design $\mathbf{F}$ for the $n-1$ angular dimensions ($\theta_1,\dots,\theta_{n-1}$), and the coordinate $r$ remains unchanged after the mapping. Consequently, the function $\mathbf{F}$ can be decomposed into $n-1$ functions: $f_i: \mathbf{R}\to \mathbf{R},~i=1\dots n-1$ with constraints in Eq.\ref{eq:constraints} as well as two additional extreme points defining the range of input and output values. %  \textcolor{red}{RZ: this part is not clear: and boundary constraints of angular dimensions, specified in Equi XXX: add equations for clarity.} 
 %In order to standardize $f_i$ for all angular dimensions, $\theta_i, ~i=1\dots n-2$ are proportionally scaled to the range between $(0,2\pi)$.
 We use the notation $\mathbf{v}_{\mathcal{SN}} - \mathbf{v}_{\mathcal{VN}} = \Delta_{\mathcal{SV}}$ and denote the the $i^{th}$ angular dimension of $\Delta_{\mathcal{SV}}$ as $\delta_{i_{{\mathcal{SV}}}}$. We use similar notations for the other dimensions, (e.g. $\mathbf{v}_{\mathcal{FN}} - \mathbf{v}_{\mathcal{VN}}$). %Hence for each angular dimension $i, i = 1,\dots, n-2$, $\delta_{i_{{\mathcal{SV}}}}$ and $\delta_{i_{{\mathcal{FV}}}}$ are both within the range of $(-\pi,\pi)$
-Hence for each angular dimension $i$, $f_i$ is determined by ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$), \textcolor{blue}{along with the two \textit{extreme boundary points} defining the domain and range of the functions.}
+Hence for each angular dimension $i$, $f_i$ is determined by ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$), \textcolor{black}{along with the two \textit{extreme boundary points} defining the domain and range of the functions.}
 
 
 
@@ -142,44 +142,48 @@ Hence for each angular dimension $i$, $f_i$ is determined by ($\delta_{i_{{\math
 In order to maintain the simplicity and the linearity of the mapping function, the functions $f_i$ should be continuous and monotonic. For this purpose, the %\textcolor{red}{not clear:periodicity} 
 valid range of angular dimensions (after considering the periodicity of these functions) is used to determine the boundary constrains; therefore the problem is transformed into a curve fitting problem. 
 
-\textcolor{red}{RZ: the text was not clear, it now reads much better. }
-\textcolor{blue}{For example, if linking ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$) results in a monotonically increasing function, noting the fact that the range of $n-2$ first angular dimensions is the interval $[0, \pi]$, then the two extreme boundary points would be $(0,0)$ and $(\pi,\pi)$, as depicted in Fig. \ref{fig:simple_spline}. Conversely, for a monotonically increasing function, the extreme boundary points would be $(\pi,0)$ and $(0i,\pi)$. These rules apply for the functions defined for the $n-2$ first angular dimensions. 
-Similar rules apply to the last angular dimension with only one consideration that the period is $2\pi$ instead of $\pi$. Since  ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$) represent the orthogonalization process, they are decisive for this process. So we call these two points as well as the two extreme boundary points as \textit{target points} of the angular dimensions in the following sections.}
+%\textcolor{red}{RZ: the text was not clear, it now reads much better. }
+\textcolor{black}{For example, if linking ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$) results in a monotonically increasing function, noting the fact that the range of $n-2$ first angular dimensions is the interval $[0, \pi]$, then the two extreme boundary points would be $(0,0)$ and $(\pi,\pi)$, as depicted in Fig. \ref{fig:simple_spline}.} Conversely, for a monotonically \textcolor{green}{decreasing} function, the extreme boundary points would be $(\pi,0)$ and $(0,\pi)$. These rules apply for the functions defined for the $n-2$ first angular dimensions. 
+Similar rules apply to the last angular dimension with only one consideration that the period is $2\pi$ instead of $\pi$. Since  ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$) represent the orthogonalization process, they are decisive for this process \textcolor{green}{and will be called as \textit{orthogonalization points}}. So we call these two points as well as the two extreme boundary points as \textit{target points} of the angular dimensions in the following sections. % boundary the two orthogonalization points are all called target points
 
-The simplest candidate function for $f_i$, which connects the two boundary points and the two target points in the 2-D plane would be a linear spline as shown in Fig.\ref{fig:simple_spline}.
+The simplest candidate function for $f_i$, which connects \textcolor{green}{all the four target points, including orthogonalization points and extreme boundary points,} in the 2-D plane would be a linear spline as shown in Fig.\ref{fig:simple_spline}.
 
 %\textcolor{red}{RZ: I think, the concept of point and value and dimension mixed up here. A point in an Euclidean distance is defined by a vector (its values in different directions). Therefore, we should design a function that passes through two points (A,B) and (C,D). where A and B define the domain of function and B-D define the range of function in our case. We can discuss later to polish the text, or send me a clarification tonight. Anyway, we should complete the thesis by Monday and send the first version to the reviewers.}
 
 \begin{figure}[t]
 \centering
-\includegraphics[scale=0.7]{Fig/simple_spline1.pdf}
-\caption{\textcolor{blue}{The simple mapping function for one angular dimension which maps the target points in the original space to the desired target points. Target points include the two extreme boundary points $(0,0)$, and $\pi,\pi)$ as well as $(XXX,XXX)$ and $(XXX,XXX)$ to yield the desired mapping.} \textcolor{red}{add (0,0) and the label target and extreme boundary points to the figure.}}
+\includegraphics[scale=0.7]{Fig/simple_spline2.pdf}
+\caption{\textcolor{black}{The simple mapping function for one angular dimension which maps the target points in the original space to the desired target points. Target points include the two extreme boundary points $(0,0)$, and $(\pi,\pi)$ as well as ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$) to yield the desired mapping.} }%\textcolor{red}{add (0,0) and the label target and extreme boundary points to the figure.}}
 %figure;plot([0,close,1.12,pi], [0,closed,1.9,pi],'-ko')
 \label{fig:simple_spline}
 \end{figure}
 
 \section{Optimized Mapping Function}
 
-The mapping function in Fig.\ref{fig:simple_spline} exhibits the two desired properties of monotonicity and continuity for an ideal mapping function $f_i$. However, this simple peicewise linear mapping function suffers from some drawbacks. Firstlt, the function is not differentiable at the target points ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$), which can lead to severe cluster deformation. Secondly, the mapping function is applied to the angular dimensions, the discontinuity of the derivative of  %linearity of each spline in [RZ: I don't think, linearity causes this distortion.
+The mapping function in Fig.\ref{fig:simple_spline} exhibits the two desired properties of monotonicity and continuity for an ideal mapping function $f_i$. However, this simple piecewise linear mapping function suffers from some drawbacks. Firstly, the function is not differentiable at the \textcolor{green}{orthogonalization} points ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$), which can lead to severe cluster deformation. Secondly, the mapping function is applied to the angular dimensions, the discontinuity of the derivative of  %linearity of each spline in [RZ: I don't think, linearity causes this distortion.
 the function can cause the convex-clusters to be mapped into non-convex clusters in the Cartesian coordinate system. In order to avoid deformations and to preserve maximal similarity with the original clustering geometry, it is desired to use a more linear functions with continuous derivatives. Also, in order to provide maximal separation among clusters and to concentrate clusters into disjoint non-overlapping clusters, it is beneficial to map the regions between two target points into a region with equal or even smaller range in the Cartesian coordinate system. In other words, it is desired to keep the samples close to the centroids in the mapped space as much as possible. This property is achieved by using nonlinear functions. However, there is a trade-off between the level of concentration and the linearity, which needs to be carefully addressed.  In order to avoid deformation while providing maximal separation, an optimized mapping function is proposed in this section.
 
 In order to accommodate satisfy the above-mentioned requirements, it is desired to find a function, which satisfies the following mathematical conditions:
 
 \begin{itemize}
 \item the function is differentiable everywhere (continuous first derivative);
-\item the derivative of the function is small at the target points, which correspond to the centroids of clusters in the original and transformed space, i.e. $\delta_{i_{{\mathcal{SV}}}}$ and $\delta_{i_{{\mathcal{FV}}}}$ in Fig. XXX;
-\item the derivative of the function is large at the boundaries of two regions (\textcolor{blue}{point ($\epsilon_{i_{sv}},XXX))$ in Fig. XX.1.3};
+\item the derivative of the function is small at the target points, which correspond to the centroids of clusters in the original and transformed space, i.e. $\delta_{i_{{\mathcal{SV}}}}$ and $\delta_{i_{{\mathcal{FV}}}}$ in Fig. \ref{fig:optimized_p};
+\item the derivative of the function is large at the boundaries of two regions (\textcolor{black}{point $(\epsilon_{i_{{\mathcal{SV}}}},\epsilon^{\perp}_{i_{{\mathcal{SV}}}})$ in Fig. \ref{fig:optimized_p})};
 \end{itemize}
 
 
-Therefore, we propose to use the basis function $p$, which satisfies the aforementioned conditions. \textcolor{red}{why you call it basis function. Basis function has a different meaning in linear analysis. I suggest you use the term basic function with adjustable parameters.} Each target point is associated with a basic function. 
-The function $p$ is composed of two constitutive functions: $h(x)$ and $g(x)$, \textcolor{blue}{respectively defined in two regions: i) from the target point to the upper boundary point, ii) from the lower boundary point to the next target point. [RZ: show h(x) and g(x) in Fig. 1.3.]. 
-Before defining the two functions $h(x)$ and $g(x)$, we need to define the boundaries between two consecutive target points  ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$), in which these functions are defined (i.g. $\epsilon_XXXX$). We simply choose the midpoint as the boundary points. For instance, we have $\epsilon=(\delta_1+\delta_2)/2$ [RZ:Write the correct equation] as stated in Equi. 1.7.
+Therefore, we propose to use the basic function $p$ with adjustable parameters, which satisfies the aforementioned conditions. %\textcolor{red}{why you call it basis function. Basis function has a different meaning in linear analysis. I suggest you use the term basic function with adjustable parameters.} 
+Each target point is associated with a basic function. 
+The function $p$ is composed of two constitutive functions: $h(x)$ and $g(x)$, \textcolor{black}{respectively defined in two regions: i) from the target point to the upper boundary point, ii) from the lower boundary point to the next target point. }% [RZ: show h(x) and g(x) in Fig. 1.3.]. }
+Before defining the two functions $h(x)$ and $g(x)$, we need to define the boundaries between two consecutive target points  ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$), in which these functions are defined.% (i.g. $\epsilon_XXXX$). 
+We simply choose the midpoint as the boundary points. For instance, we have $\epsilon=(\delta_1+\delta_2)/2$ %[RZ:Write the correct equation] 
+as stated in Eq. \ref{eq:midpoint}
 The lower and upper boundary points are noted respectively as ($\gamma$,$\gamma^{\perp}$) and ($\epsilon$,$\epsilon^{\perp}$). To ensure the continuity of the mapping function $f$, the boundaries and target points should satisfy:
  
 %The boundaries that each function activates are decided by target points ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$) along with the mid-points between the target points. The lower boundary mid points are noted as ($\gamma$,$\gamma^{\perp}$). The upper boundary mid points are noted as ($\epsilon$,$\epsilon^{\perp}$). To ensure the continuity of the mapping function $f$, the boundaries and target points satisfy:
 
 \begin{align}
+\label{eq:midpoint}
 \begin{aligned}
 (\epsilon_{i_{{\mathcal{SV}}}},\epsilon^{\perp}_{i_{{\mathcal{SV}}}}) &=
 (\gamma_{i_{{\mathcal{FV}}}},\gamma^{\perp}_{i_{{\mathcal{FV}}}}) &=
@@ -187,7 +191,7 @@ The lower and upper boundary points are noted respectively as ($\gamma$,$\gamma^
 \end{aligned}
 \end{align}
 
-The two piece-wise functions $h(x)$ and $g(x)$ are defined as \textcolor{red}{use the correct name: the inverse of logit/sigmoid function} as follows:
+The two piece-wise \textcolor{green}{inverse of logit} functions $h(x)$ and $g(x)$ are defined as follows:%\textcolor{red}{use the correct name: the inverse of logit/sigmoid function} as follows:
 
 \begin{align}
 K_h &= \frac{\epsilon^{\perp}-\delta^{\perp}}{e^{\alpha(\epsilon-\delta,0)^{+}}-1}\\ \nonumber
@@ -198,14 +202,14 @@ K_g &= \frac{\gamma^{\perp}-\delta^{\perp}}{e^{\alpha(-\gamma+\delta,0)^{+}}-1}\
 g(x) &= K_g[e^{\alpha(\delta-x,0)^{+}}-1] + \delta^{\perp}
 \end{align}
 
-\fbox{RZ: revised up to here}.
+%\fbox{RZ: revised up to here}.
 
 To demonstrate this process, we first apply $p$ on two target points ($\delta_{i_{{\mathcal{SV}}}}$,$\delta^{\perp}_{i_{{\mathcal{SV}}}}$) and ($\delta_{i_{{\mathcal{FV}}}}$,$\delta^{\perp}_{i_{{\mathcal{FV}}}}$). This will result in a smooth curve as shown in Fig.\ref{fig:optimized_p}
 
 \begin{figure}[t]
 \centering
 \includegraphics[scale=.7]{Fig/optimized_single_f.pdf}
-\caption{Optimized Piece-wise Interpolated Function $p$. \textcolor{red}{I understand this figure, but is also misleading since the target points are at two ends and the boundary is in middle (the opposite is better). To solve this issue you can plot two adjacent regions and use tags and labels to show the target points $\delta$ and edge nodes/boundary nodes $\epsilon$}.}
+\caption{Optimized Piece-wise Interpolated Function $p$.} %\textcolor{red}{I understand this figure, but is also misleading since the target points are at two ends and the boundary is in middle (the opposite is better). To solve this issue you can plot two adjacent regions and use tags and labels to show the target points $\delta$ and edge nodes/boundary nodes $\epsilon$}.}
 \label{fig:optimized_p}
 \end{figure}
 

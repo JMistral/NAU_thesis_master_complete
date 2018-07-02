@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {1.4.4}Patient-Specific ECG Classification}{14}
 \contentsline {section}{\numberline {1.5}Contributions}{15}
 \contentsline {section}{\numberline {1.6}Organization of Thesis}{16}
-\contentsline {chapter}{\numberline {2}Patient-Adaptable ECG Classification Framework}{18}
+\contentsline {chapter}{\numberline {2}Patient-Adaptive ECG Classification Framework}{18}
 \contentsline {section}{\numberline {2.1}Introduction}{18}
 \contentsline {section}{\numberline {2.2}Utilized Dataset}{19}
 \contentsline {section}{\numberline {2.3}ECG Signal Processing}{21}
@@ -30,7 +30,7 @@
 \contentsline {subsection}{\numberline {3.3.2}Multi-objective Particle Swarm Optimization}{40}
 \contentsline {subsubsection}{Implementation Details of MOPSO}{42}
 \contentsline {section}{\numberline {3.4}Experimental Results}{44}
-\contentsline {section}{\numberline {3.5}Summary of contributions}{47}
+\contentsline {section}{\numberline {3.5}Summary of Contributions}{47}
 \contentsline {chapter}{\numberline {4}Controlled Spatial Transformation With Deterministic Mapping Function}{49}
 \contentsline {section}{\numberline {4.1}Introduction}{49}
 \contentsline {section}{\numberline {4.2}Hyper-Spherical Coordinates}{50}
@@ -41,7 +41,7 @@
 \contentsline {subsection}{\numberline {4.6.1}Classification Performance}{60}
 \contentsline {subsection}{\numberline {4.6.2}Prediction Performance}{62}
 \contentsline {section}{\numberline {4.7}Summary of Contributions}{65}
-\contentsline {chapter}{\numberline {5}Conclusions And Future works}{66}
+\contentsline {chapter}{\numberline {5}Conclusions And Future Works}{66}
 \contentsline {section}{\numberline {5.1}Conclusions}{66}
-\contentsline {section}{\numberline {5.2}Future works}{68}
+\contentsline {section}{\numberline {5.2}Future Works}{69}
 \contentsline {chapter}{Bibliography}{70}

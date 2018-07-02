@@ -297,6 +297,13 @@ Y.-W. Chang, C.-J. Hsieh, K.-W. Chang, M.~Ringgaard, and C.-J. Lin, ``Training
   Journal of Machine Learning Research}, vol.~11, no.~Apr, pp.~1471--1490,
   2010.
 
+\bibitem{carr2003smooth}
+J.~C. Carr, R.~K. Beatson, B.~C. McCallum, W.~R. Fright, T.~J. McLennan, and
+  T.~J. Mitchell, ``Smooth surface reconstruction from noisy range data,'' in
+  {\em Proceedings of the 1st international conference on Computer graphics and
+  interactive techniques in Australasia and South East Asia}, pp.~119--ff, ACM,
+  2003.
+
 \bibitem{coello2002mopso}
 C.~A. Coello~Coello, ``Mopso: A proposal for multiple objective particle swarm
   optimization,'' {\em Proc. Congr. Evolutionary Computation (CEC'2002),

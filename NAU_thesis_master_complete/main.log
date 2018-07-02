@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 JUL 2018 12:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 JUL 2018 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1128,7 +1128,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  (./conclusion/6-Discussion.tex
 Chapter 5.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5064) has occurred while \output is active []
 
  [66
 
@@ -1138,7 +1138,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [67]
-[68]) [69] (./main.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68])
+[69] (./main.bbl
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
@@ -1153,20 +1156,19 @@ Missing character: There is no ™ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ˆ in font cmr12!
- [77]) [78]
-(./main.aux (./front/cover.aux) (./front/abstract.aux)
-(./Introduction/1-intro.aux) (./body/2-Framework-Final.aux)
-(./body/3-KernelModel-JCfinishing.aux) (./body/4-SphereModel-JCfinishing.aux)
-(./conclusion/6-Discussion.aux)) )
+ [77]) [78] (./main.aux
+(./front/cover.aux) (./front/abstract.aux) (./Introduction/1-intro.aux)
+(./body/2-Framework-Final.aux) (./body/3-KernelModel-JCfinishing.aux)
+(./body/4-SphereModel-JCfinishing.aux) (./conclusion/6-Discussion.aux)) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16083 strings out of 492995
- 312361 string characters out of 6132704
- 365109 words of memory out of 5000000
- 19204 multiletter control sequences out of 15000+600000
+ 16084 strings out of 492995
+ 312377 string characters out of 6132704
+ 366114 words of memory out of 5000000
+ 19205 multiletter control sequences out of 15000+600000
  16815 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,54p,2143b,2754s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1187,7 +1189,7 @@ sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
 /local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/l
 ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (86 pages, 1497436 bytes).
+Output written on main.pdf (86 pages, 1499184 bytes).
 PDF statistics:
  600 PDF objects out of 1000 (max. 8388607)
  404 compressed objects within 5 object streams

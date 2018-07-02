@@ -89,7 +89,7 @@ An exhaustive search for all possible kernels is a computationally expensive and
 
 Polynomial kernel is usually applied on normalized data for its explicit expression and steady performance. \textcolor{black}{Polynomial kernels with lower degrees are most commonly used, since higher degrees tend to overfit the training data\cite{chang2010training}}.%However, the degree of freedom in defining a polynomial kernel is relatively high, which requires tuning a large number of parameters. \textcolor{red}{In fact this statement is not so relevant here. Note that a polynomial kernel of order $p$ can be defined as $(1+v^Tw)^p=(1+v_1w_1+v_2w_2+...)^p$, which has only one free parameter $p$ and all coefficients are automatically determined. However, we are going to use a polynomial function of order $p$, (i.e. $f(v)=1+\alpha_1 v_1+\alpha_2 v_2+...+ \alpha_i v_1^2 + \alpha_j v_1v_2+... \alpha_k v_N^p$) which obviously required tuning too many free coefficients $\alpha_i$.}
 
-Gaussian kernel function \textcolor{black}{denoted by $k(v,w)=exp(-\frac{||v-w||^2}{\sigma})$ for vectors $v$ and $w$} is a very classic robust radial function, which has shown a string robustness in the case of noisy datasets [REF XXX]. However, it is equivalent to the inner product of samples after projecting into an infinite dimensional space; therefore it is difficult to visualize the projected observations $\Psi(\mathbf{x})$ and interpret the results. %Moreover its performance is greatly affected by parameter selection.
+Gaussian kernel function \textcolor{black}{denoted by $k(v,w)=exp(-\frac{||v-w||^2}{\sigma})$ for vectors $v$ and $w$} is a very classic robust radial function, which has shown a string robustness in the case of noisy datasets\cite{carr2003smooth}. However, it is equivalent to the inner product of samples after projecting into an infinite dimensional space; therefore it is difficult to visualize the projected observations $\Psi(\mathbf{x})$ and interpret the results. %Moreover its performance is greatly affected by parameter selection.
 
 Considering the above-mentioned facts, in this work, the polynomial kernel is selected for the purpose of validating the proposed method and interpreting the effect of an optimized nonlinear kernel method on feature space reshaping. However, the proposed methodology is general and applicable to other nonlinear kernels.
 
@@ -297,7 +297,7 @@ We conclude this section by stating that a new methodology provided in Chapter 4
 \end{table}
 
 
-\section{Summary of contributions} 
+\section{Summary of Contributions} 
 %\textcolor{red}{It is usual to have a summary of contributions at the end of each chapter. Conclusions and future works should be a separate section [bit 2 or 3 pages is sufficient.}
 
 %\textcolor{red}{Part of the text here is the repetition of the text before revision. reword this section and provide a list of contributions and concluding remarks here. The overall conclusions should be provided in a separate section}

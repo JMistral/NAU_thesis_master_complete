@@ -13,45 +13,45 @@ Database file #1: Bibs.bib
 Warning--entry type for "who" isn't style-file defined
 --line 29 of file Bibs.bib
 Warning--empty journal in hechenbichler2004weighted
-You've used 66 entries,
+You've used 67 entries,
             1876 wiz_defined-function locations,
-            877 strings with 16007 characters,
-and the built_in function-call counts, 21748 in all, are:
-= -- 2271
-> -- 758
+            882 strings with 16332 characters,
+and the built_in function-call counts, 22141 in all, are:
+= -- 2307
+> -- 778
 < -- 0
-+ -- 278
-- -- 212
-* -- 1549
-:= -- 2911
-add.period$ -- 71
-call.type$ -- 66
-change.case$ -- 61
++ -- 285
+- -- 218
+* -- 1578
+:= -- 2964
+add.period$ -- 72
+call.type$ -- 67
+change.case$ -- 62
 chr.to.int$ -- 0
-cite$ -- 67
-duplicate$ -- 1112
-empty$ -- 1976
-format.name$ -- 212
-if$ -- 5379
+cite$ -- 68
+duplicate$ -- 1133
+empty$ -- 2012
+format.name$ -- 218
+if$ -- 5474
 int.to.chr$ -- 0
-int.to.str$ -- 66
-missing$ -- 70
-newline$ -- 206
-num.names$ -- 66
-pop$ -- 170
+int.to.str$ -- 67
+missing$ -- 71
+newline$ -- 209
+num.names$ -- 67
+pop$ -- 176
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 892
+skip$ -- 907
 stack$ -- 0
-substring$ -- 1824
-swap$ -- 550
+substring$ -- 1853
+swap$ -- 559
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 221
-width$ -- 68
-write$ -- 690
+while$ -- 225
+width$ -- 69
+write$ -- 700
 (There were 2 warnings)

@@ -90,7 +90,7 @@ To simplify the algorithm, in this chapter, the topology of clusters in the feat
 \end{align}
 %\textcolor{red}{RZ: I used lower case $v$ for vectors, which is more consistent with other definitions. Capital letter are more commonly used for matrices.}
 
-As shown in Fig. \ref{fig:topo2}, in order to improve the performance of the personalized classifier and to avoid ambiguity in quantifying the deviations to different abnormality classes, a topology with a maximum separation between the three vectors of $\mathcal{C}$ is preferred. To achieve a lower computational complexity in higher order dimensions, the algorithm aims at transforming vectors in $\mathcal{C}$ to orthogonal vectors using a deterministic function. This approach not only simplifies the transformation derivations, it also ensures a full symmetry among abnormality clusters. As such, the problem reduces to finding a transformation that maps a set of vectors to a set of orthogonal vectors in the same space. Therefore, we can use the popular method of \textit{Gram-Schmidt} orthogonalization method \textcolor{blue}{explained} in \cite{Gram-schmidth1, Gram-schmidth2}. Hence, in the first step of this stage, the three row vectors of $\mathcal{C}$ representing the centroids of the three abnormality clusters are fed to the orthogonalization process as follows:
+As shown in Fig. \ref{fig:topo2}, in order to improve the performance of the personalized classifier and to avoid ambiguity in quantifying the deviations to different abnormality classes, a topology with a maximum separation between the three vectors of $\mathcal{C}$ is preferred. To achieve a lower computational complexity in higher order dimensions, the algorithm aims at transforming vectors in $\mathcal{C}$ to orthogonal vectors using a deterministic function. This approach not only simplifies the transformation derivations, it also ensures a full symmetry among abnormality clusters. As such, the problem reduces to finding a transformation that maps a set of vectors to a set of orthogonal vectors in the same space. Therefore, we can use the popular method of \textit{Gram-Schmidt} orthogonalization method \textcolor{black}{explained} in \cite{Gram-schmidth1, Gram-schmidth2}. Hence, in the first step of this stage, the three row vectors of $\mathcal{C}$ representing the centroids of the three abnormality clusters are fed to the orthogonalization process as follows:
 \begin{align}
 \mathcal{C}^{\perp}= \text{Gram-Schmidt}(\mathcal{C})
 =
@@ -116,7 +116,7 @@ where $\mathcal{C}^{\perp}$ is the matrix of orthogonalized vectors in the Carte
 
 
 \section{Spatial Mapping Function}
-After obtaining the original hyper-spherical coordinates of $[\mathbf{v}_{\mathcal{VN}},~\mathbf{v}_{\mathcal{SN}},~\mathbf{v}_{\mathcal{FN}}]^T$ and the orthogonalized hyper-spherical coordinates $[\mathbf{v}_{\mathcal{VN}}^{\perp},~\mathbf{v}_{\mathcal{SN}}^{\perp},~\mathbf{v}_{\mathcal{FN}}^{\perp}]^T$, the goal is to design a mapping function $\mathbf{F}: \mathbf{R}^n \to \mathbf{R}^n$ from the original coordinates to the orthogonal ones which exhibit the desired clustering topology, \textcolor{blue}{such that Eq. \ref{eq:constraints} holds.}
+After obtaining the original hyper-spherical coordinates of $[\mathbf{v}_{\mathcal{VN}},~\mathbf{v}_{\mathcal{SN}},~\mathbf{v}_{\mathcal{FN}}]^T$ and the orthogonalized hyper-spherical coordinates $[\mathbf{v}_{\mathcal{VN}}^{\perp},~\mathbf{v}_{\mathcal{SN}}^{\perp},~\mathbf{v}_{\mathcal{FN}}^{\perp}]^T$, the goal is to design a mapping function $\mathbf{F}: \mathbf{R}^n \to \mathbf{R}^n$ from the original coordinates to the orthogonal ones which exhibit the desired clustering topology, \textcolor{black}{such that Eq. \ref{eq:constraints} holds.}
 
 In the Gram-Schmidt algorithm, the very first vector serves as a reference vector and remains unchanged in the orthogonalization process, namely $\mathbf{v}_{\mathcal{VN}} = \mathbf{v}_{\mathcal{VN}}^{\perp}$. Therefore the mapping function $\mathbf{F}$ shall satisfy the following equations:
 
@@ -193,7 +193,7 @@ The lower and upper boundary points are noted respectively as ($\gamma$,$\gamma^
 
 The two piece-wise \textcolor{black}{inverse of logit} functions $h(x;\alpha,\epsilon,\epsilon^{\perp},\delta,\delta^{\perp})$ and $g(x;\alpha,\gamma,\gamma^{\perp},\delta,\delta^{\perp})$ are defined as follows:%\textcolor{red}{use the correct name: the inverse of logit/sigmoid function} as follows:
 
-\begin{align}
+\begin{align}\label{eq:basicfunctions}
 K_h &= \frac{\epsilon^{\perp}-\delta^{\perp}}{e^{\alpha(\epsilon-\delta,0)^{+}}-1}\\ \nonumber
 h(x;\alpha,\epsilon,\epsilon^{\perp},\delta,\delta^{\perp}) &= K_h[e^{\alpha(x-\delta,0)^{+}}-1] + \delta^{\perp}
 \end{align}
@@ -241,15 +241,18 @@ In this section, the performance of the proposed method is evaluated in terms of
 
 \subsection{Classification Performance}
 
-The experimental results are evaluated with the classification performance of 4 AAMI ECG classes using the test subset of MITBIH Arrhythmia DS2. Originally DS2 contains 15357 samples after feature extraction. While training Personal Classifier, the first 20\% of total normal samples serve as initialization samples for personalized dynamic normal cluster. Therefore, all samples before the last initialization normal sample should be excluded from test set for each records. Consequently, the actual test set contains 12414 samples in total consisting of 10105 type-N, 1702 type-V, 508 type-S and 99 type-F samples.
+The experimental results are assessed in terms of classification performance of 4 AAMI ECG classes using the test subset of MITBIH Arrhythmia DS2. Originally, DS2 contains 15357 samples after feature extraction. While training the personalized classifier, the first 20\% of the normal samples serve as initialization set for the personalized dynamic normal cluster. \textcolor{green}{Therefore, we exclude the first 20\% of normal samples from each record since they're included in the training process.} Consequently, the actual test set contains 12414 samples in total consisting of 10105 type-N, 1702 type-V, 508 type-S and 99 type-F samples.
 
-To present the result, we select weighted k-Nearest Neighbors where $k=10$ as global classifier because it's comparatively simple and representative among low complexity models. The parameter $\alpha$ in the deviation detection module is set to 1 for test purpose. 
+To present the result, we select the weighted k-Nearest Neighbors method with $k=10$ as our choice of global classifier because it is \textcolor{black}{one of the low-complexity methods with a relatively good classification accuracy\cite{hechenbichler2004weighted}.}%comparatively simple and representative among low complexity models. 
+The parameter $\alpha$, \textcolor{black}{used in Eq. \ref{eq:basicfunctions}} in the deviation detection module is set to 1 for test purpose. 
+%\textcolor{red}{if there are more parameters you can define here.}
 
-Table \ref{table:classification_cumu} summarized the cumulated confusion matrix for all records in the test set. In order to compare the result of global classifier and combined result, the sample numbers are presented in the following format: $combined(globaled)$. In order to measure classification performance, we adopted three metrics proposed in \cite{Hu_et_al,deChazal2006,ince2009generic}: accuracy($Ac$), sensitivity($Se$), specificity($Sp$). All three metrics are calculated based on true positive $TP$, false positive $FP$, false negative $FN$ and true negative $TN$ in a binary confusion matrix. Therefore all four metrics are calculated for each class by converting the 4x4 matrix to a 2x2 matrix.
+
+Table \ref{table:classification_cumu} summarizes the cumulated confusion matrix for all records in the test set. In order to compare the result of global classifier (red alarms) and combined results (final labels including both red and yellow alarms), the sample numbers are presented in the following format: $final~label(primary~label~by~global~ classifier)$. In order to measure the classification performance, we adopt three metrics: accuracy($Ac$), sensitivity($Se$), specificity($Sp$), as proposed in \cite{Hu_et_al,deChazal2006,ince2009generic}. All three metrics are calculated based on the true positive $TP$, false positive $FP$, false negative $FN$ and true negative $TN$ in a binary confusion matrix, \textcolor{black}{where we combined all abnormality classes into a one abnormal class/ or where one class is the specific abnormality class and all other abnormality and normal classes combined into one class, whichever is correct.}. Therefore all four metrics are calculated for each class by converting the 4x4 matrix to a 2x2 matrix.
 
 \begin{table}[t]
 	\centering
-	\caption{Cumulated Confusion Matrix for All Records in DS2}
+	\caption{Cumulated Confusion Matrix for All Records in DS2. \textcolor{green}{The numbers are $final~label(primary~label~by~global~ classifier)$}}
 	\vspace{-0.05in}
 	\begin{tabular}{|l|l|c|c|c|c|}
 		\hline 
@@ -265,7 +268,10 @@ Table \ref{table:classification_cumu} summarized the cumulated confusion matrix 
 	\vspace{-0.15in}
 \end{table}
 
-While cumulated classification results are demonstrated in Table \ref{table:classification_cumu}, the robustness of the proposed method should be evaluated based on the performance variation over 22 test records in DS2. Hence medians and IQRs(interquartile range) for each metric and each class are included in Table \ref{table:variation} to represent the robustness of proposed methods. The lower variation between performances measured on different tapes, the more robust the system is. In Table \ref{table:variation}, we observe that among all abnormal classes, the proposed method demonstrates stable performance on class V but less stable on class S and F.
+While cumulative classification results are demonstrated in Table \ref{table:classification_cumu}, the robustness of the proposed method should be evaluated based on the performance variation over 22 test records in DS2. Further, medians and IQRs (interquartile range) for each metric and each class are included in Table \ref{table:variation} to represent the robustness of proposed methods. \textcolor{black}{The robustness of the system is asses in terms of the variation between the performance of different types. The system is more robust if this variation is lower.} 
+In Table \ref{table:variation}, we observe that among all abnormality classes,  %\textcolor{red}{It is ok to use abnormal class, but since we used abnormality class, better to be consistent throughout the write-up.}, 
+the proposed method demonstrates a stable performance on class V but a lower stability for classes S and F.
+
 
 \begin{table}[b]
 \centering
@@ -282,7 +288,7 @@ IQR                         & 6.33        & 10.08       & 11.91       & 5.17    
 \end{tabular}}
 \end{table}
 
-As MITDB is widely used to verify ECG classifier performance, we compared the proposed system with five significant methods proposed in literature. According to AAMI standards, ECG classifier performance should be evaluated over the binary classification performance of \textit{Ventricular (V)} versus \textit{non-V}types and \textit{Supraventricular (S)} versus \textit{non-S} types. For methods proposed in literature, same evaluation metrics are deployed on records from MITDB. To standardize the metrics, we select 11 common ECG records from all 5 methods and compared the median of each classification metrics over these 11 records. The comparison results are demonstrated in Table \ref{table:classification_comp}. Generally speaking, the proposed method shows higher sensitivity for both V type and S type. Especially for S type, the proposed method has advantage on all three metrics over other five methods in the literature.
+As MITDB is widely used to verify ECG classifier performance, we compared the proposed system with five significant methods proposed in the literature. According to AAMI standards, the performance of ECG classification should be evaluated over the binary classifiers applied to \textit{Ventricular (V)} versus \textit{non-V}types and \textit{Supraventricular (S)} versus \textit{non-S} types. For methods proposed in the literature, the same evaluation metrics are commonly used applied to records from MITDB. To standardize the metrics, we select 11 ECG records which are common among all 5 methods and compare the median of each classification metrics over these 11 records. The comparison results are presented in Table \ref{table:classification_comp}. Generally speaking, the proposed method shows a higher sensitivity for both types V and S. Especially for type S, the proposed method shows an advantage over all three metrics compared to the five reference methods.
 
 
 \begin{table}[tbp]
@@ -304,7 +310,7 @@ Kiranyaz \textit{et al.}\cite{Kiranyaz}         & 98.9   & 95.9   & 99.4   & 96.
 
 \subsection{Prediction Performance}
 
-As an important characteristic of the proposed methods, yellow alarms triggered by personalized classifier after feature space reshaping indicate a higher probability of observing subsequent abnormalities. In order to verify this functionality, all beats following a yellow alarm is investigated for each yellow alarm. Abnormality type which occurs the earliest within the window is recorded. Similar to confusion matrix for classification evaluation, the performance of prediction can be summarized by a confusion matrix with the 3 abnormal types. Probabilities of observing a certain type of abnormal beats after a yellow alarm is calculated using the prediction confusion matrix and compared to the prior probability of observing the same type of abnormality. This process is formulated in the following two equations:
+As an important feature of the proposed method, yellow alarms triggered by the personalized classifier indicate a higher probability of observing subsequent abnormalities. In order to verify this functionality, all beats following a yellow alarm of a specific type is investigated to asses the chance of upcoming red alarms of different types. This process is repeated for yellow alarms of all types. We only account for the first abnormality type which occurs after the yellow alarm. As we used confusion matrix to evaluate the classification accuracy, the performance of prediction can be summarized by a confusion matrix with the 3 abnormal types. Probabilities of observing a certain type of abnormal beat after a yellow alarm is calculated using the prediction confusion matrix and compared to the prior probability of observing the abnormality of the same type. This process is formulated in the following two equations:
 
 \begin{align}
 \nonumber 
@@ -312,7 +318,7 @@ As an important characteristic of the proposed methods, yellow alarms triggered 
 &P(\hat{y}_{k+i}=X_r)=\frac{\text{\# of true alarm of type $X$ ($y_{k}=X$)}}{\text{\# of all true alarms}} 
 \end{align}
 
-The power of predicting each type of abnormalities is evaluated by comparing $P(\hat{y}_{k+i}=X_r|\hat{y}_{k}=X_y)$ and $P(\hat{y}_{k+i}=X_r)$. A shown in Table \ref{table:pred}, the probability of observing a certain type of abnormalities after a yellow alarm is higher than its prior for each type of abnormalities. For example, without knowing the type of a yellow alarm, the probability of observing a type $V$ sample is 71.54\% while the probability of observing a type $V$ sample given a type $V$ yellow alarm was triggered is 77.45\%. The improvement are consistent among all three types of abnormalities but the system has stronger predicting capacity for type $S$. 
+The prediction power of each abnormality type is evaluated by comparing $P(\hat{y}_{k+i}=X_r|\hat{y}_{k}=X_y)$ and $P(\hat{y}_{k+i}=X_r)$. A shown in Table \ref{table:pred}, the probability of observing a certain type of abnormalities after a yellow alarm is higher than its prior probability and this fact is consistent for abnormality types. For example, without knowing the type of a yellow alarm, the probability of observing a type $V$ sample is 71.54\%, while the probability of observing a type $V$ sample after observing a yellow alarm of a type $V$ is 77.45\% ($XXX\%$ higher than the prior probability). The improvement are consistent among all three types of abnormalities but the system shows a stronger prediction power for type $S$. 
 
 \begin{table}[t]
 \centering
@@ -329,7 +335,7 @@ The power of predicting each type of abnormalities is evaluated by comparing $P(
 \end{tabular}
 \end{table}
 
-In order to study the time window in which real abnormality occurs after yellow alarms, we also studied a window of 10 consecutive samples following a yellow alarm. Similarly, prior and posterior probabilities are compared to evaluate the performance as shown in Table.\ref{table:pred10}. 
+\textcolor{black}{In the above analysis we consider the first subsequent red alarm regardless of the time passes since the preceding yellow alarm.} In order to study the impact of the timing window (the time between the yellow alarm and the subsequent red alarm), we also studied a window of 10 consecutive samples following a yellow alarm. Similarly, the prior and posterior probabilities are compared to evaluate the performance of the prediction capacity as shown in Table.\ref{table:pred10}. %\textcolor{red}{RZ: We can generate more insightful results for the journal paper, like a curve to show the prediction improvement vs time, etc...}
 
 
 \begin{table}[t]
@@ -347,4 +353,15 @@ In order to study the time window in which real abnormality occurs after yellow 
 \end{tabular}
 \end{table}
 
-Compared with the result without windowing, the predicting performance within 10 beats window shows that the proposed algorithm can better predict the occurrence of abnormalities in a certain time window. Especially for type S, the probability of observing a type S sample within 10 beats after a yellow alarm is 27.32\% while given that the yellow alarm is type S, the posterior probability is raise to 37.14\%. With almost 10\% increase, it's proved that the yellow alarm types are informative. The results shows that same improvements are made within the 10-sample window as well. In general, the predicting performance are promising, indicating the efficiency of personalized classifier and deviation analysis.
+Compared with the result without windowing, the prediction performance within a 10-beat window shows that the proposed algorithm can better predict the occurrence of abnormalities if a certain timing window is used. Especially for type S, the probability of observing a sample of type S within 10 beats after a yellow alarm of type S is 27.32\%, %while given that the yellow alarm is type S, 
+i.e. the posterior probability rises to 37.14\%. With almost 10\% increase, it is proved that the yellow alarm types are informative. The results shows that same improvements are made within the 10-sample window as well. In general, the predicting performance are promising, indicating the efficiency of personalized classifier and deviation analysis. We believe that this concept is worthy of further more in-depth studies for different physiological signals.
+
+
+
+
+\section{Summary of Contributions}
+%We have such a section in Chapter 3. Add a short section here and at the end of Chapter 2 for consistency. Make tis section quite short: one or two para at most.
+
+\textcolor{green}{In this chapter, we proposed a novel deterministic spatial transformation. The purpose is to reshape the original feature space so that the clusters in the transformed feature space demonstrate symmetry and low within-cluster variance. This method is more tractable and analytical than the method proposed in Chapter 3.}
+
+\textcolor{green}{The method utilizes hyper-spherical coordinate and orthogonalization to determine the parameters in basic functions of mapping function. The mapping function is deterministic. We applied this method on test dataset MITDB DS2 and obtained promising results. Both classification and prediction performance of the proposed method are analyzed in this chapter. The algorithm has been proven to be efficient in classifying samples and predicting upcoming abnormalities as well. }

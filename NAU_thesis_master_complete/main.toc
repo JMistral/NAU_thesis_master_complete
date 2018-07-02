@@ -35,12 +35,12 @@
 \contentsline {section}{\numberline {4.1}Introduction}{49}
 \contentsline {section}{\numberline {4.2}Hyper-Spherical Coordinates}{50}
 \contentsline {section}{\numberline {4.3}Orthogonalization}{52}
-\contentsline {section}{\numberline {4.4}Spatial Mapping Function}{53}
-\contentsline {section}{\numberline {4.5}Optimized Mapping Function}{55}
-\contentsline {section}{\numberline {4.6}Experimental Results}{58}
-\contentsline {subsection}{\numberline {4.6.1}Classification Performance}{58}
-\contentsline {subsection}{\numberline {4.6.2}Prediction Performance}{60}
-\contentsline {chapter}{\numberline {5}Conclusions And Future works}{63}
-\contentsline {section}{\numberline {5.1}Conclusions}{63}
-\contentsline {section}{\numberline {5.2}Future works}{65}
-\contentsline {chapter}{Bibliography}{67}
+\contentsline {section}{\numberline {4.4}Spatial Mapping Function}{54}
+\contentsline {section}{\numberline {4.5}Optimized Mapping Function}{56}
+\contentsline {section}{\numberline {4.6}Experimental Results}{59}
+\contentsline {subsection}{\numberline {4.6.1}Classification Performance}{59}
+\contentsline {subsection}{\numberline {4.6.2}Prediction Performance}{62}
+\contentsline {chapter}{\numberline {5}Conclusions And Future works}{65}
+\contentsline {section}{\numberline {5.1}Conclusions}{65}
+\contentsline {section}{\numberline {5.2}Future works}{67}
+\contentsline {chapter}{Bibliography}{69}

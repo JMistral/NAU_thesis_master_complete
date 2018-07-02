@@ -1,0 +1,86 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Patient-Adaptable ECG Classification Framework}{18}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Introduction}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Utilized Dataset}{19}}
+\citation{autofs}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of the segmentation stage. Each segment consists of $s_w=3$ cardiac cycles. We slide segments with $n_s=1$ to obtain the next segment. Each segment is converted to a feature vector representing a data sample.\relax }}{20}}
+\newlabel{fig:interval}{{2.1}{20}{Illustration of the segmentation stage. Each segment consists of $s_w=3$ cardiac cycles. We slide segments with $n_s=1$ to obtain the next segment. Each segment is converted to a feature vector representing a data sample.\relax }{}{}}
+\citation{denoise}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Training and test datasets in MITDB.\relax }}{21}}
+\newlabel{table:ds}{{2.1}{21}{Training and test datasets in MITDB.\relax }{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}ECG Signal Processing}{21}}
+\newlabel{sec:ecgprocessing}{{2.3}{21}{ECG Signal Processing}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Preprocessing}{21}}
+\citation{banerjee2012delineation,2012qrs,fs,jambukia2015classification}
+\citation{2012qrs}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Segmentation}{22}}
+\citation{martinez2004wavelet}
+\citation{2012qrs}
+\citation{2012qrs}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Frequency band of wavelet decomposition coefficients for MITDB signals.\relax }}{23}}
+\newlabel{fig:wavelet_decomp}{{2.2}{23}{Frequency band of wavelet decomposition coefficients for MITDB signals.\relax }{}{}}
+\citation{2012qrs}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces \leavevmode {\color  {black}(a): the detected R peak locations within the original ECG signal; (b): the corresponding R peak locations within the signal obtained by adding up the level 5 and level 6 detail coefficients of the wavelet decomposition of the signal ($QRS\_DET = D_5+D_6$).} \relax }}{24}}
+\newlabel{fig:QRS_d5d6}{{2.3}{24}{\textcolor {black}{(a): the detected R peak locations within the original ECG signal; (b): the corresponding R peak locations within the signal obtained by adding up the level 5 and level 6 detail coefficients of the wavelet decomposition of the signal ($QRS\_DET = D_5+D_6$).} \relax }{}{}}
+\citation{autofs}
+\citation{jambukia2015classification}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Window for detecting R peaks within QRS complexes.\relax }}{25}}
+\newlabel{fig:window}{{2.4}{25}{Window for detecting R peaks within QRS complexes.\relax }{}{}}
+\citation{martinez2004wavelet}
+\citation{autofs}
+\citation{autofs,llamedo2012automatic}
+\citation{castells2007principal}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Feature Extraction}{26}}
+\citation{chen2018predictive}
+\citation{Hu_et_al,deChazal2006,llamedo2012automatic}
+\citation{chen2018predictive,Hu_et_al,deChazal2006,llamedo2012automatic}
+\citation{Hu_et_al,llamedo2012automatic}
+\citation{llamedo2012automatic}
+\@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Features extracted from ECG signal\relax }}{27}}
+\newlabel{table:features}{{2.2}{27}{Features extracted from ECG signal\relax }{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Classification Framework}{27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Global Classifier}{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Deviation Detection}{28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces The general flowchart of proposed framework.\relax }}{29}}
+\newlabel{fig:flow}{{2.5}{29}{The general flowchart of proposed framework.\relax }{}{}}
+\newlabel{eq:matrices}{{2.3}{30}{Deviation Detection}{}{}}
+\newlabel{eq:condition1}{{2.5}{30}{Deviation Detection}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces The deviation analysis boundary restrict on latent status between normal and abnormal samples compared with the Global Classifier boundary.\relax }}{31}}
+\newlabel{fig:topo_deviation}{{2.6}{31}{The deviation analysis boundary restrict on latent status between normal and abnormal samples compared with the Global Classifier boundary.\relax }{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Personalized Classifier}{32}}
+\newlabel{eq:cosine}{{2.6}{32}{Personalized Classifier}{}{}}
+\newlabel{eq:v_k}{{2.7}{32}{Personalized Classifier}{}{}}
+\newlabel{eq:personal_discrim}{{2.8}{33}{Personalized Classifier}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Left: illustration of the cluster topology in the original feature space; Right: illustration of the cluster topology in the transformed feature space using a nonlinear mapping function.\relax }}{33}}
+\newlabel{fig:topo1}{{2.7}{33}{Left: illustration of the cluster topology in the original feature space; Right: illustration of the cluster topology in the transformed feature space using a nonlinear mapping function.\relax }{}{}}
+\@setckpt{body/2-Framework-Final}{
+\setcounter{page}{34}
+\setcounter{equation}{8}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{2}
+\setcounter{section}{6}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{7}
+\setcounter{table}{2}
+\setcounter{section@level}{1}
+\setcounter{parentequation}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{AlgoLine}{0}
+\setcounter{algocfline}{0}
+\setcounter{algocfproc}{0}
+\setcounter{algocf}{0}
+}

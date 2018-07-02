@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  1 JUL 2018 17:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  1 JUL 2018 19:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -646,7 +646,7 @@ LaTeX Warning: Unused global option(s):
     [double].
 
 (./main.aux (./front/cover.aux) (./front/abstract.aux)
-(./Introduction/1-intro.aux) (./body/2-Framework-JCedit.aux)
+(./Introduction/1-intro.aux) (./body/2-Framework-Final.aux)
 (./body/3-KernelModel-JCfinishing.aux) (./body/4-SphereModel-JCedit.aux)
 (./conclusion/6-Discussion.aux))
 \openout1 = `main.aux'.
@@ -754,7 +754,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [5] (./main.lof
-Underfull \vbox (badness 1975) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6
 
@@ -789,7 +789,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-[4] <Fig/cardiac_cycle.png, id=50, 505.89pt x 454.69875pt>
+[4] <Fig/cardiac_cycle.png, id=51, 505.89pt x 454.69875pt>
 File: Fig/cardiac_cycle.png Graphic file (type png)
 
 <use Fig/cardiac_cycle.png>
@@ -806,7 +806,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-<Fig/interpatient_variability.pdf, id=58, 532.91798pt x 378.1036pt>
+<Fig/interpatient_variability.pdf, id=59, 532.91798pt x 378.1036pt>
 File: Fig/interpatient_variability.pdf Graphic file (type pdf)
 
 <use Fig/interpatient_variability.pdf>
@@ -817,7 +817,7 @@ Package pdftex.def Info: Fig/interpatient_variability.pdf used on input line 95
 Underfull \vbox (badness 6141) has occurred while \output is active []
 
  [7]
-<Fig/predicting_record215S_croped.pdf, id=62, 596.43225pt x 269.93248pt>
+<Fig/predicting_record215S_croped.pdf, id=63, 596.43225pt x 269.93248pt>
 File: Fig/predicting_record215S_croped.pdf Graphic file (type pdf)
 
 <use Fig/predicting_record215S_croped.pdf>
@@ -825,7 +825,7 @@ Package pdftex.def Info: Fig/predicting_record215S_croped.pdf used on input lin
 e 107.
 (pdftex.def)             Requested size: 357.8621pt x 161.96072pt.
 
-<Fig/predicting_record215_croped.pdf, id=63, 590.477pt x 274.89502pt>
+<Fig/predicting_record215_croped.pdf, id=64, 590.477pt x 274.89502pt>
 File: Fig/predicting_record215_croped.pdf Graphic file (type pdf)
 
 <use Fig/predicting_record215_croped.pdf>
@@ -836,7 +836,7 @@ Package pdftex.def Info: Fig/predicting_record215_croped.pdf used on input line
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8 <./Fig/interpatient_variability.pdf>]
-<Fig/general_flow.png, id=71, 473.6094pt x 273.1806pt>
+<Fig/general_flow.png, id=72, 473.6094pt x 273.1806pt>
 File: Fig/general_flow.png Graphic file (type png)
 
 <use Fig/general_flow.png>
@@ -847,7 +847,7 @@ Package pdftex.def Info: Fig/general_flow.png used on input line 121.
 Underfull \vbox (badness 4660) has occurred while \output is active []
 
  [11]
-<Fig/fiducial_peaks2.png, id=134, 555.0336pt x 187.4202pt>
+<Fig/fiducial_peaks2.png, id=135, 555.0336pt x 187.4202pt>
 File: Fig/fiducial_peaks2.png Graphic file (type png)
 
 <use Fig/fiducial_peaks2.png>
@@ -870,9 +870,9 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 176.
 ) [16]
 [17]
-\openout2 = `body/2-Framework-JCedit.aux'.
+\openout2 = `body/2-Framework-Final.aux'.
 
- (./body/2-Framework-JCedit.tex
+ (./body/2-Framework-Final.tex
 Chapter 2.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -891,9 +891,7 @@ File: Fig/segment.png Graphic file (type png)
 Package pdftex.def Info: Fig/segment.png used on input line 19.
 (pdftex.def)             Requested size: 376.33984pt x 201.97083pt.
 
-Underfull \vbox (badness 1968) has occurred while \output is active []
-
- [20 <./Fig/segment.png>] [21]
+[20 <./Fig/segment.png>] [21]
 Underfull \vbox (badness 1442) has occurred while \output is active []
 
  [22]
@@ -1161,7 +1159,7 @@ Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ˆ in font cmr12!
  [74]) [75]
 (./main.aux (./front/cover.aux) (./front/abstract.aux)
-(./Introduction/1-intro.aux) (./body/2-Framework-JCedit.aux)
+(./Introduction/1-intro.aux) (./body/2-Framework-Final.aux)
 (./body/3-KernelModel-JCfinishing.aux) (./body/4-SphereModel-JCedit.aux)
 (./conclusion/6-Discussion.aux)) )
 (\end occurred inside a group at level 1)
@@ -1170,12 +1168,12 @@ Missing character: There is no ˆ in font cmr12!
 ### bottom level 
 Here is how much of TeX's memory you used:
  16080 strings out of 492995
- 312230 string characters out of 6132704
- 363244 words of memory out of 5000000
+ 312222 string characters out of 6132704
+ 364513 words of memory out of 5000000
  19201 multiletter control sequences out of 15000+600000
  16815 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,23n,54p,2143b,2758s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,23n,54p,2143b,2754s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
@@ -1193,7 +1191,7 @@ sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
 /local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/l
 ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (83 pages, 1560089 bytes).
+Output written on main.pdf (83 pages, 1560700 bytes).
 PDF statistics:
  588 PDF objects out of 1000 (max. 8388607)
  396 compressed objects within 4 object streams

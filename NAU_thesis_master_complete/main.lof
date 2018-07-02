@@ -5,9 +5,9 @@
 \contentsline {figure}{\numberline {1.4}{\ignorespaces General structure of ECG analysis system.\relax }}{10}
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Fiducial peaks within one cardiac cycle.\relax }}{12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Segment samples correspond to three consecutive cardiac cycles.\relax }}{20}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of the segmentation stage. Each segment consists of $s_w=3$ cardiac cycles. We slide segments with $n_s=1$ to obtain the next segment. Each segment is converted to a feature vector representing a data sample.\relax }}{20}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Frequency band of wavelet decomposition coefficients for MITDB signals.\relax }}{23}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces \leavevmode {\color {blue}(a): the detected R peak location within original ECG signal; (b): corresponding R peak location within the combined signal ($QRS\_DET = D_5+D_6$).} \relax }}{24}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces \leavevmode {\color {black}(a): the detected R peak locations within the original ECG signal; (b): the corresponding R peak locations within the signal obtained by adding up the level 5 and level 6 detail coefficients of the wavelet decomposition of the signal ($QRS\_DET = D_5+D_6$).} \relax }}{24}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Window for detecting R peaks within QRS complexes.\relax }}{25}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces The general flowchart of proposed framework.\relax }}{29}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces The deviation analysis boundary restrict on latent status between normal and abnormal samples compared with the Global Classifier boundary.\relax }}{31}

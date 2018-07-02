@@ -22,13 +22,13 @@
 \contentsline {subsection}{\numberline {2.5.1}Global Classifier}{28}
 \contentsline {subsection}{\numberline {2.5.2}Deviation Detection}{28}
 \contentsline {section}{\numberline {2.6}Personalized Classifier}{32}
-\contentsline {chapter}{\numberline {3}\textit {Kernels}-Based Nonlinear Spatial Transformation}{34}
+\contentsline {chapter}{\numberline {3}\textit {Kernel}-Based Nonlinear Spatial Transformation}{34}
 \contentsline {section}{\numberline {3.1}Introduction}{34}
-\contentsline {section}{\numberline {3.2}\textit {Kernel} Method}{36}
+\contentsline {section}{\numberline {3.2}\textit {Kernel} Method}{35}
 \contentsline {section}{\numberline {3.3}Multiobjective Optimization}{39}
 \contentsline {subsection}{\numberline {3.3.1}Objective Functions}{39}
-\contentsline {subsection}{\numberline {3.3.2}Multi-objective Particle Swarm Optimization}{41}
-\contentsline {subsubsection}{MOPSO}{42}
+\contentsline {subsection}{\numberline {3.3.2}Multi-objective Particle Swarm Optimization}{40}
+\contentsline {subsubsection}{Implementation Details of MOPSO}{42}
 \contentsline {section}{\numberline {3.4}Experimental Results}{44}
 \contentsline {section}{\numberline {3.5}Summary of contributions}{47}
 \contentsline {chapter}{\numberline {4}Controlled Spatial Transformation With Deterministic Mapping Function}{49}

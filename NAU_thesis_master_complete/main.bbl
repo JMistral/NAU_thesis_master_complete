@@ -257,6 +257,15 @@ B.~Sch{\"o}lkopf, C.~J. Burges, and A.~J. Smola, {\em Advances in kernel
   methods: support vector learning}.
 \newblock MIT press, 1999.
 
+\bibitem{weston1999support}
+J.~Weston, C.~Watkins, {\em et~al.}, ``Support vector machines for multi-class
+  pattern recognition.,'' in {\em Esann}, vol.~99, pp.~219--224, 1999.
+
+\bibitem{masnadi2009design}
+H.~Masnadi-Shirazi and N.~Vasconcelos, ``On the design of loss functions for
+  classification: theory, robustness to outliers, and savageboost,'' in {\em
+  Advances in neural information processing systems}, pp.~1049--1056, 2009.
+
 \bibitem{evgeniou2000regularization}
 T.~Evgeniou, M.~Pontil, and T.~Poggio, ``Regularization networks and support
   vector machines,'' {\em Advances in computational mathematics}, vol.~13,
@@ -282,6 +291,12 @@ T.~Jebara, ``Multi-task feature and kernel selection for svms,'' in {\em
   Proceedings of the twenty-first international conference on Machine
   learning}, p.~55, ACM, 2004.
 
+\bibitem{chang2010training}
+Y.-W. Chang, C.-J. Hsieh, K.-W. Chang, M.~Ringgaard, and C.-J. Lin, ``Training
+  and testing low-degree polynomial data mappings via linear svm,'' {\em
+  Journal of Machine Learning Research}, vol.~11, no.~Apr, pp.~1471--1490,
+  2010.
+
 \bibitem{coello2002mopso}
 C.~A. Coello~Coello, ``Mopso: A proposal for multiple objective particle swarm
   optimization,'' {\em Proc. Congr. Evolutionary Computation (CEC'2002),
@@ -292,6 +307,16 @@ J.~E. Alvarez-Benitez, R.~M. Everson, and J.~E. Fieldsend, ``A mopso algorithm
   based exclusively on pareto dominance concepts,'' in {\em International
   Conference on Evolutionary Multi-Criterion Optimization}, pp.~459--473,
   Springer, 2005.
+
+\bibitem{sierra2005improving}
+M.~R. Sierra and C.~A.~C. Coello, ``Improving pso-based multi-objective
+  optimization using crowding, mutation and∈-dominance,'' in {\em
+  International Conference on Evolutionary Multi-Criterion Optimization},
+  pp.~505--519, Springer, 2005.
+
+\bibitem{coello2005recent}
+C.~A.~C. Coello, ``Recent trends in evolutionary multiobjective optimization,''
+  in {\em Evolutionary multiobjective optimization}, pp.~7--32, Springer, 2005.
 
 \bibitem{nsphere}
 L.~Blumenson, ``A derivation of n-dimensional spherical coordinates,'' {\em The

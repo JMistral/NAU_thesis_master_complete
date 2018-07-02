@@ -13,7 +13,7 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces The deviation analysis boundary restrict on latent status between normal and abnormal samples compared with the Global Classifier boundary.\relax }}{31}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Left: illustration of the cluster topology in the original feature space; Right: illustration of the cluster topology in the transformed feature space using a nonlinear mapping function.\relax }}{33}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Particles stored in external repository approximate the Pareto front. \leavevmode {\color {red}This fig does not appear for some reason.}\relax }}{43}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Particles stored in external repository approximate the Pareto front.\relax }}{42}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces The \textit {Pareto front} of the results of MOPSO is significantly shifted when using the transformed feature vectors. This improvement is due to the increase in the degree of freedom provided by additional non-linear dimensions added to the samples.\relax }}{44}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Left: illustration of cluster topology in feature space transformed with simple mapping function; Right: illustration of cluster topology in feature space transformed with optimized mapping function.\relax }}{50}

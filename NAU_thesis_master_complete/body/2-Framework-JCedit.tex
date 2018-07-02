@@ -50,7 +50,7 @@ After segmentation and new annotation, the total number of samples in the traini
 	\vspace{-0.15in}
 \end{table}
 
-\section{ECG Signal Processing}
+\section{ECG Signal Processing}\label{sec:ecgprocessing}
 
 \subsection{Preprocessing}
 Biomedical signals, such as ECG signals,are composed of a sequence of signal segments, that can be presented by a set of statistical, morphological, and spectral features. Since the signal properties change over time, the traditional Fourier transform is not suitable for this type of non-stationary signals since it is unable to capture time-varying statistics of the signal. Wavelet decomposition solves this problem by scaling and translating mother wavelet to constitute its basis functions, which capture both spectral and temporal properties of the signal. Given a time series, wavelet decomposition decomposes the signal into linear combinations of basis functions. Thus, basis functions with larger scales are smoother than those with smaller scales and consequently correspond to lower frequency components of the signal. Similarly, the coefficients of the decomposition correspond to higher frequencies when the scale is smaller. Using wavelet decomposition, we extract both time and frequency features of the signal.
@@ -209,7 +209,7 @@ to check whether or not they show considerable deviations towards one of the abn
 using patient-specific normal cluster. In order to develop a ground for patient-specific normal functionality and adapt the classifier accordingly, the first 20\% of total Normal samples of each patient are selected as the initialization of \textit{personalized dynamic normal cluster} $\mathcal{N}_0^k$. \textcolor{blue}{As we collect more samples from the patient, the samples which are newly classified as N class will be used to update the personalized dynamic normal cluster. Therefore, if a sample $\mathbf{x}_k(i)$ is classified as N after deviation detection and the \textit{mahalanobis distance} between $\mathbf{x}_k(i)$ and the centroid of personalized dynamic normal cluster $\mathbf{c}^k_N$ is less than 2, then $\mathbf{x}_k(i)$ is included in the updated $\mathcal{N}_i^k$. mahalanobis distance quantifies how many the standard deviation away $\mathbf{x}_k(i)$ is from $\mathbf{c}^k_N$, it can be formulated as follows:}
 
 \begin{align}
-d_{\mathbf{mahal}} = \sqrt{ (\mathbf{x}_k(i)- \mathbf{c}^k_N)' {\rm \bf S}^{-1} (\mathbf{x}_k(i) - \mathbf{c}^k_N) }
+d_{\mathbf{mahal}} = \sqrt{ (\mathbf{x}_k(i)- \mathbf{c}^k_N)' {\rm \bf S}^{-1} (\mathbf{x}_k(i) - \mathbf{c}^k_N) },
 \end{align}
 
 where ${\rm \bf S}^{-1}$ stands for the covariance matrix of $\mathcal{N}_i^k$.
@@ -222,7 +222,7 @@ R_i^{\max}=\underset{\mathbf{x}_j\in\mathcal{N}_i^k,\mathbf{x}_k\in\mathcal{N}_i
 \label{eq:matrices}
 D_\mathcal{X}(\mathbf{x}_k(i))=\underset{\mathbf{x} \in\mathcal{X}}{\text{median}}\{\sqrt{(\mathbf{x}_k(i)-\mathbf{x})^2}\},
 \\
-D_\mathcal{N}^{\max}(\mathbf{x}_k(i))=\underset{\mathbf{x} \in\mathcal{N}_i^k}{\text{max}}\{\sqrt{(\mathbf{x}_k(i)-\mathbf{x})^2}\},
+D_\mathcal{N}^{\max}(\mathbf{x}_k(i))=\underset{\mathbf{x} \in\mathcal{N}_i^k}{\text{max}}\{\sqrt{(\mathbf{x}_k(i)-\mathbf{x})^2}\}.
 %D_V(x^t)=\underset{x_V\in\Omega_V}{\text{median}}\{\sqrt{(x^t-x_V)^2}\}\\
 %D_S(x^t)=\underset{x_S\in\Omega_S}{\text{median}}\{\sqrt{(x^t-x_S)^2}\}\\
 %D_F(x^t)=\underset{x_N\in\Omega_F}{\text{median}}\{\sqrt{(x^t-x_F)^2}\}\\

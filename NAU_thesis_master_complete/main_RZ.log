@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.26)  1 JUL 2018 15:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.26)  1 JUL 2018 18:55
 entering extended mode
 **./main_RZ.tex
 (main_RZ.tex
@@ -650,23 +650,22 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 LaTeX Warning: Unused global option(s):
     [double].
 
-(main_RZ.aux (body/4-SphereModel-RZ.aux))
+(main_RZ.aux)
 \openout1 = `main_RZ.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count131
 \scratchdimen=\dimen182
@@ -683,4 +682,141 @@ LaTeX Font Info:    ... okay on input line 32.
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Program Files\MiKTeX 
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+ABD: EveryShipout initializing macros
+\openout2 = `body/4-SphereModel-RZ.aux'.
+
+ (body/4-SphereModel-RZ.tex
+Chapter 1.
+
+LaTeX Warning: Reference `fig:topo2' on page 1 undefined on input line 8.
+
+[1
+
+
+
+
+
+{C:/Users/Abolfazl/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<Fig/topo2.png, id=11, 895.1844pt x 378.6948pt>
+File: Fig/topo2.png Graphic file (type png)
+ <use Fig/topo2.png>
+Package pdftex.def Info: Fig/topo2.png used on input line 13.
+(pdftex.def)             Requested size: 375.97488pt x 159.05072pt.
+ [2 <./Fig/topo2.png>]
+
+LaTeX Warning: Citation `nsphere' on page 3 undefined on input line 26.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 26.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+
+LaTeX Warning: Reference `eq:cart2sph' on page 3 undefined on input line 27.
+
+
+LaTeX Warning: Reference `eq:sph2cart' on page 3 undefined on input line 27.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+
+LaTeX Warning: Reference `fig:topo2' on page 5 undefined on input line 93.
+
+
+LaTeX Warning: Citation `Gram-schmidth1' on page 5 undefined on input line 93.
+
+
+LaTeX Warning: Citation `Gram-schmidth2' on page 5 undefined on input line 93.
+
+
+LaTeX Warning: Reference `eq:cart2sph' on page 5 undefined on input line 104.
+
+
+LaTeX Warning: Reference `eq:c_ortho' on page 5 undefined on input line 104.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+
+LaTeX Warning: Reference `eq:constraints' on page 6 undefined on input line 119
+.
+
+
+LaTeX Warning: Reference `eq:constraints' on page 6 undefined on input line 132
+.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+
+LaTeX Warning: Reference `fig:simple_spline' on page 7 undefined on input line 
+147.
+
+
+LaTeX Warning: Reference `fig:simple_spline' on page 7 undefined on input line 
+149.
+
+<Fig/simple_spline1.pdf, id=38, 492.22995pt x 301.68912pt>
+File: Fig/simple_spline1.pdf Graphic file (type pdf)
+
+<use Fig/simple_spline1.pdf>
+Package pdftex.def Info: Fig/simple_spline1.pdf used on input line 155.
+(pdftex.def)             Requested size: 344.55861pt x 211.18092pt.
+
+
+LaTeX Warning: Reference `fig:simple_spline' on page 7 undefined on input line 
+163.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+[8 <./Fig/simple_spline1.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 169.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014

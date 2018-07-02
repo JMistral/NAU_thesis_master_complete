@@ -241,18 +241,18 @@ In this section, the performance of the proposed method is evaluated in terms of
 
 \subsection{Classification Performance}
 
-The experimental results are assessed in terms of classification performance of 4 AAMI ECG classes using the test subset of MITBIH Arrhythmia DS2. Originally, DS2 contains 15357 samples after feature extraction. While training the personalized classifier, the first 20\% of the normal samples serve as initialization set for the personalized dynamic normal cluster. \textcolor{green}{Therefore, we exclude the first 20\% of normal samples from each record since they're included in the training process.} Consequently, the actual test set contains 12414 samples in total consisting of 10105 type-N, 1702 type-V, 508 type-S and 99 type-F samples.
+The experimental results are assessed in terms of classification performance of 4 AAMI ECG classes using the test subset of MITBIH Arrhythmia DS2. Originally, DS2 contains 15357 samples after feature extraction. While training the personalized classifier, the first 20\% of the normal samples serve as initialization set for the personalized dynamic normal cluster. \textcolor{black}{Therefore, we exclude the first 20\% of normal samples from each record since they are already included in the training process.} Consequently, the actual test set contains 12414 samples in total consisting of 10105 type-N, 1702 type-V, 508 type-S and 99 type-F samples.
 
-To present the result, we select the weighted k-Nearest Neighbors method with $k=10$ as our choice of global classifier because it is \textcolor{black}{one of the low-complexity methods with a relatively good classification accuracy\cite{hechenbichler2004weighted}.}%comparatively simple and representative among low complexity models. 
+To present the result, we select the weighted k-Nearest Neighbors method with $k=10$ as our choice of global classifier because it is \textcolor{black}{one of the low-complexity methods with a relatively good classification accuracy\cite{hechenbichler2004weighted}. }%comparatively simple and representative among low complexity models. 
 The parameter $\alpha$, \textcolor{black}{used in Eq. \ref{eq:basicfunctions}} in the deviation detection module is set to 1 for test purpose. 
 %\textcolor{red}{if there are more parameters you can define here.}
 
 
-Table \ref{table:classification_cumu} summarizes the cumulated confusion matrix for all records in the test set. In order to compare the result of global classifier (red alarms) and combined results (final labels including both red and yellow alarms), the sample numbers are presented in the following format: $final~label(primary~label~by~global~ classifier)$. In order to measure the classification performance, we adopt three metrics: accuracy($Ac$), sensitivity($Se$), specificity($Sp$), as proposed in \cite{Hu_et_al,deChazal2006,ince2009generic}. All three metrics are calculated based on the true positive $TP$, false positive $FP$, false negative $FN$ and true negative $TN$ in a binary confusion matrix, \textcolor{black}{where we combined all abnormality classes into a one abnormal class/ or where one class is the specific abnormality class and all other abnormality and normal classes combined into one class, whichever is correct.}. Therefore all four metrics are calculated for each class by converting the 4x4 matrix to a 2x2 matrix.
+Table \ref{table:classification_cumu} summarizes the cumulated confusion matrix for all records in the test set. In order to compare the result of global classifier (red alarms) and combined results (final labels including both red and yellow alarms), the sample numbers are presented in the following format: $final~label(primary~label~by~global~ classifier)$. In order to measure the classification performance, we adopt three metrics: accuracy($Ac$), sensitivity($Se$), specificity($Sp$), as proposed in \cite{Hu_et_al,deChazal2006,ince2009generic}. All three metrics are calculated based on the true positive $TP$, false positive $FP$, false negative $FN$ and true negative $TN$ in a binary confusion matrix, \textcolor{black}{where one class is the specific abnormality class and all other abnormality and normal classes combined into one class}. Therefore all four metrics are calculated for each class by converting the 4x4 matrix to a 2x2 matrix.
 
 \begin{table}[t]
 	\centering
-	\caption{Cumulated Confusion Matrix for All Records in DS2. \textcolor{green}{The numbers are $final~label(primary~label~by~global~ classifier)$}}
+	\caption{Cumulated Confusion Matrix for All Records in DS2. \textcolor{black}{The numbers are $final~label(primary~label~by~global~ classifier)$}.}
 	\vspace{-0.05in}
 	\begin{tabular}{|l|l|c|c|c|c|}
 		\hline 
@@ -268,7 +268,7 @@ Table \ref{table:classification_cumu} summarizes the cumulated confusion matrix 
 	\vspace{-0.15in}
 \end{table}
 
-While cumulative classification results are demonstrated in Table \ref{table:classification_cumu}, the robustness of the proposed method should be evaluated based on the performance variation over 22 test records in DS2. Further, medians and IQRs (interquartile range) for each metric and each class are included in Table \ref{table:variation} to represent the robustness of proposed methods. \textcolor{black}{The robustness of the system is asses in terms of the variation between the performance of different types. The system is more robust if this variation is lower.} 
+While cumulative classification results are demonstrated in Table \ref{table:classification_cumu}, the robustness of the proposed method should be evaluated based on the performance variation over 22 test records in DS2. Further, medians and IQRs (interquartile range) for each metric and each class are included in Table \ref{table:variation} to represent the robustness of proposed methods. \textcolor{black}{The robustness of the system is assesed in terms of the variation between the performance of different types. The system is more robust if this variation is lower.} 
 In Table \ref{table:variation}, we observe that among all abnormality classes,  %\textcolor{red}{It is ok to use abnormal class, but since we used abnormality class, better to be consistent throughout the write-up.}, 
 the proposed method demonstrates a stable performance on class V but a lower stability for classes S and F.
 

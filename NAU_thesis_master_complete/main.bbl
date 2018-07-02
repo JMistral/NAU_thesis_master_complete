@@ -322,12 +322,16 @@ C.~A.~C. Coello, ``Recent trends in evolutionary multiobjective optimization,''
 L.~Blumenson, ``A derivation of n-dimensional spherical coordinates,'' {\em The
   American Mathematical Monthly}, vol.~67, no.~1, pp.~63--66, 1960.
 
+\bibitem{Gram-schmidth1}
+G.~Arfken, ``Gram-schmidt orthogonalization,'' {\em Mathematical methods for
+  physicists}, vol.~3, pp.~516--520, 1985.
+
 \bibitem{Gram-schmidth2}
 G.~W. Stewart, {\em Matrix algorithms volume 1: Basic decompositions}, vol.~2.
 \newblock Society for Industrial and Applied Mathematics, 1998.
 
-\bibitem{Gram-schmidth1}
-G.~Arfken, ``Gram-schmidt orthogonalization,'' {\em Mathematical methods for
-  physicists}, vol.~3, pp.~516--520, 1985.
+\bibitem{hechenbichler2004weighted}
+K.~Hechenbichler and K.~Schliep, ``Weighted k-nearest-neighbor techniques and
+  ordinal classification,'' 2004.
 
 \end{thebibliography}

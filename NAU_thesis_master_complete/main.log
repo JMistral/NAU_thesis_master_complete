@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 JUL 2018 10:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 JUL 2018 12:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1098,39 +1098,31 @@ File: Fig/optimized_single_v2_croped.pdf Graphic file (type pdf)
 
 <use Fig/optimized_single_v2_croped.pdf>
 Package pdftex.def Info: Fig/optimized_single_v2_croped.pdf used on input line 
-211.
+214.
 (pdftex.def)             Requested size: 361.92526pt x 214.65468pt.
-
-Overfull \hbox (0.11035pt too wide) in paragraph at lines 216--217
-[]\OT1/cmr/m/n/12 Therefore, if we ap-ply the piece-wise in-ter-po-late func-ti
-on $\OML/cmm/m/it/12 p$ \OT1/cmr/m/n/12 at all four tar-get points: ($\OML/cmm/
-m/it/12 ^^N[]$\OT1/cmr/m/n/12 ,$\OML/cmm/m/it/12 ^^N[]$\OT1/cmr/m/n/12 ),
- []
 
 <Fig/optimized_mapping_f.pdf, id=392, 589.48534pt x 343.36983pt>
 File: Fig/optimized_mapping_f.pdf Graphic file (type pdf)
 
 <use Fig/optimized_mapping_f.pdf>
-Package pdftex.def Info: Fig/optimized_mapping_f.pdf used on input line 220.
+Package pdftex.def Info: Fig/optimized_mapping_f.pdf used on input line 229.
 (pdftex.def)             Requested size: 412.63693pt x 240.35724pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [58]
-[59 <./Fig/optimized_single_v2_croped.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2012) has occurred while \output is active []
 
- [60 <./Fig/optimized_mapping_f.pdf>]
+ [59 <./Fig/optimized_single_v2_croped.pdf>] [60 <./Fig/optimized_mapping_f.pdf
+>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [61]
+[62] [63]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [63]
-[64]
+ [64])
+[65]
 \openout2 = `conclusion/6-Discussion.aux'.
 
  (./conclusion/6-Discussion.tex
@@ -1138,30 +1130,30 @@ Chapter 5.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65
+ [66
 
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66]
-[67]) [68] (./main.bbl
+ [67]
+[68]) [69] (./main.bbl
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
- [69
+ [70
 
 
-] [70]
+] [71]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [71] [72] [73] [74] [75]
+ [72] [73] [74] [75] [76]
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ˆ in font cmr12!
- [76]) [77]
+ [77]) [78]
 (./main.aux (./front/cover.aux) (./front/abstract.aux)
 (./Introduction/1-intro.aux) (./body/2-Framework-Final.aux)
 (./body/3-KernelModel-JCfinishing.aux) (./body/4-SphereModel-JCfinishing.aux)
@@ -1171,10 +1163,10 @@ Missing character: There is no ˆ in font cmr12!
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16081 strings out of 492995
- 312315 string characters out of 6132704
- 364984 words of memory out of 5000000
- 19202 multiletter control sequences out of 15000+600000
+ 16083 strings out of 492995
+ 312361 string characters out of 6132704
+ 365109 words of memory out of 5000000
+ 19204 multiletter control sequences out of 15000+600000
  16815 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,54p,2143b,2754s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1195,10 +1187,10 @@ sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
 /local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/l
 ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (85 pages, 1494841 bytes).
+Output written on main.pdf (86 pages, 1497436 bytes).
 PDF statistics:
- 597 PDF objects out of 1000 (max. 8388607)
- 402 compressed objects within 5 object streams
+ 600 PDF objects out of 1000 (max. 8388607)
+ 404 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
  108 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -38,9 +38,10 @@
 \contentsline {section}{\numberline {4.4}Spatial Mapping Function}{54}
 \contentsline {section}{\numberline {4.5}Optimized Mapping Function}{56}
 \contentsline {section}{\numberline {4.6}Experimental Results}{59}
-\contentsline {subsection}{\numberline {4.6.1}Classification Performance}{59}
+\contentsline {subsection}{\numberline {4.6.1}Classification Performance}{60}
 \contentsline {subsection}{\numberline {4.6.2}Prediction Performance}{62}
-\contentsline {chapter}{\numberline {5}Conclusions And Future works}{65}
-\contentsline {section}{\numberline {5.1}Conclusions}{65}
-\contentsline {section}{\numberline {5.2}Future works}{67}
-\contentsline {chapter}{Bibliography}{69}
+\contentsline {section}{\numberline {4.7}Summary of Contributions}{65}
+\contentsline {chapter}{\numberline {5}Conclusions And Future works}{66}
+\contentsline {section}{\numberline {5.1}Conclusions}{66}
+\contentsline {section}{\numberline {5.2}Future works}{68}
+\contentsline {chapter}{Bibliography}{70}

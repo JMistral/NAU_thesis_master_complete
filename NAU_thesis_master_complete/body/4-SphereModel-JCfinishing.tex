@@ -340,7 +340,7 @@ The prediction power of each abnormality type is evaluated by comparing $P(\hat{
 
 \begin{table}[t]
 \centering
-\caption{predictive probability versus prior probability within 10 beats' window}
+\caption{predictive probability versus prior probability within 10 samples' window}
 \label{table:pred10}
 \begin{tabular}{|c|l|l|l|l||l|l|l|}
 \hline
@@ -353,7 +353,7 @@ The prediction power of each abnormality type is evaluated by comparing $P(\hat{
 \end{tabular}
 \end{table}
 
-Compared with the result without windowing, the prediction performance within a 10-beat window shows that the proposed algorithm can better predict the occurrence of abnormalities if a certain timing window is used. Especially for type S, the probability of observing a sample of type S within 10 beats after a yellow alarm of type S is 27.32\%, %while given that the yellow alarm is type S, 
+Compared with the result without windowing, the prediction performance within a 10-sample window shows that the proposed algorithm can better predict the occurrence of abnormalities if a certain timing window is used. Especially for type S, the probability of observing a sample of type S within 10 beats after a yellow alarm of type S is 27.32\%, %while given that the yellow alarm is type S, 
 i.e. the posterior probability rises to 37.14\%. With almost 10\% increase, it is proved that the yellow alarm types are informative. The results shows that same improvements are made within the 10-sample window as well. In general, the predicting performance are promising, indicating the efficiency of personalized classifier and deviation analysis. We believe that this concept is worthy of further more in-depth studies for different physiological signals.
 
 

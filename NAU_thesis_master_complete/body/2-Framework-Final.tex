@@ -205,8 +205,7 @@ The flowchart in Fig.~\ref{fig:flow} presents the overall structure of the propo
 
 One objective of this study is to identify the fuzzy states between normality and abnormalities. Therefore, the subsequent analysis focuses on processing samples classified as \textit{normal} (N) 
 %\textcolor{red}{use a consistent notation: you can choose to use italic font for ``normal'' and ``abnormal'', ``red'', ``yellow'', etc in their first appearance or for all appearances.  Also, define labels N, S, ... on their first appearances.} 
-by distinguishing whether or not they show considerable deviations towards one of the abnormality classes. For this purpose, a one-layer classifier is not sufficient \textcolor{black}{due to multiple reasons: i) the numbers of samples in the normal and different morbid classes are not balanced in the training set DS1 as shown in Table \ref{table:ds}, ii) the patient-specific normal trend is unknown, iii) detecting \textit{yellow alarms} require a new set of decision rules to determine whether or not the deviations are worthy of calling a yellow alarm.} Therefore, a deviation detection module is added after the \textit{global classifier} to identify fuzzy state between normality and abnormalities %\textcolor{red}{latent has a special meaning in ML, which is different than what you mean., I recommend change ``latent'' to a different word} %latent status 
-using patient-specific normal cluster. In order to develop a ground for patient-specific normal functionality and adapt the classifier accordingly, the Normal samples within first 5 minutes' signal of each patient are selected as the initialization of \textit{personalized dynamic normal cluster} $\mathcal{N}_0^k$. \textcolor{black}{As we collect more samples from the patient, the samples which are newly classified as normal (N) will be used to update the personalized dynamic normal cluster. Therefore, if a sample $\mathbf{x}_k(i)$ is classified as N after deviation detection and the \textit{mahalanobis distance} between $\mathbf{x}_k(i)$ and the centroid of the personalized dynamic normal cluster $\mathbf{c}^k_N$ is less than 2, then $\mathbf{x}_k(i)$ is included in the updated $\mathcal{N}_i^k$. Mahalanobis distance quantifies how many the standard deviation away $\mathbf{x}_k(i)$ is from $\mathbf{c}^k_N$, it can be formulated as follows:}
+by distinguishing whether or not they show considerable deviations towards one of the abnormality classes. For this purpose, an one-layer classifier is not sufficient \textcolor{black}{due to multiple reasons: i) the numbers of samples in the normal and different morbid classes are not balanced in the training set DS1 as shown in Table \ref{table:ds}, ii) the patient-specific normal trend is unknown, iii) detecting \textit{yellow alarms} requires a new set of decision rules to determine whether or not the deviations are worthy of calling a yellow alarm.} Therefore, a deviation detection module is added after the \textit{global classifier} to identify fuzzy states between normality and abnormalities using patient-specific normal cluster. In order to develop a ground for patient-specific normal functionality and adapt the classifier accordingly, the \textit{normal} samples within first 5 minutes' signal of each patient are selected as the initialization of \textit{personalized dynamic normal cluster} $\mathcal{N}_0^k$. \textcolor{black}{As we collect more samples from the patient, the samples which are newly classified as \textit{normal} (N) will be used to update the \textit{personalized dynamic normal cluster}. Therefore, if a sample $\mathbf{x}_k(i)$ is classified as N after the deviation detection stage and the \textit{mahalanobis distance} between $\mathbf{x}_k(i)$ and the centroid of the \textit{personalized dynamic normal cluster} $\mathbf{c}^k_N$ is less than 2, then $\mathbf{x}_k(i)$ is included in the updated $\mathcal{N}_i^k$. Mahalanobis distance quantifies the numbers of standard deviations between $\mathbf{x}_k(i)$ and $\mathbf{c}^k_N$, it can be formulated as follows:}
 
 \begin{align}
 d_{\mathbf{mahal}} = \sqrt{ (\mathbf{x}_k(i)- \mathbf{c}^k_N)' {\rm \bf S}^{-1} (\mathbf{x}_k(i) - \mathbf{c}^k_N) },
@@ -215,7 +214,7 @@ d_{\mathbf{mahal}} = \sqrt{ (\mathbf{x}_k(i)- \mathbf{c}^k_N)' {\rm \bf S}^{-1} 
 where ${\rm \bf S}^{-1}$ stands for the covariance matrix of $\mathcal{N}_i^k$.
 
 
-To distinguish between normal state and fuzzy state, we use a binary classification of N versus non-N, where the second includes all abnormal classes. We firstly calculate the following distance metrics:
+To distinguish between normal state and fuzzy states, we use a binary classification of N versus non-N, where the second includes all abnormal classes. We firstly calculate the following distance metrics:
 
 \begin{align}
 R_i^{\max}=\underset{\mathbf{x}_j\in\mathcal{N}_i^k,\mathbf{x}_k\in\mathcal{N}_i^k}{\max}\{\sqrt{(\mathbf{x}_j-\mathbf{x}_k)^2}\},\\
@@ -229,7 +228,7 @@ D_\mathcal{N}^{\max}(\mathbf{x}_k(i))=\underset{\mathbf{x} \in\mathcal{N}_i^k}{\
 %D_{max}(x^t)=\underset{x_N\in\Omega_N^t}{\max}\{\sqrt{(x^t-x_N)^2}\}
 \end{align}
 
-The following conditions in Eq. \ref{eq:condition1} are then examined to verify if the deviation of a sample is within the range defined by $\alpha$. Since some rare abnormalities are unlikely to be observed within the limited initialization period, therefore abnormal clusters: ${\mathcal{S},\mathcal{V},\mathcal{F}}$, which include abnormal beats for all patients in DS1, are deployed as the training dataset when \textcolor{black}{calculating $D_\mathcal{X}(\mathbf{x}_k(i))$ in Eq. \ref{eq:matrices}} %developing the  \textit{personalized dynamic normal cluster} $\mathcal{N}_i^k$ as follows. \textcolor{red}{I think here in $\mathcal{N}_i^k$, you mean that $i=0$ represents the normal cluster and $i=1,2,...$ represent different abnormality clusters. This is not obvious and you need define it before its first appearance.}
+The following conditions in Eq.~\ref{eq:condition1} are then examined to verify if the deviation of a sample is within the range defined by $\alpha$. Since some rare abnormalities are unlikely to be observed within the limited initialization period, the abnormal clusters (${\mathcal{S},\mathcal{V},\mathcal{F}}$), which include abnormal beats from all patients in DS1, are deployed as the training dataset when \textcolor{black}{calculating $D_\mathcal{X}(\mathbf{x}_k(i))$ in Eq. \ref{eq:matrices}} %developing the  \textit{personalized dynamic normal cluster} $\mathcal{N}_i^k$ as follows. \textcolor{red}{I think here in $\mathcal{N}_i^k$, you mean that $i=0$ represents the normal cluster and $i=1,2,...$ represent different abnormality clusters. This is not obvious and you need define it before its first appearance.}
 
 \begin{align}\label{eq:condition1}
 \begin{cases}
@@ -238,29 +237,29 @@ D_\mathcal{N}(\mathbf{x}_k(i)) < D_\mathcal{X}(\mathbf{x}_k(i)) &\text{for~} \ma
 \end{cases}
 \end{align}
 
-If a sample already labeled normal by the \textit{global classifier}, is again confirmed as N in this module, it will be used to update the $\mathcal{N}_i^k$ as mentioned above. Otherwise, the system assumes that the sample has a considerable deviation towards one of the abnormal clusters and hence will pass it to the subsequent \textcolor{black}{\textit{personalized classifier}}. The \textit{personalized classifier} uses controlled transformation with optimized parameters to discern the deviation to different morbid types regardless of the cluster topology within the original feature space\textcolor{black}{, as detailed in Chapter 3 and 4}. 
+If a sample labeled as \textit{normal} by the \textit{global classifier}, is again confirmed as N in this module, it will be used to update the $\mathcal{N}_i^k$ as mentioned above. Otherwise, the system assumes that the sample has a considerable deviation towards one of the abnormal clusters and hence will pass it to the subsequent \textcolor{black}{\textit{personalized classifier}}. The \textit{personalized classifier} uses controlled transformation with optimized parameters to discern the deviation to different morbid types regardless of the cluster topology within the original feature space, as detailed in chapter 3 and chapter 4. 
 
-After performing both global and personalized classification steps, a given sample $x_k(i)$ of patient $i$ at time $k$ is mapped to label $\hat{y}_k \in \{N,V_y,S_y,F_y,V_r,S_r,F_r\}$, where $N$ stands for the normal state, and $X_y$ and $X_r$ stand for \textit{yellow} and \textit{red} alarms of type $X$.
+After performing both global and personalized classification steps, a given sample $x_k(i)$ of patient $i$ at time $k$ is mapped to a label $\hat{y}_k \in \{N,V_y,S_y,F_y,V_r,S_r,F_r\}$, where $N$ stands for the \textit{normal} state, and $X_y$ and $X_r$ stand for \textit{yellow} and \textit{red} alarms of type $X$.
 
 \begin{figure}[t]
 \centering
-\includegraphics[scale=.7]{Fig/topology.jpg}
-\caption{The deviation analysis boundary restrict on latent status between normal and abnormal samples compared with the \textit{global classifier} boundary.}
+\includegraphics[scale=.6]{Fig/topology.jpg}
+\caption{The deviation analysis boundary restricts on fuzzy states between normality and abnormalities compared with the \textit{global classifier} boundary.}
 \label{fig:topo_deviation}
 \end{figure}
 
 
 \section{Personalized Classifier} %\textcolor{red}{I suggest you use the term personalized classifier, although personal classifier is correct too.}
 
-Here, we provide the core idea behind the design of the \textit{personalized classifier}, and the details of implementation will be discussed in \textcolor{black}{Chapters 3 and 4.} 
-Since the proposed system aims at predicting subsequent abnormalities by analyzing a signal's deviation from the patient's normal functionality of the sample signal, it is vital to quantify the deviations using topological characteristics of the training dataset. For most of the ECG applications, ECG signal is analyzed by its representative feature vectors. A natural choice for deviation analysis in the high-dimensional feature space, is \textcolor{black}{\textit{cosine distance}} (as defined in Eq. \ref{eq:cosine}) to quantify the distance between two vectors $\textbf{v}$ and $\textbf{w}$.
+In this section, we provide the core idea behind the design of the \textit{personalized classifier}, and the details of implementation will be discussed in \textcolor{black}{chapter 3 and chapter 4.} 
+Since the proposed system aims at predicting the subsequent abnormality by analyzing a sample's deviation from the patient's normal functionality, it is vital to quantify the deviations using topological characteristics of the training data in the feature space. For most of the ECG applications, ECG signals are analyzed by their representative feature vectors. A natural choice for deviation analysis in the high-dimensional feature space is \textcolor{black}{\textit{cosine distance}} (as defined in Eq.~\ref{eq:cosine}), which quantifies the distance between two vectors $\textbf{v}$ and $\textbf{w}$.
 
 \begin{align}
 \label{eq:cosine}
 d(\mathbf{v},\mathbf{w})= 1 - \frac{\mathbf{v}^T\mathbf{w}}{|\mathbf{v}||\mathbf{w}|}=1 - \frac{\mathbf{v}^T\mathbf{w}}{\sqrt{(\mathbf{v}^T\mathbf{v})(\mathbf{w}^T\mathbf{w})}}
 \end{align}
 
-Consequently, relative deviations of a sample from normal cluster(N) to other abnormal clusters (V, S, F) are defined by the cosine distance between the vector $\mathbf{v}_k(i)$ (defined in Eq.\ref{eq:v_k}) and the three vectors $\mathbf{v}_{\mathcal{X}}(i)=\mathbf{c}_{\mathcal{X}}-\mathbf{x}_k(i)$ where $\mathcal{X} \in \{ \mathcal{S}, \mathcal{V}, \mathcal{F}\}$. \textcolor{black}{In this case, a smaller cosine distance represents a higher alignment between the vector from the normal cluster centroid $\mathbf{v}_k(i)$ to the current sample $\mathbf{x}_k(i)$ and the reference vector from the normal cluster centroid to abnormal centroids $\mathbf{c}_{\mathcal{X}}$.}
+Consequently, relative deviations of a sample from normal cluster ($\mathcal{N}_i^k$) to other abnormal clusters ($\mathcal{S},\mathcal{V},\mathcal{F}$) are defined by the cosine distance between the vector $\mathbf{v}_k(i)$ (defined in Eq.~\ref{eq:v_k}) and the three vectors $\mathbf{v}_{\mathcal{X}}(i)=\mathbf{c}_{\mathcal{X}}-\mathbf{x}_k(i)$, where $\mathcal{X} \in \{ \mathcal{S}, \mathcal{V}, \mathcal{F}\}$. In this case, a smaller cosine distance represents a higher alignment between the vector from the normal cluster centroid $\mathbf{v}_k(i)$ to the current sample $\mathbf{x}_k(i)$ and the reference vector from the normal cluster centroid to abnormal centroids $\mathbf{c}_{\mathcal{X}}$.
 
 
 \begin{align}
@@ -276,14 +275,14 @@ Therefore, the classification result of the \textit{personalized classifier} $\h
 \hat{y}^2_k(i) = \underset{\mathcal{X} \in \{ \mathcal{S}, \mathcal{V}, \mathcal{F} \}}{\text{argmin}}\{ d(\mathbf{v}_k(i),\mathbf{v}_{\mathcal{X}}(i)) \} 
 \end{align}
 
-The relevance of cosine distance depend on the topology of clusters in the feature space. The topology in feature space, itself is inherited from the feature extraction and feature selection methods. For example, as shown in Fig.\ref{fig:topo1}, in the original feature space overlaps and alignment of abnormal clusters may lead to inaccurate results of deviation quantification. \textcolor{black}{In order to eliminate the deviation analysis errors that arise from the asymmetry in the topology of clusters, it is desired to transform the original topology into a more symmetric one, where cosine distances directly reflect the amount of deviations.}
+The relevance of cosine distance depends on the topology of clusters in the feature space. The topology in feature space, itself is inherited from the feature extraction and feature selection methods. For example, as shown in Fig.~\ref{fig:topo1}, in the original feature space the overlaps and alignments of abnormal clusters may lead to inaccurate results of deviation detection. \textcolor{black}{In order to eliminate the deviation analysis errors that arise from the asymmetry in the topology of clusters, it is desired to transform the original topology into a more symmetric one, where cosine distances directly reflect the amount of deviations.}
 
-\begin{figure}[thpb]
+\begin{figure}[b]
 \centering
 \includegraphics[scale=.5]{Fig/topo1.png}
 \caption{Left: illustration of the cluster topology in the original feature space; Right: illustration of the cluster topology in the transformed feature space using a nonlinear mapping function.}
 \label{fig:topo1}
 \end{figure}
 
-For this purpose, two different spatial transformation methods are proposed in the next two chapters.
+For this purpose, two different spatial transformation methods are proposed in the next chapter 3 and chapter 4.
 

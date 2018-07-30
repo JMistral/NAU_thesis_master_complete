@@ -191,7 +191,7 @@ The lower and upper boundary points are noted respectively as ($\gamma$,$\gamma^
 \end{aligned}
 \end{align}
 
-The two piece-wise functions $h(x;\alpha,\epsilon,\epsilon^{\perp},\delta,\delta^{\perp})$ and $g(x;\alpha,\gamma,\gamma^{\perp},\delta,\delta^{\perp})$ are \textcolor{green}{inspired by the inverse of logit function, hence they are} defined as follows:%\textcolor{red}{use the correct name: the inverse of logit/sigmoid function} as follows:
+The two piece-wise functions $h(x;\alpha,\epsilon,\epsilon^{\perp},\delta,\delta^{\perp})$ and $g(x;\alpha,\gamma,\gamma^{\perp},\delta,\delta^{\perp})$ are \textcolor{black}{developed using the inverse of logit function, hence they are} defined as follows:%\textcolor{red}{use the correct name: the inverse of logit/sigmoid function} as follows:
 
 \begin{align}\label{eq:basicfunctions}
 K_h &= \frac{\epsilon^{\perp}-\delta^{\perp}}{e^{\alpha(\epsilon-\delta,0)^{+}}-1}\\ \nonumber
@@ -241,7 +241,7 @@ In this section, the performance of the proposed method is evaluated in terms of
 
 \subsection{Classification Performance}
 
-The experimental results are assessed in terms of classification performance of 4 AAMI ECG classes using the test subset of MITBIH Arrhythmia DS2. Originally, DS2 contains 15357 samples after feature extraction. While training the \textit{personalized classifier}, \textcolor{green}{the normal samples within first 5 minutes' signal} serve as initialization set for the personalized dynamic normal cluster. \textcolor{black}{Therefore, we exclude the first \textcolor{green}{5 minutes'} normal samples from each record since they are already included in the training process.} Consequently, the actual test set contains 12414 samples in total consisting of 10105 type-N, 1702 type-V, 508 type-S and 99 type-F samples.
+The experimental results are assessed in terms of classification performance of 4 AAMI ECG classes using the test subset of MITBIH Arrhythmia DS2. Originally, DS2 contains 15357 samples after feature extraction. While training the \textit{personalized classifier}, \textcolor{black}{the normal samples within the first 5 minutes of the signal} serve as initialization set for the personalized dynamic normal cluster. \textcolor{black}{Therefore, we exclude the normal samples in the first 5 minutes of the signal from each record since they are already included in the training process.} Consequently, the actual test set contains 12414 samples in total consisting of 10105 type-N, 1702 type-V, 508 type-S and 99 type-F samples.
 
 To present the result, we select the weighted k-Nearest Neighbors method with $k=10$ as our choice of \textit{global classifier} because it is \textcolor{black}{one of the low-complexity methods with a relatively good classification accuracy\cite{hechenbichler2004weighted}. }%comparatively simple and representative among low complexity models. 
 The parameter $\alpha$, \textcolor{black}{used in Eq. \ref{eq:basicfunctions}} in the deviation detection module is set to 1 for test purpose. 
@@ -269,7 +269,7 @@ Table \ref{table:classification_cumu} summarizes the cumulated confusion matrix 
 
 While cumulative classification results are demonstrated in Table \ref{table:classification_cumu}, the robustness of the proposed method should be evaluated based on the performance variation over 22 test records in DS2. Further, medians and IQRs (interquartile range) for each metric and each class are included in Table \ref{table:variation} to represent the robustness and average performance of proposed methods. \textcolor{black}{The robustness of the system is assesed in terms of the variation between the performance of different records. The system is more robust if this variation is lower.} 
 In Table \ref{table:variation}, we observe that among all abnormality classes,  %\textcolor{red}{It is ok to use abnormal class, but since we used abnormality class, better to be consistent throughout the write-up.}, 
-the proposed method demonstrates a stable performance on class V but a \textcolor{green}{lower performance consistency} for classes S and F.
+the proposed method demonstrates a stable performance on class V but a \textcolor{black}{lower performance consistency} for classes S and F.
 
 
 \begin{table}[t]

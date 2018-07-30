@@ -4,16 +4,16 @@
 As discussed in chapter 2, the main objective of the \textit{personalized classifier} is to reassess the normal samples to identify deviation of seemingly normal samples into any of the abnormality types. \textcolor{black}{The original geometry of clusters in the feature space $\Omega^d$ depends on the choice of features implied by the feature extraction and feature selection stages $g()$}. We noticed that with the resulting features in this work, the cluster geometry does no exhibit the necessary symmetric property and thus leads to a poor performance and even failure in predicting subsequent abnormalities. 
 Therefore, an optimization method based on spatial transformation is proposed to solve this issue. More specifically, we propose a method to reshape the clusters such that 
 \begin{itemize}
-\item The abnormal clusters surround the normal cluster; 
-\item A maximal separation among the abnormal clusters are achieved; 
-\item The angles between the vectors connecting the centroid of normal cluster to different abnormal clusters are equalized. 
+\item the abnormal clusters surround the normal cluster; 
+\item a maximal separation among the abnormal clusters are achieved; 
+\item the angles between the vectors connecting the centroid of normal cluster to different abnormal clusters are equalized. 
 \end{itemize}
 
 These properties can be achieved through imposing the following conditions:  
  \begin{itemize}
      %\item Vectors pointing from normal centroid to different abnormal clusters centroids has no overlapping or cross with each other.
-     \item The vectors pointing from the normal centroid to different abnormal centroids present maximum mutual cosine distances.
-     \item The overlapping parts among all clusters are minimized.
+     \item the vectors pointing from the normal centroid to different abnormal centroids present maximum mutual cosine distances;
+     \item the overlapping parts among all clusters are minimized.
  \end{itemize}
 
 % maximizing the minimum of the angles between the aforementioned vectors from the normal cluster centroid to abnormal cluster centroids. 
@@ -83,7 +83,7 @@ When optimizing the objective function, SVM only requires to calculate the inner
 
 Different kernels represent different nonlinear mapping functions. For ML models, the selection of kernel plays a crucial role. Hence, there is no straightforward method to choose the best kernel and it is typically chosen by empirical approach and other heuristic model selection methods. An effective kernel function generally needs to satisfy the Mercer's condition, so that the inner products can be replaced by kernel functions, as used in SVM \cite{cristianini2000introduction}. 
 %This means the matrix defined by function $\Psi(x_j,x)$ is symmetric positive semi-definite. In general, the selection of kernel function depends on all observations in input space. 
-The exhaustive search for all possible kernels is a computationally expensive and unrealistic task\cite{chapelle1999support}. A more efficient way to resolve this issue would be to search for an optimally weighted combination of a set of basis kernels, such as polynomial kernel functions and Gaussian kernel functions\cite{lanckriet2002robust}. This method has been proven to be robust and efficient since the basis kernels satisfy Mercer’s condition individually and this property is consistent for different datasets\cite{jebara2004multi}.
+The exhaustive search for all possible kernels is a computationally expensive and unrealistic task\cite{chapelle1999support}. A more efficient way to resolve this issue would be to search for an optimally weighted combination of a set of base kernels, such as polynomial kernel functions and Gaussian kernel functions\cite{lanckriet2002robust}. This method has been proven to be robust and efficient since the base kernels satisfy Mercer’s condition individually and this property is consistent for different datasets\cite{jebara2004multi}.
 %However, in effect, kernel functions with simple expression, such as polynomial kernel function, Gaussian kernel function and exponential kernel function are usually preferred than complicated kernel function for its simplicity and consistency. 
 
 
@@ -302,7 +302,7 @@ We conclude this section by stating that a new methodology provided in chapter 4
 
 %\textcolor{red}{Part of the text here is the repetition of the text before revision. reword this section and provide a list of contributions and concluding remarks here. The overall conclusions should be provided in a separate section}
 \textcolor{black}{In this chapter, we proposed a novel method which combines kernel-based nonlinear transformation with MOPSO optimization method. With the concept of kernel method and the loss function, we implemented a novel method using a weighted combination of base nonlinear kernels to reshape the input feature space by mapping it to a high-dimensional space. The coefficients of kernels are optimized according to two conditions, namely, maximum separation between the clusters and maximum cosine similarities between the abnormal clusters.} \\
-\textcolor{black}{By studying kernel methods as well as heuristic optimization methods based on the spatial topology optimization concept, the outcome of this chapter can be concluded as follow:\\
+\textcolor{black}{By studying kernel methods as well as heuristic optimization methods based on the spatial topology optimization concept, the outcome of this chapter can be concluded as follows:\\
 \begin{itemize}
 	\item translate the ideal symmetric geometry of feature space into two objective functions;
 	\item design a kernel-based transformation using weighted combination of base kernels;
